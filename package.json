@@ -1,0 +1,23 @@
+{
+  "name": "ourannounce",
+  "version": "1.0.0",
+  "description": "cards for invitations",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch src/style/sass/main.scss:src/style/css/main.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/G-nava/ourannounce.git"
+  },
+  "keywords": [
+    "invitations"
+  ],
+  "author": "Ever Navarro M",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/G-nava/ourannounce/issues"
+  },
+  "homepage": "https://github.com/G-nava/ourannounce#readme"
+}
