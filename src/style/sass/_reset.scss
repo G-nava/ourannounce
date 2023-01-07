@@ -1,0 +1,14 @@
+*,
+*::after,
+*::before{
+    padding: auto;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(245, 244, 244);
+}
+section{
+    height: 100vh;
+}
