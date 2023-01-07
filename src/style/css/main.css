@@ -11,12 +11,39 @@ body {
 }
 
 section {
+  display: grid;
   height: 100vh;
 }
 
-.main-sect {
+footer {
+  background-color: #202020;
+  color: white;
+  padding: 0.25rem;
   display: grid;
   place-items: center;
+  height: max-content;
+}
+
+.main-page_container {
+  font-family: "Work Sans";
+}
+.main-page_container .main-sectn {
+  display: grid;
+  place-items: center;
+}
+.main-page_container .main-sectn .square-element {
+  padding: 1rem;
+  font-weight: bold;
+  background-color: rgb(164, 218, 186);
+}
+
+.footer-section {
+  font-size: 0.75rem;
+  font-family: "Work Sans";
+  padding: 0.25rem;
+  display: grid;
+  place-items: center;
+  height: max-content;
 }
 
 /*# sourceMappingURL=main.css.map */

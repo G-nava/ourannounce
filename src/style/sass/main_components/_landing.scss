@@ -1,8 +1,28 @@
+@use 'reset' as *;
+
+$work-sans:'Work Sans';
+// $zen-dots:'Zen Dots';
 
 .main-page_container{
-
+    font-family: $work-sans;
+    
+    .main-sectn{
+        display: grid;
+        place-items:center;
+        
+        .square-element{
+            padding: 1rem;
+            font-weight: bold;
+            background-color: rgb(164, 218, 186); 
+        }
+    
+    }
 }
-.main-sect{
+.footer-section{
+    font-size: .75rem;
+    font-family: $work-sans;
+    padding: .25rem;
     display: grid;
-    place-items:center;
+    place-items: center;
+    height: max-content;
 }

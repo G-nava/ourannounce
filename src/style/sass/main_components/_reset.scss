@@ -1,0 +1,27 @@
+*,
+*::after,
+*::before{
+    padding: auto;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(245, 244, 244);
+    // height: 100vh;
+}
+section{
+    display: grid;
+    height: 100vh;
+    // height: 100vh;
+    // height: max-content;
+}
+
+footer{
+    background-color: #202020;
+    color: white;
+    padding: .25rem;
+    display: grid;
+    place-items: center;
+    height: max-content;
+}
