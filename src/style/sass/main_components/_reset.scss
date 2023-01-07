@@ -7,21 +7,15 @@
 }
 
 body{
-    background-color: rgb(245, 244, 244);
-    // height: 100vh;
-}
-section{
-    display: grid;
     height: 100vh;
-    // height: 100vh;
-    // height: max-content;
+    background-color: rgb(245, 244, 244);
 }
+// section{
+
+// }
 
 footer{
     background-color: #202020;
     color: white;
-    padding: .25rem;
-    display: grid;
-    place-items: center;
-    height: max-content;
+
 }

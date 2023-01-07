@@ -2,26 +2,39 @@
 
 $work-sans:'Work Sans';
 // $zen-dots:'Zen Dots';
+.the-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
-.main-page_container{
+
+.main-page_container{ // main tag
     font-family: $work-sans;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    place-items:center;
     
-    .main-sectn{
+    .main-sectn{ // section tag
         display: grid;
         place-items:center;
         
-        .square-element{
-            padding: 1rem;
+        .square-element{ // header
+            padding: 1rem 2rem;
             font-weight: bold;
             background-color: rgb(164, 218, 186); 
         }
-    
     }
 }
+
 .footer-section{
+    // position: relative;
+    width: 100%;
     font-size: .75rem;
     font-family: $work-sans;
-    padding: .25rem;
+    padding: .5rem;
     display: grid;
     place-items: center;
     height: max-content;

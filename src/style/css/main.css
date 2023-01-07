@@ -7,40 +7,44 @@
 }
 
 body {
-  background-color: rgb(245, 244, 244);
-}
-
-section {
-  display: grid;
   height: 100vh;
+  background-color: rgb(245, 244, 244);
 }
 
 footer {
   background-color: #202020;
   color: white;
-  padding: 0.25rem;
-  display: grid;
-  place-items: center;
-  height: max-content;
+}
+
+.the-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .main-page_container {
   font-family: "Work Sans";
+  height: 100%;
+  width: 100%;
+  display: grid;
+  place-items: center;
 }
 .main-page_container .main-sectn {
   display: grid;
   place-items: center;
 }
 .main-page_container .main-sectn .square-element {
-  padding: 1rem;
+  padding: 1rem 2rem;
   font-weight: bold;
   background-color: rgb(164, 218, 186);
 }
 
 .footer-section {
+  width: 100%;
   font-size: 0.75rem;
   font-family: "Work Sans";
-  padding: 0.25rem;
+  padding: 0.5rem;
   display: grid;
   place-items: center;
   height: max-content;
