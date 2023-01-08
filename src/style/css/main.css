@@ -7,8 +7,11 @@
 }
 
 body {
-  height: 100vh;
   background-color: rgb(245, 244, 244);
+}
+
+section {
+  height: 100vh;
 }
 
 footer {
@@ -30,14 +33,24 @@ footer {
   display: grid;
   place-items: center;
 }
-.main-page_container .main-sectn {
+.main-page_container .sctn {
   display: grid;
   place-items: center;
+  width: 100%;
 }
-.main-page_container .main-sectn .square-element {
+.main-page_container .sctn .square-element {
   padding: 1rem 2rem;
   font-weight: bold;
   background-color: rgb(164, 218, 186);
+}
+.main-page_container .sctn-1 {
+  background-color: rgb(255, 245, 245);
+}
+.main-page_container .sctn-2 {
+  background-color: rgb(113, 158, 117);
+}
+.main-page_container .sctn-3 {
+  background-color: rgb(255, 245, 245);
 }
 
 .footer-section {

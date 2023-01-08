@@ -17,15 +17,28 @@ $work-sans:'Work Sans';
     display: grid;
     place-items:center;
     
-    .main-sectn{ // section tag
+    .sctn{ // section tag
         display: grid;
         place-items:center;
+        width: 100%;
         
         .square-element{ // header
             padding: 1rem 2rem;
             font-weight: bold;
             background-color: rgb(164, 218, 186); 
         }
+    }
+
+    .sctn-1{
+        background-color: rgb(255, 245, 245);
+    }
+    .sctn-2{
+        background-color: rgb(113, 158, 117);
+        
+    }
+    .sctn-3{
+        background-color: rgb(255, 245, 245);
+
     }
 }
 
