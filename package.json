@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "sass": "sass --watch src/style/sass/main.scss:src/style/css/main.css",
+    "start": "./node_modules/.bin/netlify-lambda serve src",
+    "build": "./node_modules/.bin/netlify-lambda build src",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
