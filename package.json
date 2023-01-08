@@ -1,31 +1,22 @@
 {
   "name": "ourannounce",
   "version": "1.0.0",
-  "description": "cards for invitations",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch src/style/sass/main.scss:src/style/css/main.css",
-    "start": "./node_modules/.bin/netlify-lambda serve src",
-    "build": "./node_modules/.bin/netlify-lambda build src",
+
+    "sass": "sass --watch --update src/style/sass/main.scss:src/style/css/main.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/G-nava/ourannounce.git"
   },
-  "keywords": [
-    "invitations"
-  ],
-  "author": "Ever Navarro M",
-  "license": "MIT",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/G-nava/ourannounce/issues"
   },
-  "homepage": "https://github.com/G-nava/ourannounce#readme",
-  "dependencies": {
-    "express": "^4.18.2",
-    "netlify": "^13.1.0",
-    "netlify-lambda": "^2.0.15",
-    "serverless-http": "^3.1.1"
-  }
+  "homepage": "https://github.com/G-nava/ourannounce#readme"
 }
