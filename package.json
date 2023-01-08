@@ -2,7 +2,7 @@
   "name": "ourannounce",
   "version": "1.0.0",
   "description": "cards for invitations",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "sass": "sass --watch src/style/sass/main.scss:src/style/css/main.css",
     "test": "echo \"Error: no test specified\" && exit 1"
