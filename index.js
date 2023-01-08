@@ -9,13 +9,14 @@ const path = require("path");
 
 // app.use("/pages", express.static(path.resolve(__dirname, "src", "static")));
 
-app.get("/", (req, res) => {
+app.get('/*', (req, res) => {
     // res.send("ñeh");
     res.sendFile(path.resolve(__dirname, "src" , "index.html"));
 });
-app.get("/client", (req, res) => {
-    // res.send("ñeh");
-    res.sendFile(path.resolve(__dirname, "src" , "pages", "client.html"));
-});
+// app.get("/client", (req, res) => {
+//     // res.send("ñeh");
+//     res.sendFile(path.resolve(__dirname, "src" , "pages", "client.html"));
+// });
 
-app.listen(process.env.PORT || 5500);
+app.listen(process.env.PORT || 9000);
+// app.listen(process.env.PORT || 5500 , '127.0.0.1');
