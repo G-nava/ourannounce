@@ -1,14 +1,17 @@
 const PATHS = {
     home:{
         path:'/',
-        template:`index.html`
-    },
-    client:{
-        path:'/client',
         template:`
         <section>
-            CLIENT!!!
-        </section>
+            <a href="/keisi" onclick="ROUTER.load('keisy')">Abrir</a>
+        </section>`
+    },
+    keisi:{
+        path:'/keisi',
+        template:`
+            <section>
+                CAÑANGA!!!
+            </section>
     `
     },
 };

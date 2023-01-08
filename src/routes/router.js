@@ -12,7 +12,7 @@ class Router {
                 pathname = '/' 
             }
         } = window
-        const URI = pathname === '/' ? 'home' : pathname.replace('/', '');
+        const URI = pathname === '/' ? 'keisi' : pathname.replace('/', '');
         this.load(URI)
     };
 
