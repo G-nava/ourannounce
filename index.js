@@ -18,5 +18,5 @@ app.get('/*', (req, res) => {
 //     res.sendFile(path.resolve(__dirname, "src" , "pages", "client.html"));
 // });
 
-app.listen(process.env.PORT || 9000);
 // app.listen(process.env.PORT || 5500 , '127.0.0.1');
+app.listen();
