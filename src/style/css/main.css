@@ -105,6 +105,23 @@ footer {
   font-family: "Work Sans";
 }
 
+.sctn-map {
+  display: grid;
+  place-items: center;
+}
+.sctn-map .mapouter {
+  position: relative;
+  text-align: right;
+  height: 500px;
+  width: 100%;
+}
+.sctn-map .gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 500px;
+  width: 100%;
+}
+
 .footer-section {
   font-size: 0.75rem;
   font-family: "Work Sans";
