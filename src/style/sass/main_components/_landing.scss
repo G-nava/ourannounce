@@ -1,50 +1,90 @@
-@use 'reset' as *;
+*,
+*::after,
+*::before{
+    padding: auto;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(245, 244, 244);
+}
+
+section{
+    height: 100vh;
+}
+
+footer{
+    background-color: #202020;
+    color: white;
+
+}
 
 $work-sans:'Work Sans';
-// $zen-dots:'Zen Dots';
-.the-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
+$Nova: 'Nova Square', cursive;
+$Passion: 'Passions Conflict', cursive;
+$Zen: 'Zen Dots', cursive;
+$parisiene: 'Parisienne', cursive;
+$main-color:#701717;
+$background_1:#f7f5f3;
+$background_2:#E5DED9;
 
 
-.main-page_container{ // main tag
-    font-family: $work-sans;
-    height: 100%;
-    width: 100%;
-    display: grid;
-    place-items:center;
-    
-    .sctn{ // section tag
+.sctn{
+    overflow: hidden;
+    position: relative;
+    background-color: $background_1;
+
+    .elmnt{
+        position: absolute;
+
+    }
+
+    .elmnt_1{
+        width: 150%;
+        height: 70%;
+        left: -3rem;
+        top: -5rem;
+    }
+
+    .elmnt_2{
+        width: 150%;
+        left: -3rem;
+        top: -1rem;
+    }
+
+    .main_title{
         display: grid;
-        place-items:center;
-        width: 100%;
-        
-        .square-element{ // header
-            padding: 1rem 2rem;
-            font-weight: bold;
-            background-color: rgb(164, 218, 186); 
+        place-items: center;
+        gap: .75rem;
+        position: relative;
+        // z-index: 10;
+        text-align: center;
+        top: 5rem;
+        padding-bottom: 1rem;
+        p{
+            // position: relative;
+            color: rgb(184, 168, 83);
+            font-family: $work-sans;
+            width: 50%;
+            font-weight: 200;
+
+        }
+        h1{
+            color:  rgb(184, 168, 83);
+            font-family: $parisiene;
+            font-size: 6rem;
+            font-weight: 100;
+            line-height: .9;
+            
         }
     }
-
-    .sctn-1{
-        background-color: rgb(255, 245, 245);
-    }
-    .sctn-2{
-        background-color: rgb(113, 158, 117);
-        
-    }
-    .sctn-3{
-        background-color: rgb(255, 245, 245);
-
-    }
 }
+
 
 .footer-section{
     // position: relative;
-    width: 100%;
+    // width: 100%;
     font-size: .75rem;
     font-family: $work-sans;
     padding: .5rem;
