@@ -46,23 +46,30 @@ footer {
 }
 .sctn .elmnt_4_left {
   width: 30%;
-  left: -0.25rem;
-  transform: rotate(20deg) translateY(50%);
+  left: -3rem;
+  top: 5rem;
+  animation: leaves 20s infinite ease;
 }
 .sctn .elmnt_4_right {
-  transform: rotateY(180deg) translateY(80%);
+  animation: leaves 17s infinite ease;
+  rotate: y 180deg;
   width: 30%;
-  right: -2rem;
+  right: -3rem;
 }
 .sctn .elmnt_5_left {
+  animation: leaves 17s infinite ease;
+  animation-direction: reverse;
   width: 35%;
-  left: 2.5rem;
-  transform: rotate3d(2, 1, 1, 40deg) translateY(170%);
+  left: -3.5rem;
+  top: 20rem;
 }
 .sctn .elmnt_5_right {
-  transform: rotateY(180deg) translateY(170%);
+  animation: leaves 17s infinite ease;
+  animation-direction: reverse;
+  rotate: y 180deg;
   width: 36%;
   right: -4rem;
+  top: 18rem;
 }
 .sctn .main_title {
   display: grid;
@@ -105,6 +112,18 @@ footer {
   display: grid;
   place-items: center;
   height: max-content;
+}
+
+@keyframes leaves {
+  0% {
+    transform: rotate(20deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(20deg);
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
