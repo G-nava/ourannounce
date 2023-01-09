@@ -52,6 +52,12 @@ $background_2:#E5DED9;
         left: -3rem;
         top: -1rem;
     }
+    .elmnt_3{
+        z-index: 10;
+        width: 150%;
+        left: -3rem;
+        bottom: -2rem;
+    }
 
     .main_title{
         display: grid;
@@ -78,6 +84,19 @@ $background_2:#E5DED9;
             line-height: .9;
             
         }
+    }
+    .text_complement{
+        display: grid;
+        place-items: center;
+        // gap: .75rem;
+        position: relative;
+        text-align: center;
+        bottom: -17rem;
+        font-size: 1.25rem;
+        font-weight: 300;
+        font-family: $work-sans;
+        // padding-bottom: 1rem;
+
     }
 }
 
