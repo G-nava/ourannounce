@@ -24,104 +24,17 @@ footer {
   position: relative;
   background-color: #f7f5f3;
 }
-.sctn .elmnt {
+.sctn .corners {
   position: absolute;
 }
-.sctn .elmnt_1 {
-  width: 150%;
-  height: 70%;
-  left: -3rem;
-  top: -5rem;
-}
-.sctn .elmnt_2 {
-  width: 150%;
-  left: -3rem;
-  top: -1rem;
-}
-.sctn .elmnt_3 {
-  z-index: 10;
-  width: 150%;
-  left: -3rem;
-  bottom: -2rem;
-}
-.sctn .elmnt_4_left {
-  width: 30%;
-  left: -3rem;
-  top: 5rem;
-  animation: leaves 20s infinite ease;
-}
-.sctn .elmnt_4_right {
-  animation: leaves 17s infinite ease;
-  rotate: y 180deg;
-  width: 30%;
-  right: -3rem;
-}
-.sctn .elmnt_5_left {
-  animation: leaves 17s infinite ease;
-  animation-direction: reverse;
-  width: 35%;
-  left: -3.5rem;
-  top: 20rem;
-}
-.sctn .elmnt_5_right {
-  animation: leaves 17s infinite ease;
-  animation-direction: reverse;
-  rotate: y 180deg;
-  width: 36%;
-  right: -4rem;
-  top: 18rem;
-}
-.sctn .main_title {
-  display: grid;
-  place-items: center;
-  gap: 0.75rem;
-  position: relative;
-  text-align: center;
-  top: 5rem;
-  padding-bottom: 1rem;
-}
-.sctn .main_title p {
-  color: rgb(184, 168, 83);
-  font-family: "Work Sans";
-  width: 70%;
-  font-weight: 200;
-  font-size: 1.25rem;
-}
-.sctn .main_title h1 {
-  color: rgb(184, 168, 83);
-  font-family: "Parisienne", cursive;
-  font-size: 6rem;
-  font-weight: 100;
-  line-height: 0.9;
-}
-.sctn .text_complement {
-  display: grid;
-  place-items: center;
-  position: relative;
-  text-align: center;
-  bottom: -17rem;
-  font-size: 1.25rem;
-  font-weight: 300;
-  font-family: "Work Sans";
-}
-
-.sctn-map {
-  display: grid;
-  place-items: center;
-}
-.sctn-map .mapouter {
-  position: relative;
-  text-align: right;
-  height: 500px;
+.sctn .crnr-up {
+  top: 0;
   width: 100%;
 }
-.sctn-map .gmap_canvas {
-  overflow: hidden;
-  background: none !important;
-  height: 500px;
+.sctn .crnr-dwn {
+  bottom: 0;
   width: 100%;
 }
-
 .footer-section {
   font-size: 0.75rem;
   font-family: "Work Sans";
