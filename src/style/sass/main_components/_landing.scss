@@ -26,7 +26,7 @@ $Passion: 'Passions Conflict', cursive;
 $Zen: 'Zen Dots', cursive;
 $parisiene: 'Parisienne', cursive;
 $main-color:#701717;
-$background_1:#f7f5f3;
+$background_1:#fffdf4;
 $background_2:#E5DED9;
 
 
@@ -34,6 +34,8 @@ $background_2:#E5DED9;
     overflow: hidden;
     position: relative;
     background-color: $background_1;
+    display: grid;
+    place-items: center;
 
     .corners{
         position: absolute;
@@ -48,7 +50,12 @@ $background_2:#E5DED9;
     }
 
     .first-container{
-        
+        display: grid;
+        place-items: center;
+        width: 80%;
+        height: 70%;
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
     }
 
     // .elmnt{

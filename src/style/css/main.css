@@ -22,7 +22,9 @@ footer {
 .sctn {
   overflow: hidden;
   position: relative;
-  background-color: #f7f5f3;
+  background-color: #fffdf4;
+  display: grid;
+  place-items: center;
 }
 .sctn .corners {
   position: absolute;
@@ -35,6 +37,15 @@ footer {
   bottom: 0;
   width: 100%;
 }
+.sctn .first-container {
+  display: grid;
+  place-items: center;
+  width: 80%;
+  height: 70%;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
 .footer-section {
   font-size: 0.75rem;
   font-family: "Work Sans";
