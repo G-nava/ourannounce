@@ -51,11 +51,38 @@ $background_2:#E5DED9;
 
     .first-container{
         display: grid;
+        grid-template-rows: repeat(2, 1fr);
         place-items: center;
         width: 80%;
         height: 70%;
         background-color: white;
         box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+        
+        .text-card_container{
+            // display: grid;
+            
+            .main-tittle{
+                color:  rgb(184, 168, 83);
+                font-family: $parisiene;
+                font-size: 4rem;
+                text-align: center;
+                line-height: .6;
+                font-weight: 100;
+    
+                .middle{
+                    font-size: 3.5rem;
+                }
+            }
+        }
+        .img-card_container{
+            display: flex;
+            height: 100%;
+            .img-card{
+                object-fit: cover;
+                max-width: 100%;
+            }
+        }
+    
     }
 
     // .elmnt{
