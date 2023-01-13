@@ -38,13 +38,22 @@ footer {
   width: 100%;
 }
 .sctn .first-container {
+  z-index: 10;
   display: grid;
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 50%);
   place-items: center;
   width: 80%;
   height: 70%;
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+.sctn .first-container .corner-flower {
+  position: absolute;
+}
+.sctn .first-container .text-card_container .intro {
+  font-family: "Work Sans";
+  padding-bottom: 1.5rem;
+  font-weight: 300;
 }
 .sctn .first-container .text-card_container .main-tittle {
   color: rgb(184, 168, 83);
@@ -63,7 +72,7 @@ footer {
 }
 .sctn .first-container .img-card_container .img-card {
   object-fit: cover;
-  max-width: 100%;
+  width: 100%;
 }
 
 .footer-section {
