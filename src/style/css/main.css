@@ -38,6 +38,7 @@ footer {
   width: 100%;
 }
 .sctn .first-container {
+  position: relative;
   z-index: 10;
   display: grid;
   grid-template-rows: repeat(2, 50%);
@@ -49,6 +50,10 @@ footer {
 }
 .sctn .first-container .corner-flower {
   position: absolute;
+  width: 80%;
+  height: 80%;
+  top: -5%;
+  right: -25%;
 }
 .sctn .first-container .text-card_container .intro {
   font-family: "Work Sans";
@@ -58,7 +63,7 @@ footer {
 .sctn .first-container .text-card_container .main-tittle {
   color: rgb(184, 168, 83);
   font-family: "Parisienne", cursive;
-  font-size: 4rem;
+  font-size: 5rem;
   text-align: center;
   line-height: 0.6;
   font-weight: 100;
