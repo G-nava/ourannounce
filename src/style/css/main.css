@@ -51,9 +51,12 @@ footer {
 .sctn .first-container .corner-flower {
   position: absolute;
   width: 80%;
-  height: 80%;
-  top: -5%;
-  right: -25%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  top: -20%;
+  right: -0.3%;
+  transform: rotate(-65deg);
 }
 .sctn .first-container .text-card_container .intro {
   font-family: "Work Sans";
