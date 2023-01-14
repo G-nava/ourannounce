@@ -44,22 +44,23 @@ footer {
   grid-template-rows: repeat(2, 50%);
   place-items: center;
   width: 80%;
-  height: 70%;
+  height: 55%;
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
-.sctn .first-container .corner-flower {
+.sctn .first-container .flwr_1 {
+  top: -40%;
+  left: -1rem;
   position: absolute;
-  width: 100%;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  top: -20%;
+  width: 120%;
   transform: rotate(20deg);
 }
-.sctn .first-container .corner-flower .flwr_1 {
-  position: relative;
+.sctn .first-container .flwr_2 {
+  bottom: -40%;
+  left: -3rem;
+  position: absolute;
   width: 120%;
+  transform: rotate(200deg);
 }
 .sctn .first-container .text-card_container .intro {
   font-family: "Work Sans";
