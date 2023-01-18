@@ -26,6 +26,13 @@ footer {
   display: grid;
   place-items: center;
 }
+.sctn .red-element {
+  position: absolute;
+  width: 130%;
+  top: -20%;
+  right: -60%;
+  transform: rotate(45deg);
+}
 .sctn .corners {
   position: absolute;
 }
