@@ -52,16 +52,16 @@ footer {
   transform: rotate(195deg);
 }
 .sctn .leave-3 {
-  width: 40%;
+  width: 35%;
   bottom: -5%;
   left: -10%;
-  transform: rotate(13deg) scaleX(-1);
+  transform: rotate(20deg) scaleX(-1);
 }
 .sctn .leave-4 {
   width: 40%;
-  bottom: -18%;
+  bottom: -20%;
   left: 0%;
-  transform: rotate(45deg);
+  transform: rotate(50deg);
 }
 .sctn .first-container {
   width: 25rem;
