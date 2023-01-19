@@ -57,28 +57,40 @@ $background_2:#E5DED9;
         width: 40%;
     }
 
-    .leave-1{
-        bottom: -20%;
-        left: -10%;
-        transform: rotate(15deg);
-    }
-    .leave-2{
-        top: -20%;
-        right: -10%;
-        transform: rotate(195deg);
-    }
+    // .leave-1{
+    //     bottom: -20%;
+    //     left: -10%;
+    //     transform: rotate(15deg);
+    // }
+    // .leave-2{
+    //     top: -20%;
+    //     right: -10%;
+    //     transform: rotate(195deg);
+    // }
     
-    .leave-3{
-        width: 35%;
+    // .leave-3{
+    //     width: 35%;
+    //     bottom: -5%;
+    //     left: -10%;
+    //     transform: rotate(20deg) scaleX(-1);
+    // }
+    // .leave-4{
+    //     width: 40%;
+    //     bottom: -20%;
+    //     left: 0%;
+    //     transform: rotate(50deg);
+    // }
+    .leave-5{
+        width: 70%;
         bottom: -5%;
-        left: -10%;
-        transform: rotate(20deg) scaleX(-1);
+        left: -9%;
+        transform: rotate(10deg);
     }
-    .leave-4{
-        width: 40%;
-        bottom: -20%;
-        left: 0%;
-        transform: rotate(50deg);
+    .leave-6{
+        width: 70%;
+        top: -5%;
+        right: -9%;
+        transform: rotate(180deg);
     }
     // .corners{
     //     position: absolute;

@@ -41,27 +41,17 @@ footer {
   position: absolute;
   width: 40%;
 }
-.sctn .leave-1 {
-  bottom: -20%;
-  left: -10%;
-  transform: rotate(15deg);
-}
-.sctn .leave-2 {
-  top: -20%;
-  right: -10%;
-  transform: rotate(195deg);
-}
-.sctn .leave-3 {
-  width: 35%;
+.sctn .leave-5 {
+  width: 70%;
   bottom: -5%;
-  left: -10%;
-  transform: rotate(20deg) scaleX(-1);
+  left: -9%;
+  transform: rotate(10deg);
 }
-.sctn .leave-4 {
-  width: 40%;
-  bottom: -20%;
-  left: 0%;
-  transform: rotate(50deg);
+.sctn .leave-6 {
+  width: 70%;
+  top: -5%;
+  right: -9%;
+  transform: rotate(180deg);
 }
 .sctn .first-container {
   width: 25rem;
