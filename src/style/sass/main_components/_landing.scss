@@ -37,12 +37,19 @@ $background_2:#E5DED9;
     display: grid;
     place-items: center;
 
-    .red-element{
+    .red_up{
         position: absolute;
-        width: 130%;
+        width: 125%;
         top: -20%;
-        right: -60%;
-        transform: rotate(45deg);
+        // right: -60%;
+        // transform: rotate(45deg);
+    }
+    
+    .red_down{
+        position: absolute;
+        width: 125%;
+        bottom: -20%;
+        transform: rotate(180deg);
     }
 
     .corners{
