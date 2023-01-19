@@ -89,8 +89,8 @@ $background_2:#E5DED9;
     .leave-6{
         width: 70%;
         top: -5%;
-        right: -9%;
-        transform: rotate(180deg);
+        right: -10%;
+        transform: rotate(185deg);
     }
     // .corners{
     //     position: absolute;
@@ -105,18 +105,43 @@ $background_2:#E5DED9;
     // }
 
     .first-container{
-        width: 25rem;
-        height: 25rem;
-        position: relative;
-        transform: rotate(45deg) skew(15deg, 15deg);
-        z-index: 10;
-        display: grid;
-        grid-template-rows: repeat(2, 50%);
-        // justify-content: center;
-        // align-items: center;
-        place-items: center;
-        // background-color: white;
-        box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+        text-align: center;
+        .reason{
+            font-family: $work-sans;
+            margin-bottom: 1.5rem;
+            font-size: 1rem;
+            font-weight: 300;
+            &::first-letter{
+                text-transform: uppercase;
+            }
+        }
+
+        .main-text{
+            font-family: $parisiene;
+            text-transform: capitalize;
+            font-size: 5rem;
+            font-weight: 100;
+            line-height: .6;
+            
+
+            .y{
+
+            }
+        }
+
+
+        // width: 25rem;
+        // height: 25rem;
+        // position: relative;
+        // transform: rotate(45deg) skew(15deg, 15deg);
+        // z-index: 10;
+        // display: grid;
+        // grid-template-rows: repeat(2, 50%);
+        // // justify-content: center;
+        // // align-items: center;
+        // place-items: center;
+        // // background-color: white;
+        // box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
         // .corner-flower{
             // position: absolute;
             
@@ -128,20 +153,20 @@ $background_2:#E5DED9;
             // // background-color: #701717;
             
             
-            .flwr_1{
-                top: -50%;
-                left: -1rem;
-                position: absolute;
-                width: 120%;
-                transform: rotate(20deg) ;
-            }
-            .flwr_2{
-                bottom: -50%;
-                left: -3rem;
-                position: absolute;
-                width: 120%;
-                transform: rotate(200deg) ;
-            }
+            // .flwr_1{
+            //     top: -50%;
+            //     left: -1rem;
+            //     position: absolute;
+            //     width: 120%;
+            //     transform: rotate(20deg) ;
+            // }
+            // .flwr_2{
+            //     bottom: -50%;
+            //     left: -3rem;
+            //     position: absolute;
+            //     width: 120%;
+            //     transform: rotate(200deg) ;
+            // }
         // }
         
         .text-card_container{

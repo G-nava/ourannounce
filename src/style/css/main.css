@@ -50,33 +50,27 @@ footer {
 .sctn .leave-6 {
   width: 70%;
   top: -5%;
-  right: -9%;
-  transform: rotate(180deg);
+  right: -10%;
+  transform: rotate(185deg);
 }
 .sctn .first-container {
-  width: 25rem;
-  height: 25rem;
-  position: relative;
-  transform: rotate(45deg) skew(15deg, 15deg);
-  z-index: 10;
-  display: grid;
-  grid-template-rows: repeat(2, 50%);
-  place-items: center;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  text-align: center;
 }
-.sctn .first-container .flwr_1 {
-  top: -50%;
-  left: -1rem;
-  position: absolute;
-  width: 120%;
-  transform: rotate(20deg);
+.sctn .first-container .reason {
+  font-family: "Work Sans";
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  font-weight: 300;
 }
-.sctn .first-container .flwr_2 {
-  bottom: -50%;
-  left: -3rem;
-  position: absolute;
-  width: 120%;
-  transform: rotate(200deg);
+.sctn .first-container .reason::first-letter {
+  text-transform: uppercase;
+}
+.sctn .first-container .main-text {
+  font-family: "Parisienne", cursive;
+  text-transform: capitalize;
+  font-size: 5rem;
+  font-weight: 100;
+  line-height: 0.6;
 }
 .sctn .first-container .text-card_container .intro {
   font-family: "Work Sans";
