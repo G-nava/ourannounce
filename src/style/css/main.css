@@ -37,15 +37,15 @@ footer {
 }
 .sctn .flower-container .capullo-1 {
   bottom: 39%;
-  left: 13%;
-  width: 8%;
+  left: 12%;
+  width: 10%;
   animation: leaves 9s alternate-reverse infinite ease-in;
   transform-origin: bottom center;
 }
 .sctn .flower-container .capullo-2 {
   bottom: 21%;
-  right: 8.2%;
-  width: 25%;
+  right: 5.7%;
+  width: 30%;
   animation: leaves2 10s alternate infinite ease-in;
   transform-origin: bottom center;
 }
