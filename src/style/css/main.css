@@ -112,7 +112,7 @@ footer {
   width: 90;
   height: 70%;
   border-color: goldenrod;
-  border-width: 5px;
+  border-width: 0.5rem;
 }
 .sctn .content .first-container {
   display: grid;
