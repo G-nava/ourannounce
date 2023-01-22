@@ -30,6 +30,23 @@ footer {
   position: absolute;
   width: 80%;
 }
+.sctn .flower-1 {
+  position: absolute;
+  width: 45%;
+  top: 0;
+}
+.sctn .flower-1 .capullo-1 {
+  width: 1rem;
+  position: relative;
+  animation: leaves 10s linear infinite;
+  transform-origin: bottom center;
+}
+.sctn .flower-1 .capullo-2 {
+  width: 1rem;
+  position: relative;
+  animation: leaves 15s linear infinite;
+  transform-origin: bottom center;
+}
 .sctn .leave-5 {
   width: 70%;
   bottom: -5%;
@@ -108,13 +125,19 @@ footer {
 
 @keyframes leaves {
   0% {
-    transform: rotate(20deg);
+    transform: rotate(1deg);
   }
-  50% {
+  25% {
     transform: rotate(0deg);
   }
-  100% {
-    transform: rotate(20deg);
+  50% {
+    transform: rotate(-1deg);
+  }
+  75% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(1deg);
   }
 }
 
