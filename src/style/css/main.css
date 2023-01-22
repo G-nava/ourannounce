@@ -31,7 +31,7 @@ footer {
 }
 .sctn .flower-container {
   z-index: 100;
-  width: 45%;
+  width: 55%;
   top: -1rem;
   right: -1rem;
 }
@@ -124,13 +124,14 @@ footer {
 .sctn .content .first-container .arrow {
   position: absolute;
   max-width: 50%;
+  transform: rotate(45deg);
 }
 .sctn .content .first-container .reason {
   width: 70%;
   place-self: center;
   top: 0.5rem;
   font-family: "Work Sans";
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 300;
 }
 .sctn .content .first-container .reason::first-letter {
@@ -210,7 +211,7 @@ footer {
 
 @keyframes leaves {
   0% {
-    transform: rotate(5deg);
+    transform: rotate(9deg);
   }
   50% {
     transform: rotate(0deg);
@@ -221,7 +222,7 @@ footer {
 }
 @keyframes leaves2 {
   0% {
-    transform: rotate(9deg);
+    transform: rotate(13deg);
   }
   50% {
     transform: rotate(0deg);
