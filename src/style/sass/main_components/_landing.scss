@@ -41,26 +41,33 @@ $background_2:#E5DED9;
         position: absolute;
         width: 80%;
     }
-    .flower-1{
-        position: absolute;
+
+    .flower-container{
+        // position: absolute;
         width: 45%;
+        position: absolute;
         top: 0;
+        right: -1rem;
         
         .capullo-1{
-            width: 1rem;
-            position: relative;
-            animation: leaves 10s linear infinite;
+            bottom: 39%;
+            left: 12.5%;
+            width: 8%;
+            position: absolute;
+            animation: leaves  9s alternate-reverse  infinite ease-in;
             transform-origin: bottom center;
 
         }
+        
         .capullo-2{
-            width: 1rem;
-            position: relative;
-            animation: leaves 15s linear infinite;
+            bottom: 21%;
+            right: 8.2%;
+            width: 25%;
+            position: absolute;
+            animation: leaves2 10s alternate infinite ease-in;
             transform-origin: bottom center;
-
+            
         }
-
     }
 
 
@@ -158,24 +165,23 @@ $background_2:#E5DED9;
 
 @keyframes leaves {
     0%{
-        transform: rotate(1deg);
-
-    }
-    25%{
-        transform: rotate(0deg);
-
+        transform: rotate(5deg);
     }
     50%{
-        transform: rotate(-1deg);
-
-    }
-    75%{
         transform: rotate(0deg);
-
     }
-    10%{
-        transform: rotate(1deg);
-
+    100%{
+        transform: rotate(-17deg);
     }
-
+}
+@keyframes leaves2 {
+    0%{
+        transform: rotate(9deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-20deg);
+    }
 }
