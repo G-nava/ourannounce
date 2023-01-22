@@ -28,7 +28,7 @@ footer {
 }
 .sctn .arrow {
   position: absolute;
-  width: 80%;
+  width: 60%;
 }
 .sctn .abs {
   position: absolute;
@@ -89,7 +89,7 @@ footer {
 .sctn .flower-container-2 .leave-left-down-left {
   width: 65%;
   top: 40%;
-  left: 25%;
+  left: 27%;
   animation: leaves6 8s alternate infinite ease-in-out;
   transform-origin: bottom right;
 }
