@@ -97,8 +97,6 @@ footer {
   width: 80%;
   top: -20%;
   right: -10%;
-  opacity: 0.5;
-  filter: invert(16%) sepia(25%) saturate(5461%) hue-rotate(341deg) brightness(86%) contrast(98%);
 }
 .sctn .watercolor2 {
   width: 100%;
