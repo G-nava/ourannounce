@@ -117,15 +117,21 @@ $background_2:#E5DED9;
         }
 
         .main-text{
+            display: grid;
+            grid-template-rows: repeat(auto-fill, 3fr);
+            justify-content: center;
+            align-items: center;
             font-family: $parisiene;
             text-transform: capitalize;
             font-size: 5rem;
             font-weight: 100;
-            line-height: .6;
+            // line-height: .8;
             
-
-            .y{
-
+            
+            .y{ //span
+                font-size: 3rem;   
+                margin-top: -.5rem;   
+                margin-bottom: -.5rem;   
             }
         }
 
