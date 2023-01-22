@@ -133,6 +133,8 @@ $background_2:#E5DED9;
         width: 80%;
         top: -20%;
         right: -10%;
+        opacity: .5;
+        filter: invert(16%) sepia(25%) saturate(5461%) hue-rotate(341deg) brightness(86%) contrast(98%);
     }
     .watercolor2{
         width: 100%;
