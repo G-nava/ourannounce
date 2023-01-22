@@ -123,7 +123,7 @@ footer {
 }
 .sctn .content .first-container .arrow {
   position: absolute;
-  width: 65%;
+  max-width: 50%;
 }
 .sctn .content .first-container .reason {
   width: 70%;
@@ -174,6 +174,27 @@ footer {
 .sctn .content .first-container .img-card_container .img-card {
   object-fit: cover;
   width: 100%;
+}
+.sctn .content .first-container .date {
+  font-size: 1.25rem;
+  font-weight: 300;
+  font-family: "Work Sans";
+  text-align: center;
+  display: grid;
+  grid-auto-flow: column;
+  place-items: center;
+  width: 80%;
+}
+.sctn .content .first-container .date .separator {
+  display: block;
+  width: 1px;
+  height: calc(100% + 0.1rem);
+  background-color: #4d4c49;
+}
+.sctn .content .first-container .date .lugar {
+  text-transform: capitalize;
+  display: grid;
+  grid-auto-flow: row;
 }
 
 .footer-section {

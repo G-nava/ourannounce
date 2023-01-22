@@ -166,7 +166,7 @@ $background_2:#E5DED9;
 
             .arrow{
                 position: absolute;
-                width: 65%;
+                max-width: 50%;
             }
             
             .reason{
@@ -229,6 +229,31 @@ $background_2:#E5DED9;
                 .img-card{
                     object-fit: cover;
                     width: 100%;
+                }
+            }
+            .date{
+                font-size: 1.25rem;
+                font-weight: 300;
+                font-family: $work-sans;
+                text-align: center;
+                display: grid;
+                grid-auto-flow: column;
+                place-items: center;
+                width: 80%;
+        
+                .separator{
+                    display: block;
+                    width: 1px;
+                    height:calc(100% + .10rem);
+                    background-color: #4d4c49;
+                    // transform: translate(6px, -9px);
+                }
+                
+                .lugar{
+                    text-transform: capitalize;
+                    display: grid;
+                    grid-auto-flow: row;
+        
                 }
             }
         }
