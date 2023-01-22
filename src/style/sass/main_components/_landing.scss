@@ -42,10 +42,14 @@ $background_2:#E5DED9;
         width: 80%;
     }
 
-    .flower-container{
-        // position: absolute;
-        width: 45%;
+    .abs{
         position: absolute;
+
+    }
+
+    .flower-container{
+
+        width: 45%;
         top: -1rem;
         right: -1rem;
         
@@ -53,7 +57,7 @@ $background_2:#E5DED9;
             bottom: 39%;
             left: 13%;
             width: 8%;
-            position: absolute;
+            // position: absolute;
             animation: leaves  9s alternate-reverse  infinite ease-in;
             transform-origin: bottom center;
 
@@ -63,26 +67,69 @@ $background_2:#E5DED9;
             bottom: 21%;
             right: 8.2%;
             width: 25%;
-            position: absolute;
+            // position: absolute;
             animation: leaves2 10s alternate infinite ease-in;
             transform-origin: bottom center;
             
         }
     }
+    
+    .flower-container-2{
+        z-index: 10;
+        width: 15%;
+        bottom: -15%;
+        left: 8%;
+        // top: -1rem;
+        // right: -1rem;
+        
+        .capullo-3{
+            // position: absolute;
+            width: 130%;
+            left: -65%;
+            top: -19%;
+            animation: leaves3 10s alternate infinite ease-in;
+            transform-origin: center;
+        }
+        
+        .capullo-4{
+            // position: absolute;
+            width: 120%;
+            left: 32%;
+            bottom: 65%;
+            animation: leaves3 14s alternate-reverse infinite ease-in-out;
+            transform-origin: center bottom;
+        }
+        
+        .leave-right-down{
+            width: 38%;
+
+            top: 2%;
+            left: -30%;
+            animation: leaves4 8s alternate infinite ease-in-out;
+            transform-origin: bottom right;
+        }
+        
+        .leave-right-down-left{
+            width: 30%;
+            // transform: rotate(-20deg);
+            top: 25%;
+            left: 10%;
+            animation: leaves5 8s alternate infinite ease-in-out;
+            transform-origin: bottom right;
+        }
+        
+        .leave-left-down-left{
+            width: 65%;
+            top: 40%;
+            left: 25%;
+            animation: leaves6 8s alternate infinite ease-in-out;
+            transform-origin: bottom right;
+            
+        }
+        
+    }
 
 
-    .leave-5{
-        width: 70%;
-        bottom: -5%;
-        left: -9%;
-        transform: rotate(10deg);
-    }
-    .leave-6{
-        width: 70%;
-        top: -5%;
-        right: -10%;
-        transform: rotate(185deg);
-    }
     .first-container{
         text-align: center;
         display: grid;
@@ -180,6 +227,53 @@ $background_2:#E5DED9;
     }
     50%{
         transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-20deg);
+    }
+}
+@keyframes leaves3 {
+    0%{
+        transform: rotate(9deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-9deg);
+    }
+}
+
+@keyframes leaves4 {
+    0%{
+        transform: rotate(-25deg);
+    }
+    50%{
+        transform: rotate(-18deg);
+    }
+    100%{
+        transform: rotate(-25deg);
+    }
+}
+
+@keyframes leaves5 {
+    0%{
+        transform: rotate(20deg);
+    }
+    50%{
+        transform: rotate(10deg);
+    }
+    100%{
+        transform: rotate(20deg);
+    }
+}
+
+@keyframes leaves6 {
+    0%{
+        transform: rotate(-20deg);
+    }
+    50%{
+        transform: rotate(-10deg);
     }
     100%{
         transform: rotate(-20deg);
