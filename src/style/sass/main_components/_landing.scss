@@ -140,11 +140,20 @@ $background_2:#E5DED9;
         left: -12%;
     }
     
+    
+    .watercolor3{
+        width: 100%;
+        opacity: .5;
+        // bottom: -20%;
+        // left: -12%;
+    }
+    
 
 
     .first-container{
         text-align: center;
         display: grid;
+        z-index: 100;
         
         .reason{
             position: relative;
