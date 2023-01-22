@@ -26,20 +26,9 @@ footer {
   display: grid;
   place-items: center;
 }
-.sctn .red_up {
+.sctn .arrow {
   position: absolute;
-  width: 125%;
-  top: -20%;
-}
-.sctn .red_down {
-  position: absolute;
-  width: 125%;
-  bottom: -20%;
-  transform: rotate(180deg);
-}
-.sctn .leaves {
-  position: absolute;
-  width: 40%;
+  width: 80%;
 }
 .sctn .leave-5 {
   width: 70%;
@@ -55,10 +44,13 @@ footer {
 }
 .sctn .first-container {
   text-align: center;
+  display: grid;
 }
 .sctn .first-container .reason {
+  position: relative;
+  place-self: center;
+  top: 0.5rem;
   font-family: "Work Sans";
-  margin-bottom: 1.5rem;
   font-size: 1rem;
   font-weight: 300;
 }
