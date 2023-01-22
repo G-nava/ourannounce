@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: #E2D7D5;
+  background-color: rgb(245, 244, 244);
 }
 
 section {
@@ -97,6 +97,11 @@ footer {
   width: 80%;
   top: -20%;
   right: -10%;
+}
+.sctn .watercolor2 {
+  width: 100%;
+  bottom: -20%;
+  left: -12%;
 }
 .sctn .first-container {
   text-align: center;
