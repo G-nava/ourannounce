@@ -19,6 +19,12 @@ footer {
   color: white;
 }
 
+h2 {
+  font-family: "Work Sans";
+  text-transform: capitalize;
+  font-weight: 350;
+}
+
 .sctn {
   overflow: hidden;
   position: relative;
@@ -37,14 +43,14 @@ footer {
 }
 .sctn .flower-container .capullo-1 {
   bottom: 39%;
-  left: 12%;
+  left: 13%;
   width: 10%;
   animation: leaves 9s alternate-reverse infinite ease-in;
   transform-origin: bottom center;
 }
 .sctn .flower-container .capullo-2 {
   bottom: 21%;
-  right: 5.7%;
+  right: 5.5%;
   width: 30%;
   animation: leaves2 10s alternate infinite ease-in;
   transform-origin: bottom center;
@@ -149,10 +155,9 @@ footer {
   font-weight: 100;
 }
 .sctn .content .first-container .main-text .y {
-  color: #202020;
   font-size: 3rem;
-  margin-top: -0.5rem;
-  margin-bottom: -0.5rem;
+  margin-top: -1.5rem;
+  margin-bottom: -1.5rem;
 }
 .sctn .content .first-container .text-card_container .intro {
   font-family: "Work Sans";
@@ -198,6 +203,75 @@ footer {
   text-transform: capitalize;
   display: grid;
   grid-auto-flow: row;
+}
+.sctn .corner-1-sctn-2 {
+  width: 100%;
+  top: -4rem;
+  left: -4rem;
+}
+.sctn .bottom-sctn-2 {
+  width: 130%;
+  bottom: -3.5rem;
+}
+.sctn .sctn-2_flowers {
+  z-index: 10;
+  width: 50%;
+  bottom: -5%;
+  right: -3%;
+}
+.sctn .sctn-2_flowers .sctn-2_flwr2 {
+  width: 45%;
+  right: 53%;
+  bottom: 8%;
+}
+.sctn .sctn-2_flowers .sctn-2_flwr3 {
+  width: 12%;
+  right: 50%;
+  bottom: 50%;
+}
+.sctn .sctn-2_flowers .sctn-2_flwr4 {
+  width: 35%;
+  left: 2%;
+  bottom: 55%;
+}
+.sctn .sctn-2_flowers .sctn-2_flwr5 {
+  width: 35%;
+  right: 22.5%;
+  top: -7%;
+}
+.sctn .sctn-2_flowers .sctn-2_flwr6 {
+  width: 8%;
+  right: 38%;
+  top: 18%;
+}
+.sctn .sctn-2_flowers .sctn-2_flwr7 {
+  width: 10%;
+  right: 27%;
+  top: 25%;
+}
+.sctn .sctn-2_flowers .sctn-2_flwr8 {
+  width: 15%;
+  right: 7%;
+  bottom: 35%;
+}
+.sctn .container-2 {
+  display: grid;
+  place-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+.sctn .container-2 .sub-content {
+  width: 80%;
+  border-radius: 50%;
+  overflow: hidden;
+  object-fit: cover;
+  object-position: -70% 150%;
+  aspect-ratio: 1;
+}
+.sctn .container-2 .sub-content .couple {
+  width: 130%;
+  opacity: 0.8;
+  transform: translate(-22%, -20%) scale(1.5);
 }
 
 .footer-section {
