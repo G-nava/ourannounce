@@ -182,12 +182,12 @@ h2{
             
             .reason{
                 // position: relative;
-                width: 70%;
+                width: 90%;
                 place-self: center;
                 top: .5rem;
                 color: #3f3f3f;
                 font-family: $work-sans;
-                font-size: 1.5rem;
+                font-size: 1.3rem;
                 font-weight: 400;
                 &::first-letter{
                     text-transform: uppercase;
@@ -247,7 +247,7 @@ h2{
             }
             .date{
                 font-size: 1rem;
-                font-weight: 400;
+                font-weight: 300;
                 font-family: $work-sans;
                 text-align: center;
                 display: grid;
@@ -269,12 +269,13 @@ h2{
                     text-transform: capitalize;
                     display: grid;
                     grid-auto-flow: row;
-        
+                    
                 }
             }
             .city{
+                font-weight: 300;
                 font-size: 1rem;
-                font-weight: 400;
+                // font-weight: 400;
                 margin-top: 1rem;
                 font-family: $work-sans;
                 color: #3f3f3f;
