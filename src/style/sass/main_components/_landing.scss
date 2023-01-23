@@ -15,11 +15,6 @@ $main-color:#701717;
 $background_1:#fffdf4;
 $background_2:#E5DED9;
 
-body{
-    background-color: rgb(245, 244, 244);
-
-}
-
 section{
     height: 100vh;
 }
@@ -157,24 +152,31 @@ h2{
         z-index: 100;
         display: grid;
         place-items: center;
-        background-color: rgba(255, 255, 255, 0.788);
-        width: 90;
+        justify-content: center;
+        align-items: center;
+        width: 90% !important;
         height: 70%;
-        border-color: goldenrod;
-        border-width: .5rem;
-        // margin:;
+        background-color: rgba(255, 255, 255, 0.712);
+
+        // border-color: goldenrod;
+        // border-width: .5rem;
+        margin:0 auto;
         
         .first-container{
+            // height: 70%;
             display: grid;
             place-items: center;
+            justify-content: center;
+            align-items: center;
             text-align: center;
             display: grid;
-            width: 100%;
+            width: 90%;
 
             .arrow{
                 position: absolute;
                 transform: translateY(.25%);
                 max-width: 80%;
+                place-self: center;
                 // transform: rotate(45deg);
             }
             
@@ -225,7 +227,7 @@ h2{
                 .main-tittle{
                     color:  rgb(184, 168, 83);
                     font-family: $parisiene;
-                    font-size: 5rem;
+                    font-size: 5.5rem;
                     text-align: center;
                     line-height: .6;
                     font-weight: 100;
@@ -250,8 +252,10 @@ h2{
                 text-align: center;
                 display: grid;
                 grid-auto-flow: column;
-                place-items: center;
-                width: 80%;
+                // place-items: center;
+                justify-content: center;
+                align-items: center;
+                width: 90%;
         
                 .separator{
                     display: block;
@@ -267,6 +271,13 @@ h2{
                     grid-auto-flow: row;
         
                 }
+            }
+            .city{
+                font-size: 1rem;
+                font-weight: 400;
+                margin-top: 1rem;
+                font-family: $work-sans;
+                color: #3f3f3f;
             }
         }
     }
@@ -348,23 +359,23 @@ h2{
 
         .sub-content{
             width: 90%;
-            // border-radius: 50%;
+            border-radius: 50%;
             overflow: hidden;
             object-fit: cover;
             object-position: -70% 150%;
-            // aspect-ratio: 1; 
+            aspect-ratio: 1; 
             
-            // .couple{
-            //     // height: 100%;
-            //     width: 130%;
-            //     opacity: .8;
-            //     transform: translate(-22%, -20%) scale(1.5);
-            // }
-            .brush{
-                width: 100%;
-                fill: url(../../couple/IMG-20230108-WA0002.jpg);
-                // height: ;
+            .couple{
+                // height: 100%;
+                width: 130%;
+                opacity: .8;
+                transform: translate(-22%, -20%) scale(1.5);
             }
+            // .brush{
+            //     width: 100%;
+            //     fill: url(../../couple/IMG-20230108-WA0002.jpg);
+            //     // height: ;
+            // }
 
         }
     }
