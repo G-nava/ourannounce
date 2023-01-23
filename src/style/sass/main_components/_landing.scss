@@ -173,8 +173,9 @@ h2{
 
             .arrow{
                 position: absolute;
-                max-width: 50%;
-                transform: rotate(45deg);
+                transform: translateY(.25%);
+                max-width: 80%;
+                // transform: rotate(45deg);
             }
             
             .reason{
@@ -182,9 +183,10 @@ h2{
                 width: 70%;
                 place-self: center;
                 top: .5rem;
+                color: #3f3f3f;
                 font-family: $work-sans;
                 font-size: 1.5rem;
-                font-weight: 300;
+                font-weight: 400;
                 &::first-letter{
                     text-transform: uppercase;
                 }
@@ -199,7 +201,7 @@ h2{
                 align-items: center;
                 font-family: $parisiene;
                 text-transform: capitalize;
-                font-size: 5rem;
+                font-size: 5.5rem;
                 font-weight: 100;
                 // line-height: .8;
                 
@@ -242,8 +244,8 @@ h2{
                 }
             }
             .date{
-                font-size: 1.25rem;
-                font-weight: 300;
+                font-size: 1rem;
+                font-weight: 400;
                 font-family: $work-sans;
                 text-align: center;
                 display: grid;
@@ -307,7 +309,7 @@ h2{
         .sctn-2_flwr4{
             width: 35%;
             // top: 100%;
-            left: 2%;
+            left: 1.5%;
             bottom: 55%;
         }
         .sctn-2_flwr5{
@@ -345,19 +347,25 @@ h2{
         margin: 0 auto;
 
         .sub-content{
-            width: 80%;
-            border-radius: 50%;
+            width: 90%;
+            // border-radius: 50%;
             overflow: hidden;
             object-fit: cover;
             object-position: -70% 150%;
-            aspect-ratio: 1; 
+            // aspect-ratio: 1; 
             
-            .couple{
-                // height: 100%;
-                width: 130%;
-                opacity: .8;
-                transform: translate(-22%, -20%) scale(1.5);
+            // .couple{
+            //     // height: 100%;
+            //     width: 130%;
+            //     opacity: .8;
+            //     transform: translate(-22%, -20%) scale(1.5);
+            // }
+            .brush{
+                width: 100%;
+                fill: url(../../couple/IMG-20230108-WA0002.jpg);
+                // height: ;
             }
+
         }
     }
 
