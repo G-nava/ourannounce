@@ -46,8 +46,14 @@ h2{
     }
 
     .flower-container{
+        // display:inline-table;
+        // position: relative;
         z-index: 100;
-        width: 55%;
+        width: 50%;
+        // border:10px solid black;
+        // max-height: 50%;
+        // max-width: 100%;
+        // transform: translateX(50%);
         top: -1rem;
         right: -1rem;
         
