@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "sass": "sass --watch --update src/style/sass/main.scss:public/style/css/main.css",
-    "start": "node index"
+    "start": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
