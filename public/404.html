@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        WHAT ARE YOU DOING HERE! GO TO YOUR PAGE...!
+    </h1>
+    <div>
+        <p>Lo que estás buscando no está aquí</p>
+        <!-- <p>What you were looking for is just not there.</p> -->
+        <p>Redireccionando en: <span id="time"></span></p>
+    </div>
+
+    
+    <script>
+        var segundos = 5;
+        function actualizar(){
+            document.querySelector('#time').innerHTML = segundos+"s";
+            // if (segundos == -1) {
+                // document.querySelector('#time').innerHTML = "Tiempo finalizado";
+            // }else{
+                segundos-=1;
+                setTimeout(actualizar, 1E3);
+            // }
+        }
+        actualizar();
+ 
+        setTimeout(function(){
+            window.location.href='/';
+            }, 5E3);
+    </script>
+</body>
+</html>

@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass":"sass --watch --update src/style/sass/main.scss:src/style/css/main.css",
+    "sass": "sass --watch --update src/style/sass/main.scss:src/style/css/main.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/G-nava/ourannounce/issues"
   },
-  "homepage": "https://github.com/G-nava/ourannounce#readme"
+  "homepage": "https://github.com/G-nava/ourannounce#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
