@@ -1,11 +1,17 @@
-// const familia = "family";
+const locationValue = window.location.search;
+    console.log(locationValue);
+    
+    //separar datos
 
-const URL = '/family'
+    const urlParams = new URLSearchParams(locationValue);
 
-document.addEventListener('DOMContentLoaded', ()=>{
+    const primerApellido = urlParams.get('pa')
+    const segundApellido = urlParams.get('sa')
 
-    document.getElementById('guest').addEventListener('click')
-});
+    console.log(primerApellido,segundApellido);
+    document.getElementById('value').innerHTML = `${primerApellido} ${segundApellido}`
+
+
 
 
 

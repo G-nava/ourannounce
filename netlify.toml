@@ -1,9 +1,11 @@
 [build]
-    publish = "/public/."
+    publish = "."
 
     command = "echo 'I be building' "
 
+    functions = "src/router"
+
 [[redirects]]
-    from = "/guest/*"
+    from = "/*"
     to   = "/:splat"
     status = 200
