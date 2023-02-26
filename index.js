@@ -1,23 +1,38 @@
-const express = require('express');
+// const familia = "family";
 
-const app = express();
+const URL = '/family'
 
-const port = process.env.PORT || 5500;
+document.addEventListener('DOMContentLoaded', ()=>{
 
-//motor de plantillas
-app.set('view engine','ejs');
-app.set('views', `${__dirname}/src/views`);
+    document.getElementById('guest').addEventListener('click')
+});
 
 
-app.use(express.static(__dirname + "/public"));
 
-//rutas web
-app.use('/', require('./src/router/routesWeb'))
 
-app.use((req, res, next)=>{
-    res.status(404).sendFile(`${__dirname}/public/404.html`)
-})
 
-app.listen(port,()=>{
-    console.log(`listening in port: ${port}` );
-});  
+
+
+// const express = require('express');
+
+// const app = express();
+
+// const port = process.env.PORT || 5500;
+
+// //motor de plantillas
+// app.set('view engine','ejs');
+// app.set('views', `${__dirname}/src/views`);
+
+
+// app.use(express.static(__dirname + "/public"));
+
+// //rutas web
+// app.use('/', require('./src/router/routesWeb'))
+
+// app.use((req, res, next)=>{
+//     res.status(404).sendFile(`${__dirname}/public/404.html`)
+// })
+
+// app.listen(port,()=>{
+//     console.log(`listening in port: ${port}` );
+// });  

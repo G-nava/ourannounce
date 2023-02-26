@@ -1,2 +1,9 @@
 [build]
-    publish = "."
+    publish = "/public/."
+
+    command = "echo 'I be building' "
+
+[[redirects]]
+    from = "/guest/*"
+    to   = "/:splat"
+    status = 200
