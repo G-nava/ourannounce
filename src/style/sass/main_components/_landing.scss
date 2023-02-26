@@ -265,7 +265,6 @@ h2{
                 text-align: center;
                 display: grid;
                 grid-auto-flow: column;
-                // place-items: center;
                 justify-content: center;
                 align-items: center;
                 width: 90%;
@@ -282,8 +281,7 @@ h2{
                 .lugar{
                     text-transform: capitalize;
                     display: grid;
-                    grid-auto-flow: row;
-                    
+                    grid-auto-flow: row;                
                 }
             }
             .city{
@@ -307,7 +305,6 @@ h2{
     .bottom-sctn-2{
         width: 130%;
         bottom: -3.5rem;
-
     }
 
     .sctn-2_flowers{
@@ -316,10 +313,6 @@ h2{
         bottom: -5%;
         right: -3%;
 
-
-        // .sctn-2_flwr1{
-        //     // width: 100%;
-        // }
         .sctn-2_flwr2{
             width: 45%;
             // top: 100%;
@@ -394,7 +387,14 @@ h2{
 
         }
     }
+}
 
+.familyName{
+    position: absolute;
+    top: 0;
+    color: black;
+    font-size: 2rem;
+    z-index: 1000;
 }
 
 

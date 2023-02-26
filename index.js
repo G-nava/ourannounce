@@ -8,8 +8,14 @@ const locationValue = window.location.search;
     const primerApellido = urlParams.get('pa')
     const segundApellido = urlParams.get('sa')
 
-    console.log(primerApellido,segundApellido);
-    document.getElementById('value').innerHTML = `${primerApellido} ${segundApellido}`
+    if(primerApellido == null && segundApellido == null){
+        document.getElementById('value').style.display = 'none'
+    }else{
+        document.getElementById('value').innerHTML = `${primerApellido} ${segundApellido}`
+    
+    }
+
+    // console.log(primerApellido,segundApellido);
 
 
 

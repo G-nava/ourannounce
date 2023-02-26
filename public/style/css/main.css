@@ -287,14 +287,6 @@ h2 {
   transform: translate(-22%, -20%) scale(1.5);
 }
 
-.familyName {
-  position: absolute;
-  top: 0;
-  color: black;
-  font-size: 2rem;
-  z-index: 1000;
-}
-
 .footer-section {
   font-size: 0.75rem;
   font-family: "Work Sans";
