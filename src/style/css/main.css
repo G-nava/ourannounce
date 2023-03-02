@@ -1,18 +1,450 @@
-/* Error: Expected expression.
- *    ,
- * 48 |         font-size: ;
- *    |                    ^
- *    '
- *   src\style\sass\main_components\_landing.scss 48:20  @use
- *   src\style\sass\main.scss 2:1                        root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Expected expression.\a    \2577 \a 48 \2502          font-size: ;\d\a    \2502                     ^\a    \2575 \a   src\\style\\sass\\main_components\\_landing.scss 48:20  @use\a   src\\style\\sass\\main.scss 2:1                        root stylesheet";
+*,
+*::after,
+*::before {
+  padding: auto;
+  margin: 0;
+  box-sizing: border-box;
 }
+
+section {
+  height: 100vh;
+}
+
+footer {
+  background-color: #202020;
+  color: white;
+}
+
+h2 {
+  font-family: "Work Sans";
+  text-transform: capitalize;
+  font-weight: 350;
+}
+
+li {
+  list-style: none;
+}
+
+.sctn {
+  overflow: hidden;
+  position: relative;
+  background-color: #fffdf4;
+  display: grid;
+  place-items: center;
+}
+.sctn .familyName {
+  font-size: 1.5rem;
+  background: #fffdf4;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  text-transform: capitalize;
+  font-family: "Work Sans";
+}
+.sctn .abs {
+  position: absolute;
+}
+.sctn .flower-container {
+  z-index: 100;
+  width: 50%;
+  top: -1rem;
+  right: -1rem;
+}
+.sctn .flower-container .capullo-1 {
+  bottom: 39%;
+  left: 11.5%;
+  width: 10%;
+  animation: leaves 9s alternate-reverse infinite ease-in;
+  transform-origin: bottom center;
+}
+.sctn .flower-container .capullo-2 {
+  bottom: 21%;
+  right: 5.5%;
+  width: 30%;
+  animation: leaves2 10s alternate infinite ease-in;
+  transform-origin: bottom center;
+}
+.sctn .flower-container-2 {
+  z-index: 100;
+  width: 18%;
+  bottom: -10%;
+  left: 8%;
+}
+.sctn .flower-container-2 .capullo-3 {
+  width: 130%;
+  left: -65%;
+  top: -19%;
+  animation: leaves3 10s alternate infinite ease-in;
+  transform-origin: center;
+}
+.sctn .flower-container-2 .capullo-4 {
+  width: 120%;
+  left: 32%;
+  bottom: 65%;
+  animation: leaves3 14s alternate-reverse infinite ease-in-out;
+  transform-origin: center bottom;
+}
+.sctn .flower-container-2 .leave-right-down {
+  width: 38%;
+  top: 2%;
+  left: -30%;
+  animation: leaves4 8s alternate infinite ease-in-out;
+  transform-origin: bottom right;
+}
+.sctn .flower-container-2 .leave-right-down-left {
+  width: 30%;
+  top: 25%;
+  left: 10%;
+  animation: leaves5 8s alternate infinite ease-in-out;
+  transform-origin: bottom right;
+}
+.sctn .flower-container-2 .leave-left-down-left {
+  width: 65%;
+  top: 40%;
+  left: 27%;
+  animation: leaves6 8s alternate infinite ease-in-out;
+  transform-origin: bottom right;
+}
+.sctn .watercolor1 {
+  width: 80%;
+  top: -20%;
+  right: -10%;
+}
+.sctn .watercolor2 {
+  width: 100%;
+  bottom: -20%;
+  left: -12%;
+}
+.sctn .watercolor3 {
+  width: 130%;
+  opacity: 0.8;
+}
+.sctn .content {
+  z-index: 100;
+  display: grid;
+  place-items: center;
+  justify-content: center;
+  align-items: center;
+  width: 90% !important;
+  height: 70%;
+  background-color: rgba(255, 255, 255, 0.8);
+  margin: 0 auto;
+}
+.sctn .content .first-container {
+  position: relative;
+  display: grid;
+  place-items: center;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 90%;
+}
+.sctn .content .first-container .reason {
+  width: 100%;
+  place-self: center;
+  top: 0.5rem;
+  color: #3f3f3f;
+  font-family: "Work Sans";
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+.sctn .content .first-container .reason::first-letter {
+  text-transform: uppercase;
+}
+.sctn .content .first-container .main-text {
+  color: #AD8555;
+  display: grid;
+  grid-template-rows: repeat(auto-fill, 3fr);
+  justify-content: center;
+  align-items: center;
+  font-family: "Parisienne", cursive;
+  text-transform: capitalize;
+  font-size: 5.5rem;
+  font-weight: 100;
+}
+.sctn .content .first-container .main-text .y {
+  position: relative;
+  font-size: 3rem;
+  margin-top: -1.5rem;
+  margin-bottom: -1.5rem;
+  display: grid;
+  place-items: center;
+}
+.sctn .content .first-container .main-text .y .arrow {
+  position: absolute;
+  width: 130%;
+  place-self: center;
+  top: 50%;
+}
+.sctn .content .first-container .text-card_container .intro {
+  font-family: "Work Sans";
+  padding-bottom: 1.5rem;
+  font-weight: 300;
+}
+.sctn .content .first-container .text-card_container .main-tittle {
+  color: rgb(184, 168, 83);
+  font-family: "Parisienne", cursive;
+  font-size: 5.5rem;
+  text-align: center;
+  line-height: 0.6;
+  font-weight: 100;
+}
+.sctn .content .first-container .text-card_container .main-tittle .middle {
+  font-size: 3.5rem;
+}
+.sctn .content .first-container .img-card_container {
+  display: flex;
+  height: 100%;
+}
+.sctn .content .first-container .img-card_container .img-card {
+  object-fit: cover;
+  width: 100%;
+}
+.sctn .content .first-container .date {
+  font-size: 1rem;
+  font-weight: 300;
+  font-family: "Work Sans";
+  text-align: center;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  color: #202020;
+}
+.sctn .content .first-container .date .separator {
+  display: block;
+  width: 1px;
+  height: calc(100% + 0.1rem);
+  background-color: #4d4c49;
+}
+.sctn .content .first-container .date .lugar {
+  text-transform: capitalize;
+  display: grid;
+  grid-auto-flow: row;
+}
+.sctn .content .first-container .city {
+  font-weight: 300;
+  font-size: 1rem;
+  margin-top: 1rem;
+  font-family: "Work Sans";
+  color: #202020;
+}
+.sctn .corner-1-sctn-2 {
+  width: 100%;
+  top: -4rem;
+  left: -4rem;
+}
+.sctn .bottom-sctn-2 {
+  width: 130%;
+  bottom: -3.5rem;
+}
+.sctn .sctn-2_flowers {
+  z-index: 10;
+  width: 50%;
+  bottom: -5%;
+  right: -3%;
+}
+.sctn .sctn-2_flowers .sctn-2_flwr2 {
+  width: 45%;
+  right: 53%;
+  bottom: 8%;
+}
+.sctn .sctn-2_flowers .sctn-2_flwr3 {
+  width: 12%;
+  right: 50%;
+  bottom: 50%;
+}
+.sctn .sctn-2_flowers .sctn-2_flwr4 {
+  width: 35%;
+  left: 1.5%;
+  bottom: 55%;
+}
+.sctn .sctn-2_flowers .sctn-2_flwr5 {
+  width: 35%;
+  right: 22.5%;
+  top: -7%;
+}
+.sctn .sctn-2_flowers .sctn-2_flwr6 {
+  width: 8%;
+  right: 38%;
+  top: 18%;
+}
+.sctn .sctn-2_flowers .sctn-2_flwr7 {
+  width: 10%;
+  right: 27%;
+  top: 25%;
+}
+.sctn .sctn-2_flowers .sctn-2_flwr8 {
+  width: 15%;
+  right: 7%;
+  bottom: 35%;
+}
+.sctn .container-2 {
+  display: grid;
+  place-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+.sctn .container-2 .sub-content {
+  width: 90%;
+  border-radius: 50%;
+  overflow: hidden;
+  object-fit: cover;
+  object-position: -70% 150%;
+  aspect-ratio: 1;
+}
+.sctn .container-2 .sub-content .couple {
+  width: 130%;
+  opacity: 0.8;
+  transform: translate(-22%, -20%) scale(1.5);
+}
+.sctn .content_sect3 {
+  display: grid;
+  place-items: center;
+  width: 90%;
+}
+.sctn .content_sect3 .dress_icon {
+  max-width: 18%;
+  fill: #202020;
+}
+.sctn .content_sect3 .dresscode {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #af4154;
+  font-weight: 300;
+  text-align: center;
+  font-size: 1.75rem;
+}
+.sctn .content_sect3 .half {
+  display: grid;
+  grid-auto-flow: column;
+  width: 95%;
+  margin-top: 2rem;
+}
+.sctn .content_sect3 .half .line__container {
+  display: grid;
+  place-items: center;
+}
+.sctn .content_sect3 .half .line__container .line {
+  display: block;
+  width: 1px;
+  height: calc(100% + 0.1rem);
+  background-color: #202020;
+  transform: translate(6px, -5px);
+}
+.sctn .content_sect3 .half .men, .sctn .content_sect3 .half .women {
+  font-family: "Work Sans";
+}
+.sctn .content_sect3 .half .men ul, .sctn .content_sect3 .half .women ul {
+  padding: 0;
+  display: grid;
+  place-items: center;
+  text-transform: capitalize;
+}
+.sctn .content_sect3 .half .men ul h3, .sctn .content_sect3 .half .women ul h3 {
+  margin-bottom: 0.75rem;
+  color: #202020;
+  font-size: 1.5rem;
+}
+.sctn .content_sect3 .half .men li, .sctn .content_sect3 .half .women li {
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+.sctn .content_sect3 h3 {
+  font-family: "Work Sans";
+  font-weight: 400;
+  font-size: 1.25rem;
+}
+.sctn .content_sect3 h3::first-letter {
+  text-transform: uppercase;
+}
+.sctn .content_sect3 .reserva_color {
+  margin-top: 1.5rem;
+}
+
+.familyName {
+  position: absolute;
+  top: 0;
+  color: black;
+  font-size: 2rem;
+  z-index: 1000;
+}
+
+.footer-section {
+  font-size: 0.75rem;
+  font-family: "Work Sans";
+  padding: 0.5rem;
+  display: grid;
+  place-items: center;
+  height: max-content;
+}
+
+@keyframes leaves {
+  0% {
+    transform: rotate(9deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-17deg);
+  }
+}
+@keyframes leaves2 {
+  0% {
+    transform: rotate(13deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-20deg);
+  }
+}
+@keyframes leaves3 {
+  0% {
+    transform: rotate(9deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-9deg);
+  }
+}
+@keyframes leaves4 {
+  0% {
+    transform: rotate(-25deg);
+  }
+  50% {
+    transform: rotate(-18deg);
+  }
+  100% {
+    transform: rotate(-25deg);
+  }
+}
+@keyframes leaves5 {
+  0% {
+    transform: rotate(20deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(20deg);
+  }
+}
+@keyframes leaves6 {
+  0% {
+    transform: rotate(-20deg);
+  }
+  50% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(-20deg);
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
