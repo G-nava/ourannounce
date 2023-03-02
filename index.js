@@ -10,7 +10,7 @@ const locationValue = window.location.search;
 
     primerApellido == null && segundApellido == null ?
         document.getElementById('value').style.display = 'none' :
-        document.getElementById('value').innerHTML = `${primerApellido} ${segundApellido}`
+        document.getElementById('value').innerHTML = `Familia: ${primerApellido} ${segundApellido}`
 
 
 

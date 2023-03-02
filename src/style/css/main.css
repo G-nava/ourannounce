@@ -32,6 +32,13 @@ li {
   display: grid;
   place-items: center;
 }
+.sctn .familyName {
+  background: #fffdf4;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  text-transform: capitalize;
+  font-family: "Work Sans";
+}
 .sctn .abs {
   position: absolute;
 }

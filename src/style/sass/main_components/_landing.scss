@@ -44,6 +44,14 @@ li{
     display: grid;
     place-items: center;
 
+    .familyName{
+        background: $background_1;
+        padding: .5rem 1rem;
+        margin-top: 1rem;
+        text-transform: capitalize;
+        font-family: $work-sans;
+    }
+
     .abs{
         position: absolute;
         // filter: invert(28%) sepia(14%) saturate(7107%) hue-rotate(321deg) brightness(93%) contrast(75%);
