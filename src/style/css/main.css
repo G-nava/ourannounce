@@ -113,8 +113,9 @@ li {
 }
 .sctn .watercolor2 {
   width: 100%;
-  bottom: -20%;
-  left: -12%;
+  top: -20%;
+  right: -60%;
+  transform: rotateY(180deg);
 }
 .sctn .watercolor3 {
   width: 130%;
@@ -233,7 +234,7 @@ li {
 }
 .sctn .corner-1-sctn-2 {
   width: 100%;
-  top: -4rem;
+  top: -1.5rem;
   left: -4rem;
 }
 .sctn .bottom-sctn-2 {
@@ -363,6 +364,10 @@ li {
 }
 .sctn .content_sect3 .reserva_color {
   margin-top: 1.5rem;
+}
+
+.sctn2 {
+  margin-top: -5rem;
 }
 
 .familyName {

@@ -159,8 +159,9 @@ li{
     }
     .watercolor2{
         width: 100%;
-        bottom: -20%;
-        left: -12%;
+        top: -20%;
+        right: -60%;
+        transform: rotateY(180deg);
     }
     
     
@@ -316,7 +317,7 @@ li{
 // ===================== SECOND SECTION ===========================
     .corner-1-sctn-2{
         width: 100%;
-        top: -4rem;
+        top: -1.5rem;
         left: -4rem;
     }
     
@@ -484,6 +485,10 @@ li{
         
         
     }
+}
+
+.sctn2{
+    margin-top: -5rem;
 }
 
 
