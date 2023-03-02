@@ -46,7 +46,8 @@ li{
 
     .abs{
         position: absolute;
-
+        // filter: invert(28%) sepia(14%) saturate(7107%) hue-rotate(321deg) brightness(93%) contrast(75%);
+        // opacity: .2;
     }
 
     .flower-container{
@@ -140,6 +141,8 @@ li{
         width: 80%;
         top: -20%;
         right: -10%;
+        // filter: invert(30%) sepia(14%) saturate(7000%) hue-rotate(321deg) brightness(93%) contrast(60%);
+        
         // opacity: .5;
         // filter: invert(16%) sepia(25%) saturate(5461%) hue-rotate(341deg) brightness(86%) contrast(98%);
     }
@@ -406,7 +409,8 @@ li{
         .dresscode{
             margin-top: 1rem;
             padding: .5rem 1rem;
-            background-color: #ee8484;
+            background-color: #af4154;
+            // background-color: #af415375;
             font-weight: 300;
             text-align: center;
             font-size: 1.75rem;
