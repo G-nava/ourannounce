@@ -289,17 +289,12 @@ li {
   margin: 0 auto;
 }
 .sctn .container-2 .sub-content {
-  width: 90%;
-  border-radius: 50%;
-  overflow: hidden;
-  object-fit: cover;
-  object-position: -70% 150%;
-  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
 }
 .sctn .container-2 .sub-content .couple {
-  width: 130%;
-  opacity: 0.8;
-  transform: translate(-22%, -20%) scale(1.5);
+  width: 115%;
+  opacity: 0.85;
 }
 .sctn .content_sect3 {
   display: grid;
@@ -368,6 +363,12 @@ li {
 
 .sctn2 {
   margin-top: -5rem;
+}
+
+.sctn3 .bottom-sctn-3 {
+  position: absolute;
+  width: 130%;
+  top: 0;
 }
 
 .familyName {
