@@ -1,217 +1,3 @@
-.sctn1 {
-  background: none;
-}
-.sctn1 .familyName {
-  font-size: 1.25rem;
-  background: #fdf9ec;
-  padding: 0.5rem 1rem;
-  margin-top: 1.5rem;
-  text-transform: capitalize;
-  font-family: "Work Sans";
-  color: #3f3f3f;
-  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
-}
-.sctn1 .flower-container {
-  z-index: 100;
-  width: 50%;
-  top: -1rem;
-  right: -1rem;
-}
-.sctn1 .flower-container .capullo-1 {
-  bottom: 39%;
-  left: 11.5%;
-  width: 10%;
-  animation: leaves 9s alternate-reverse infinite ease-in;
-  transform-origin: bottom center;
-}
-.sctn1 .flower-container .capullo-2 {
-  bottom: 21%;
-  right: 5.5%;
-  width: 30%;
-  animation: leaves2 10s alternate infinite ease-in;
-  transform-origin: bottom center;
-}
-.sctn1 .flower-container-2 {
-  z-index: 100;
-  width: 18%;
-  bottom: -10%;
-  left: 8%;
-}
-.sctn1 .flower-container-2 .capullo-3 {
-  width: 130%;
-  left: -65%;
-  top: -19%;
-  animation: leaves3 10s alternate infinite ease-in;
-  transform-origin: center;
-}
-.sctn1 .flower-container-2 .capullo-4 {
-  width: 120%;
-  left: 32%;
-  bottom: 65%;
-  animation: leaves3 14s alternate-reverse infinite ease-in-out;
-  transform-origin: center bottom;
-}
-.sctn1 .flower-container-2 .leave-right-down {
-  width: 38%;
-  top: 2%;
-  left: -30%;
-  animation: leaves4 8s alternate infinite ease-in-out;
-  transform-origin: bottom right;
-}
-.sctn1 .flower-container-2 .leave-right-down-left {
-  width: 30%;
-  top: 25%;
-  left: 10%;
-  animation: leaves5 8s alternate infinite ease-in-out;
-  transform-origin: bottom right;
-}
-.sctn1 .flower-container-2 .leave-left-down-left {
-  width: 65%;
-  top: 40%;
-  left: 27%;
-  animation: leaves6 8s alternate infinite ease-in-out;
-  transform-origin: bottom right;
-}
-.sctn1 .watercolor1 {
-  width: 80%;
-  top: -20%;
-  right: -10%;
-}
-.sctn1 .watercolor2 {
-  width: 100%;
-  top: -20%;
-  right: -60%;
-  transform: rotateY(180deg);
-}
-.sctn1 .watercolor3 {
-  width: 100%;
-  opacity: 0.9;
-}
-.sctn1 .content {
-  z-index: 100;
-  display: grid;
-  place-items: center;
-  justify-content: center;
-  align-items: center;
-  width: 90%;
-  height: min-content;
-  padding: 1rem 0;
-  background-color: rgba(255, 255, 255, 0.726);
-  margin: 0 auto;
-}
-.sctn1 .content .first-container {
-  position: relative;
-  display: grid;
-  place-items: center;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 90%;
-}
-.sctn1 .content .first-container .reason, .sctn1 .content .first-container .versiculo {
-  width: 100%;
-  place-self: center;
-  color: #858585;
-  font-family: "Work Sans";
-}
-.sctn1 .content .first-container .reason {
-  margin-top: 0.5rem;
-  top: 0.5rem;
-  font-size: 1.3rem;
-  font-weight: 400;
-}
-.sctn1 .content .first-container .reason::first-letter {
-  text-transform: uppercase;
-}
-.sctn1 .content .first-container .versiculo {
-  font-size: 1.125rem;
-  font-weight: 300;
-}
-.sctn1 .content .first-container .main-text {
-  color: #ad9654;
-  display: grid;
-  grid-template-rows: repeat(auto-fill, 3fr);
-  justify-content: center;
-  align-items: center;
-  font-family: "Parisienne", cursive;
-  text-transform: capitalize;
-  font-size: 5.5rem;
-  font-weight: 100;
-}
-.sctn1 .content .first-container .main-text .y {
-  position: relative;
-  font-size: 3rem;
-  margin-top: -1.5rem;
-  margin-bottom: -1.5rem;
-  display: grid;
-  place-items: center;
-}
-.sctn1 .content .first-container .main-text .y .arrow {
-  position: absolute;
-  width: 100%;
-  place-self: center;
-  top: 50%;
-}
-.sctn1 .content .first-container .main-text .doubleName {
-  margin-top: 1.5rem;
-  line-height: 4.5rem;
-}
-.sctn1 .content .first-container .text-card_container .intro {
-  font-family: "Work Sans";
-  padding-bottom: 1.5rem;
-  font-weight: 300;
-}
-.sctn1 .content .first-container .text-card_container .main-tittle {
-  color: rgb(184, 168, 83);
-  font-family: "Parisienne", cursive;
-  font-size: 5.5rem;
-  text-align: center;
-  line-height: 0.6;
-  font-weight: 100;
-}
-.sctn1 .content .first-container .text-card_container .main-tittle .middle {
-  font-size: 3.5rem;
-}
-.sctn1 .content .first-container .img-card_container {
-  display: flex;
-  height: 100%;
-}
-.sctn1 .content .first-container .img-card_container .img-card {
-  object-fit: cover;
-  width: 100%;
-}
-.sctn1 .content .first-container .date {
-  margin-top: 1rem;
-  font-size: 1.25rem;
-  font-weight: 400;
-  font-family: "Work Sans";
-  text-align: center;
-  display: grid;
-  grid-auto-flow: column;
-  justify-content: center;
-  align-items: center;
-  width: 90%;
-  color: #858585;
-}
-.sctn1 .content .first-container .date .separator {
-  display: block;
-  width: 1px;
-  height: calc(100% + 0.1rem);
-  background-color: #4d4c49;
-}
-.sctn1 .content .first-container .date .lugar {
-  text-transform: capitalize;
-  display: grid;
-  grid-auto-flow: row;
-}
-.sctn1 .content .first-container .city {
-  font-weight: 300;
-  font-size: 1.25rem;
-  margin-top: 1rem;
-  font-family: "Work Sans";
-  color: #202020;
-}
-
 *,
 *::after,
 *::before {
@@ -239,6 +25,10 @@ li {
   list-style: none;
 }
 
+.cl-b {
+  color: #4d4c4c;
+}
+
 .sctn {
   background-color: #fdf9ec;
 }
@@ -251,56 +41,6 @@ li {
 }
 .sctn .sc .abs {
   position: absolute;
-}
-.sctn .corner-1-sctn-2 {
-  width: 100%;
-  top: -1.5rem;
-  left: -4rem;
-}
-.sctn .bottom-sctn-2 {
-  width: 130%;
-  bottom: -3.5rem;
-}
-.sctn .sctn-2_flowers {
-  z-index: 10;
-  width: 45%;
-  bottom: 0;
-  right: -3%;
-}
-.sctn .sctn-2_flowers .sctn-2_flwr2 {
-  width: 45%;
-  right: 53%;
-  bottom: 8%;
-}
-.sctn .sctn-2_flowers .sctn-2_flwr3 {
-  width: 12%;
-  right: 50%;
-  bottom: 50%;
-}
-.sctn .sctn-2_flowers .sctn-2_flwr4 {
-  width: 35%;
-  left: 1.5%;
-  bottom: 55%;
-}
-.sctn .sctn-2_flowers .sctn-2_flwr5 {
-  width: 35%;
-  right: 22.5%;
-  top: -7%;
-}
-.sctn .sctn-2_flowers .sctn-2_flwr6 {
-  width: 8%;
-  right: 38%;
-  top: 18%;
-}
-.sctn .sctn-2_flowers .sctn-2_flwr7 {
-  width: 10%;
-  right: 27%;
-  top: 25%;
-}
-.sctn .sctn-2_flowers .sctn-2_flwr8 {
-  width: 15%;
-  right: 7%;
-  bottom: 35%;
 }
 .sctn .container-2 {
   display: grid;
@@ -381,10 +121,6 @@ li {
   margin-top: 1.5rem;
 }
 
-.sctn2 {
-  margin-top: -5rem;
-}
-
 .sctn3 .bottom-sctn-3 {
   position: absolute;
   width: 130%;
@@ -394,7 +130,6 @@ li {
 .familyName {
   position: absolute;
   top: 0;
-  color: black;
   font-size: 2rem;
   z-index: 1000;
 }
@@ -473,6 +208,270 @@ li {
   100% {
     transform: rotate(-20deg);
   }
+}
+.sctn1 {
+  background: none;
+}
+.sctn1 .familyName {
+  font-size: 1.25rem;
+  background: #fdf9ec;
+  padding: 0.5rem 1rem;
+  margin-top: 1.5rem;
+  text-transform: capitalize;
+  font-family: "Work Sans";
+  color: #3f3f3f;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+.sctn1 .flower-container {
+  z-index: 100;
+  width: 40%;
+  top: -1rem;
+  right: -1rem;
+}
+.sctn1 .flower-container .capullo-1 {
+  bottom: 39%;
+  left: 11.5%;
+  width: 10%;
+  animation: leaves 9s alternate-reverse infinite ease-in;
+  transform-origin: bottom center;
+}
+.sctn1 .flower-container .capullo-2 {
+  bottom: 21%;
+  right: 5.5%;
+  width: 30%;
+  animation: leaves2 10s alternate infinite ease-in;
+  transform-origin: bottom center;
+}
+.sctn1 .flower-container-2 {
+  z-index: 100;
+  width: 16.5%;
+  bottom: -10%;
+  left: 8%;
+}
+.sctn1 .flower-container-2 .capullo-3 {
+  width: 130%;
+  left: -65%;
+  top: -19%;
+  animation: leaves3 10s alternate infinite ease-in;
+  transform-origin: center;
+}
+.sctn1 .flower-container-2 .capullo-4 {
+  width: 120%;
+  left: 32%;
+  bottom: 65%;
+  animation: leaves3 14s alternate-reverse infinite ease-in-out;
+  transform-origin: center bottom;
+}
+.sctn1 .flower-container-2 .leave-right-down {
+  width: 38%;
+  top: 2%;
+  left: -30%;
+  animation: leaves4 8s alternate infinite ease-in-out;
+  transform-origin: bottom right;
+}
+.sctn1 .flower-container-2 .leave-right-down-left {
+  width: 30%;
+  top: 25%;
+  left: 10%;
+  animation: leaves5 8s alternate infinite ease-in-out;
+  transform-origin: bottom right;
+}
+.sctn1 .flower-container-2 .leave-left-down-left {
+  width: 65%;
+  top: 40%;
+  left: 27%;
+  animation: leaves6 8s alternate infinite ease-in-out;
+  transform-origin: bottom right;
+}
+.sctn1 .watercolor1 {
+  width: 80%;
+  top: -20%;
+  right: -10%;
+}
+.sctn1 .watercolor2 {
+  width: 100%;
+  top: -20%;
+  right: -60%;
+  transform: rotateY(180deg);
+}
+.sctn1 .watercolor3 {
+  width: 100%;
+  opacity: 0.9;
+}
+.sctn1 .content {
+  z-index: 100;
+  display: grid;
+  place-items: center;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: min-content;
+  padding: 1rem 0;
+  background-color: rgba(255, 255, 255, 0.726);
+  margin: 0 auto;
+}
+.sctn1 .content .first-container {
+  position: relative;
+  display: grid;
+  place-items: center;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 90%;
+}
+.sctn1 .content .first-container .reason, .sctn1 .content .first-container .versiculo {
+  width: 100%;
+  place-self: center;
+  font-family: "Work Sans";
+}
+.sctn1 .content .first-container .reason {
+  margin-top: 0.5rem;
+  top: 0.5rem;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+.sctn1 .content .first-container .reason::first-letter {
+  text-transform: uppercase;
+}
+.sctn1 .content .first-container .versiculo {
+  font-size: 1.125rem;
+  font-weight: 300;
+}
+.sctn1 .content .first-container .main-text {
+  color: #ad9654;
+  display: grid;
+  grid-template-rows: repeat(auto-fill, 3fr);
+  justify-content: center;
+  align-items: center;
+  font-family: "Parisienne", cursive;
+  text-transform: capitalize;
+  font-size: 5.5rem;
+  font-weight: 100;
+}
+.sctn1 .content .first-container .main-text .y {
+  position: relative;
+  font-size: 3rem;
+  margin-top: -1.5rem;
+  margin-bottom: -1.5rem;
+  display: grid;
+  place-items: center;
+}
+.sctn1 .content .first-container .main-text .y .arrow {
+  position: absolute;
+  width: 100%;
+  place-self: center;
+  top: 50%;
+}
+.sctn1 .content .first-container .main-text .doubleName {
+  margin-top: 1.5rem;
+  line-height: 4.5rem;
+}
+.sctn1 .content .first-container .text-card_container .intro {
+  font-family: "Work Sans";
+  padding-bottom: 1.5rem;
+  font-weight: 300;
+}
+.sctn1 .content .first-container .text-card_container .main-tittle {
+  color: rgb(184, 168, 83);
+  font-family: "Parisienne", cursive;
+  font-size: 5.5rem;
+  text-align: center;
+  line-height: 0.6;
+  font-weight: 100;
+}
+.sctn1 .content .first-container .text-card_container .main-tittle .middle {
+  font-size: 3.5rem;
+}
+.sctn1 .content .first-container .img-card_container {
+  display: flex;
+  height: 100%;
+}
+.sctn1 .content .first-container .img-card_container .img-card {
+  object-fit: cover;
+  width: 100%;
+}
+.sctn1 .content .first-container .date {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+  font-weight: 400;
+  font-family: "Work Sans";
+  text-align: center;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+}
+.sctn1 .content .first-container .date .separator {
+  display: block;
+  width: 1px;
+  height: calc(100% + 0.1rem);
+  background-color: #4d4c49;
+}
+.sctn1 .content .first-container .date .lugar {
+  text-transform: capitalize;
+  display: grid;
+  grid-auto-flow: row;
+}
+.sctn1 .content .first-container .city {
+  font-weight: 300;
+  font-size: 1.25rem;
+  margin-top: 1rem;
+  font-family: "Work Sans";
+}
+
+.sctn2 {
+  margin-top: -5rem;
+}
+.sctn2 .corner-1-sctn-2 {
+  width: 100%;
+  top: -1.5rem;
+  left: -4rem;
+}
+.sctn2 .bottom-sctn-2 {
+  width: 130%;
+  bottom: -3.5rem;
+}
+.sctn2 .sctn-2_flowers {
+  z-index: 10;
+  width: 40%;
+  bottom: 0;
+  right: -3%;
+}
+.sctn2 .sctn-2_flowers .sctn-2_flwr2 {
+  width: 45%;
+  right: 53%;
+  bottom: 8%;
+}
+.sctn2 .sctn-2_flowers .sctn-2_flwr3 {
+  width: 12%;
+  right: 50%;
+  bottom: 50%;
+}
+.sctn2 .sctn-2_flowers .sctn-2_flwr4 {
+  width: 35%;
+  left: 1.5%;
+  bottom: 55%;
+}
+.sctn2 .sctn-2_flowers .sctn-2_flwr5 {
+  width: 35%;
+  right: 22.5%;
+  top: -7%;
+}
+.sctn2 .sctn-2_flowers .sctn-2_flwr6 {
+  width: 8%;
+  right: 38%;
+  top: 18%;
+}
+.sctn2 .sctn-2_flowers .sctn-2_flwr7 {
+  width: 10%;
+  right: 27%;
+  top: 25%;
+}
+.sctn2 .sctn-2_flowers .sctn-2_flwr8 {
+  width: 15%;
+  right: 7%;
+  bottom: 35%;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -28,7 +28,10 @@ li{
     list-style: none;
 }
 
-
+.cl-b{
+    // color: #ff0000;
+    color: #4d4c4c;
+}
 
 .sctn{
     background-color: $background_1;
@@ -50,69 +53,7 @@ li{
 
     
 // ===================== SECOND SECTION ===========================
-    .corner-1-sctn-2{
-        width: 100%;
-        top: -1.5rem;
-        left: -4rem;
-    }
-    
-    .bottom-sctn-2{
-        width: 130%;
-        bottom: -3.5rem;
-    }
-
-    .sctn-2_flowers{
-        z-index: 10;
-        width: 45%;
-        bottom: 0;
-        right: -3%;
-
-        .sctn-2_flwr2{
-            width: 45%;
-            // top: 100%;
-            right: 53%;
-            bottom: 8%;
-        }
-        .sctn-2_flwr3{
-            width: 12%;
-            // top: 100%;
-            right: 50%;
-            bottom: 50%;
-        }
-        .sctn-2_flwr4{
-            width: 35%;
-            // top: 100%;
-            left: 1.5%;
-            bottom: 55%;
-        }
-        .sctn-2_flwr5{
-            width: 35%;
-            // top: 100%;
-            right: 22.5%;
-            top: -7%;
-        }
-        .sctn-2_flwr6{
-            width: 8%;
-            // top: 100%;
-            right: 38%;
-            top: 18%;
-        }
-        .sctn-2_flwr7{
-            width: 10%;
-            // top: 100%;
-            right: 27%;
-            top: 25%;
-        }
-        .sctn-2_flwr8{
-            width: 15%;
-            // top: 100%;
-            right: 7%;
-            bottom: 35%;
-        }
-    }
-
-
-
+   
     .container-2{
         display: grid;
         place-items: center;
@@ -224,9 +165,6 @@ li{
     }
 }
 
-.sctn2{
-    margin-top: -5rem;
-}
 
 .sctn3{
 
@@ -241,7 +179,7 @@ li{
 .familyName{
     position: absolute;
     top: 0;
-    color: black;
+    // color: black;
     font-size: 2rem;
     z-index: 1000;
 }

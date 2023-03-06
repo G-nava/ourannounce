@@ -19,8 +19,7 @@
         // display:inline-table;
         // position: relative;
         z-index: 100;
-        width: 50%;
-        // border:10px solid black;
+        width: 40%;        // border:10px solid black;
         // max-height: 50%;
         // max-width: 100%;
         // transform: translateX(50%);
@@ -50,7 +49,7 @@
     
     .flower-container-2{
         z-index: 100;
-        width: 18%;
+        width: 16.5%;
         bottom: -10%;
         left: 8%;
         // top: -1rem;
@@ -152,7 +151,7 @@
             .reason, .versiculo{
                 width: 100%;
                 place-self: center;
-                color: #858585;
+                // color: #858585;
                 font-family: $work-sans;
 
             }
@@ -257,7 +256,7 @@
                 justify-content: center;
                 align-items: center;
                 width: 90%;
-                color: #858585;
+                // color: #858585;
         
                 .separator{
                     display: block;
@@ -279,7 +278,7 @@
                 // font-weight: 400;
                 margin-top: 1rem;
                 font-family: $work-sans;
-                color: #202020;
+                // color: #202020;
             }
         }
     }
