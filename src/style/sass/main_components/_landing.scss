@@ -34,10 +34,17 @@ li{
     background-color: $background_1;
     
     .sc{
+        height: 100vh;
         overflow: hidden;
         position: relative;
         display: grid;
         place-items: center;
+
+        .abs{
+            position: absolute;
+            // filter: invert(28%) sepia(14%) saturate(7107%) hue-rotate(321deg) brightness(93%) contrast(75%);
+            // opacity: .2;
+        }
         
     }
 

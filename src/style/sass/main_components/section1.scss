@@ -1,7 +1,6 @@
 @use "variables.scss" as *;
 
 .sctn1{
-    height: 100vh;
     background: none;
     
     .familyName{
@@ -15,11 +14,6 @@
         box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
     }
     
-    .abs{
-        position: absolute;
-        // filter: invert(28%) sepia(14%) saturate(7107%) hue-rotate(321deg) brightness(93%) contrast(75%);
-        // opacity: .2;
-    }
     
     .flower-container{
         // display:inline-table;
@@ -139,7 +133,8 @@
         justify-content: center;
         align-items: center;
         width: 90% ;
-        height: 60%;
+        height: min-content;
+        padding: 1rem 0;
         background-color: rgba(255, 255, 255, 0.726); // PONBER MÁS TRANSPARENTE
         margin:0 auto;
         
@@ -154,22 +149,34 @@
             width: 90%;
     
     
-            .reason{
-                // position: relative;
+            .reason, .versiculo{
                 width: 100%;
                 place-self: center;
-                top: .5rem;
-                color: #3f3f3f;
+                color: #858585;
                 font-family: $work-sans;
+
+            }
+            .reason{
+                // position: relative;
+                margin-top: .5rem;
+                top: .5rem;
+                // color: #3f3f3f;
                 font-size: 1.3rem;
                 font-weight: 400;
                 &::first-letter{
                     text-transform: uppercase;
                 }
             }
+            
+            .versiculo{
+                font-size: 1.125rem;
+                font-weight: 300;
+
+            }
     
             .main-text{
                 // height: min-content;
+                
                 color: #ad9654;
                 display: grid;
                 grid-template-rows: repeat(auto-fill, 3fr);
@@ -195,11 +202,17 @@
                         // display: grid;
                         position: absolute;
                         // transform: translateY(100%);
-                        width: 130%;
+                        width: 100%;
                         place-self: center;
                         top: 50%;
                         // transform: rotate(45deg);
                     }
+                    
+                }
+
+                .doubleName{
+                    margin-top: 1.5rem;
+                    line-height: 4.5rem;
                     
                 }
             }
@@ -234,6 +247,7 @@
                 }
             }
             .date{
+                margin-top: 1rem;
                 font-size: 1.25rem;
                 font-weight: 400;
                 font-family: $work-sans;
