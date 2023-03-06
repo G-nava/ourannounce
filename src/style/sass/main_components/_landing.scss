@@ -31,11 +31,15 @@ li{
 
 
 .sctn{
-    overflow: hidden;
-    position: relative;
     background-color: $background_1;
-    display: grid;
-    place-items: center;
+    
+    .sc{
+        overflow: hidden;
+        position: relative;
+        display: grid;
+        place-items: center;
+        
+    }
 
     
 // ===================== SECOND SECTION ===========================

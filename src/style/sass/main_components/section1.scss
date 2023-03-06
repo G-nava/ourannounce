@@ -16,7 +16,7 @@
     }
     
     .abs{
-        position: relative;
+        position: absolute;
         // filter: invert(28%) sepia(14%) saturate(7107%) hue-rotate(321deg) brightness(93%) contrast(75%);
         // opacity: .2;
     }
@@ -126,10 +126,9 @@
     
     
     .watercolor3{
-        width: 130%;
-        opacity: .8;
-        // bottom: -20%;
-        // left: -12%;
+        width: 100%;
+        opacity: .9;
+
     }
     
     //INFORMACION PRINCIPAL 
@@ -140,8 +139,8 @@
         justify-content: center;
         align-items: center;
         width: 90% ;
-        height: 70%;
-        background-color: rgb(255, 255, 255); // PONBER MÁS TRANSPARENTE
+        height: 60%;
+        background-color: rgba(255, 255, 255, 0.726); // PONBER MÁS TRANSPARENTE
         margin:0 auto;
         
         .first-container{
