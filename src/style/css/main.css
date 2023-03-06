@@ -173,8 +173,8 @@
   width: 100%;
 }
 .sctn1 .content .first-container .date {
-  font-size: 1rem;
-  font-weight: 300;
+  font-size: 1.25rem;
+  font-weight: 400;
   font-family: "Work Sans";
   text-align: center;
   display: grid;
@@ -182,7 +182,7 @@
   justify-content: center;
   align-items: center;
   width: 90%;
-  color: #202020;
+  color: #858585;
 }
 .sctn1 .content .first-container .date .separator {
   display: block;
@@ -197,7 +197,7 @@
 }
 .sctn1 .content .first-container .city {
   font-weight: 300;
-  font-size: 1rem;
+  font-size: 1.25rem;
   margin-top: 1rem;
   font-family: "Work Sans";
   color: #202020;
