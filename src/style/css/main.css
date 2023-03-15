@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 *::after,
 *::before {
@@ -474,6 +475,71 @@ li {
 }
 .sctn3 .content_sect3 .reserva_color {
   margin-top: 1.5rem;
+}
+
+.sctn4 .form {
+  color: #3f3f3f;
+  font-family: "Work Sans";
+  text-transform: capitalize;
+  display: grid;
+  grid-auto-flow: row;
+  gap: 1rem;
+}
+.sctn4 .form .check {
+  display: grid;
+  grid-auto-flow: column;
+}
+.sctn4 .form .check .rad {
+  border-radius: 50%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  position: relative;
+  top: 13.33333px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 35px;
+  width: 35px;
+  transition: all 0.15s ease-out 0s;
+  background: #cbd1d8;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 0.5rem;
+  outline: none;
+  position: relative;
+  z-index: 1000;
+}
+.sctn4 .form .check .rad:checked {
+  background: #f3adb9;
+}
+.sctn4 .form .check .rad:checked::before {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  content: "✓";
+  font-size: 25px;
+  font-weight: bold;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+}
+.sctn4 .form .btn {
+  all: unset;
+  background-color: #f3adb9;
+  font-family: "Work Sans";
+  text-align: center;
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  transition: 0.5s ease-in;
+}
+.sctn4 .form .btn:hover {
+  background-color: #3f3f3f;
+  color: white;
 }
 
 /*# sourceMappingURL=main.css.map */

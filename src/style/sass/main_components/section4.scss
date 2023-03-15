@@ -1,0 +1,96 @@
+@use "variables.scss" as *;
+
+
+.sctn4{
+
+    .form{
+        color: $text-color;
+        font-family: $work-sans;
+        text-transform: capitalize;
+        display: grid;
+        grid-auto-flow: row;
+        gap: 1rem;
+
+        .check{
+            display: grid;
+            grid-auto-flow: column;
+            
+            .rad{
+                border-radius: 50%;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                -ms-appearance: none;
+                -o-appearance: none;
+                appearance: none;
+                position: relative;
+                top: 13.33333px;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                height: 35px;
+                width: 35px;
+                transition: all 0.15s ease-out 0s;
+                background: #cbd1d8;
+                border: none;
+                color: #fff;
+                cursor: pointer;
+                display: inline-block;
+                margin-right: 0.5rem;
+                outline: none;
+                position: relative;
+                z-index: 1000;
+
+                // &:hover {
+                //     background: #9faab7;
+                //   }
+                &:checked {
+                    background: $pink;
+                  }
+
+                &:checked::before {
+                    width: 35px;
+                    height: 35px;
+                    display:flex;
+                    content: "\2713";
+                    font-size: 25px;
+                    font-weight:bold;
+                    position: absolute;
+                    align-items:center;
+                    justify-content:center;
+                    // font-family:'Font Awesome 5 Free';
+                  }
+            }
+
+
+        }
+
+
+        .invitado_1{
+
+            .guest1{
+                // border
+                // border:none;
+            }
+        }
+
+
+        .btn{
+            all: unset;
+            background-color: $pink;
+            font-family: $work-sans;
+            // color:$text-color;
+            text-align: center;
+            padding: .75rem 1rem;
+            cursor: pointer;
+            transition: .5s ease-in;
+            &:hover{
+                background-color: $text-color;
+                color: white;
+    
+            }
+        }
+    }
+
+
+
+}
