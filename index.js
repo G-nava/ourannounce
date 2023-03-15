@@ -17,7 +17,6 @@ const locationValue = window.location.search;
 
 
 
-
 // const express = require('express');
 
 // const app = express();
