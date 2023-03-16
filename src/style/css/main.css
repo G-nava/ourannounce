@@ -486,6 +486,11 @@ li {
 .sctn3 .content_sect3 .reserva_color {
   margin-top: 1.5rem;
 }
+.sctn3 .wtrclr-on-sctn-3 {
+  position: absolute;
+  bottom: -1rem;
+  left: -2.5rem;
+}
 
 .sctn4 {
   margin-top: -3rem;
@@ -566,6 +571,10 @@ li {
 .sctn4 .form .btn:hover {
   background-color: #3f3f3f;
   color: white;
+}
+
+.sctn-map {
+  margin-top: -3rem;
 }
 
 /*# sourceMappingURL=main.css.map */
