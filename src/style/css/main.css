@@ -478,18 +478,31 @@ li {
 }
 
 .sctn4 .form {
+  background-color: white;
   color: #3f3f3f;
   font-family: "Work Sans";
   text-transform: capitalize;
   display: grid;
   grid-auto-flow: row;
-  gap: 1rem;
+  padding: 1rem;
+  gap: 2rem 1.5rem;
+  place-items: center;
 }
 .sctn4 .form .check {
   display: grid;
+  width: 100%;
   grid-auto-flow: column;
+  align-self: center;
+  justify-content: space-between;
 }
-.sctn4 .form .check .rad {
+.sctn4 .form .check .label_check {
+  display: grid;
+  grid-auto-flow: row;
+  gap: 0.95rem;
+  justify-content: center;
+  text-align: center;
+}
+.sctn4 .form .check .label_check .rad {
   border-radius: 50%;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -509,15 +522,14 @@ li {
   color: #fff;
   cursor: pointer;
   display: inline-block;
-  margin-right: 0.5rem;
   outline: none;
   position: relative;
   z-index: 1000;
 }
-.sctn4 .form .check .rad:checked {
+.sctn4 .form .check .label_check .rad:checked {
   background: #f3adb9;
 }
-.sctn4 .form .check .rad:checked::before {
+.sctn4 .form .check .label_check .rad:checked::before {
   width: 35px;
   height: 35px;
   display: flex;
@@ -532,6 +544,7 @@ li {
   all: unset;
   background-color: #f3adb9;
   font-family: "Work Sans";
+  width: 70%;
   text-align: center;
   padding: 0.75rem 1rem;
   cursor: pointer;
