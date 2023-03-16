@@ -497,6 +497,7 @@ li {
 }
 .sctn4 .form {
   background-color: white;
+  width: 80%;
   color: #3f3f3f;
   font-family: "Work Sans";
   text-transform: capitalize;
@@ -505,6 +506,15 @@ li {
   padding: 2rem 1rem;
   gap: 3rem 1.5rem;
   place-items: center;
+}
+.sctn4 .form .form_description {
+  display: block;
+  text-transform: lowercase;
+  width: 95%;
+  text-align: center;
+}
+.sctn4 .form .form_description::first-letter {
+  text-transform: uppercase;
 }
 .sctn4 .form .check {
   display: grid;
@@ -551,12 +561,13 @@ li {
   width: 35px;
   height: 35px;
   display: flex;
-  content: "✓";
+  content: "✔";
   font-size: 25px;
   font-weight: bold;
   position: absolute;
   align-items: center;
   justify-content: center;
+  transform: rotate(10deg);
 }
 .sctn4 .form .btn {
   all: unset;

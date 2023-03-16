@@ -6,6 +6,7 @@
 
     .form{
         background-color: white;
+        width: 80%;
         color: $text-color;
         font-family: $work-sans;
         text-transform: capitalize;
@@ -14,6 +15,20 @@
         padding: 2rem 1rem;
         gap: 3rem  1.5rem;
         place-items: center; //////////////
+
+
+
+
+        .form_description{
+            display: block;
+            text-transform: lowercase;
+            width: 95%;
+            text-align: center;
+
+            &::first-letter{
+                text-transform: uppercase;
+            }
+        }
 
         .check{
             display: grid;
@@ -61,19 +76,21 @@
                     &:checked {
                         background: $pink;
                       }
-    
+
+                      
                     &:checked::before {
                         width: 35px;
                         height: 35px;
                         display:flex;
-                        content: "\2713";
+                        content: "\2714";
                         font-size: 25px;
                         font-weight:bold;
                         position: absolute;
                         align-items:center;
                         justify-content:center;
+                        transform: rotate(10deg);
                         // font-family:'Font Awesome 5 Free';
-                      }
+                    }
                 }
             }
 
