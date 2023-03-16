@@ -13,8 +13,8 @@
         background-color: white;
         display: grid;
         place-items: center;
-        width: 90%;
-        padding: 2rem 0;
+        width: 80%;
+        padding: 3rem 1rem;
 
         .dress_icon{
             max-width: 18%;
@@ -24,18 +24,19 @@
 
         .dresscode{
             margin-top: 1rem;
+            width: 100%;
             padding: .5rem 1rem;
             background-color: #f3adb9;
             // background-color: #af415375;
             font-weight: 300;
             text-align: center;
-            font-size: 1.75rem;
+            font-size: 1.5rem;
         }
 
         .half{
             display: grid;
             grid-auto-flow: column;
-            width: 95%;
+            width: 80%;
             margin-top: 2rem;
 
 

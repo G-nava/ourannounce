@@ -420,8 +420,8 @@ li {
   background-color: white;
   display: grid;
   place-items: center;
-  width: 90%;
-  padding: 2rem 0;
+  width: 80%;
+  padding: 3rem 1rem;
 }
 .sctn3 .content_sect3 .dress_icon {
   max-width: 18%;
@@ -429,16 +429,17 @@ li {
 }
 .sctn3 .content_sect3 .dresscode {
   margin-top: 1rem;
+  width: 100%;
   padding: 0.5rem 1rem;
   background-color: #f3adb9;
   font-weight: 300;
   text-align: center;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
 }
 .sctn3 .content_sect3 .half {
   display: grid;
   grid-auto-flow: column;
-  width: 95%;
+  width: 80%;
   margin-top: 2rem;
 }
 .sctn3 .content_sect3 .half .line__container {
@@ -490,8 +491,8 @@ li {
   text-transform: capitalize;
   display: grid;
   grid-auto-flow: row;
-  padding: 1rem;
-  gap: 2rem 1.5rem;
+  padding: 2rem 1rem;
+  gap: 3rem 1.5rem;
   place-items: center;
 }
 .sctn4 .form .check {

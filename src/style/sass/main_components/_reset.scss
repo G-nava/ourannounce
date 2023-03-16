@@ -1,3 +1,4 @@
+@use "variables.scss" as *;
 *,
 *::after,
 *::before{
@@ -10,4 +11,24 @@ html{
     scroll-behavior: smooth;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
     -webkit-tap-highlight-color: transparent;
+}
+
+section{
+    height: 500vh;
+}
+
+footer{
+    background-color: #202020;
+    color: white;
+
+}
+
+h2{
+    font-family: $work-sans;
+    text-transform: capitalize;
+    font-weight: 350;
+}
+
+li{
+    list-style: none;
 }
