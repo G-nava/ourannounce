@@ -1,4 +1,5 @@
 @use "variables.scss" as *;
 .sctn-map{
+    height: calc(100vh - 3rem);
     margin-top: -3rem;
 }

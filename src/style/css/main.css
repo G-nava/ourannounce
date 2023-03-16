@@ -37,6 +37,7 @@ li {
 }
 
 .sctn {
+  height: 100%;
   background-color: #fdf9ec;
 }
 .sctn .sc {
@@ -275,6 +276,8 @@ li {
   font-weight: 300;
 }
 .sctn1 .content .first-container .main-text {
+  transition: 0.5s ease-in-out;
+  animation-delay: 0.5;
   color: #ad9654;
   display: grid;
   grid-template-rows: repeat(auto-fill, 3fr);
@@ -503,9 +506,14 @@ li {
   text-transform: capitalize;
   display: grid;
   grid-auto-flow: row;
-  padding: 2rem 1rem;
-  gap: 3rem 1.5rem;
+  padding: 3rem 1rem;
+  gap: 2.75rem 1.5rem;
   place-items: center;
+}
+.sctn4 .form .form_title {
+  font-weight: 400;
+  color: #3f3f3f;
+  font-size: 1.65rem;
 }
 .sctn4 .form .form_description {
   display: block;
@@ -574,6 +582,7 @@ li {
   background-color: #f3adb9;
   font-family: "Work Sans";
   width: 70%;
+  font-size: 1.25rem;
   text-align: center;
   padding: 0.75rem 1rem;
   cursor: pointer;
@@ -585,6 +594,7 @@ li {
 }
 
 .sctn-map {
+  height: calc(100vh - 3rem);
   margin-top: -3rem;
 }
 

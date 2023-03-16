@@ -12,11 +12,15 @@
         text-transform: capitalize;
         display: grid;
         grid-auto-flow: row;
-        padding: 2rem 1rem;
-        gap: 3rem  1.5rem;
+        padding: 3rem 1rem;
+        gap: 2.75rem  1.5rem;
         place-items: center; //////////////
 
-
+        .form_title{
+            font-weight: 400;
+            color: $text-color;
+            font-size: 1.65rem;
+        }
 
 
         .form_description{
@@ -112,6 +116,7 @@
             background-color: $pink;
             font-family: $work-sans;
             width: 70%;
+            font-size: 1.25rem;
             // color:$text-color;
             text-align: center;
             padding: .75rem 1rem;
