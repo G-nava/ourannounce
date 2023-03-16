@@ -1,12 +1,6 @@
 @use "variables.scss" as *;
 
-*,
-*::after,
-*::before{
-    padding: auto;
-    margin: 0;
-    box-sizing: border-box;
-}
+
 
 section{
     height: 500vh;
