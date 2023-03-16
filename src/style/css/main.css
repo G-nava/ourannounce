@@ -411,6 +411,9 @@ li {
   bottom: 35%;
 }
 
+.sctn3 {
+  margin-top: -3rem;
+}
 .sctn3 .bottom-sctn-3 {
   position: absolute;
   width: 130%;
@@ -484,6 +487,9 @@ li {
   margin-top: 1.5rem;
 }
 
+.sctn4 {
+  margin-top: -3rem;
+}
 .sctn4 .form {
   background-color: white;
   color: #3f3f3f;
