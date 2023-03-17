@@ -445,7 +445,7 @@ li {
 .sctn3 .content_sect3 .half {
   display: grid;
   grid-auto-flow: column;
-  width: 80%;
+  width: 100%;
   margin-top: 2rem;
 }
 .sctn3 .content_sect3 .half .line__container {
