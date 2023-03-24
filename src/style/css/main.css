@@ -514,9 +514,15 @@ li {
 }
 .sctn3 .f-s3_3 {
   position: absolute;
-  width: 35%;
+  width: 60%;
   bottom: -2rem;
   right: 0;
+}
+.sctn3 .f-s3_4 {
+  position: absolute;
+  width: 25%;
+  left: 1rem;
+  top: 1rem;
 }
 
 .sctn4 {
