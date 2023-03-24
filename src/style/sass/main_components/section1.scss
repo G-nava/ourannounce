@@ -171,6 +171,13 @@
                 font-size: 1.125rem;
                 font-weight: 300;
 
+                .cita{
+                    line-height: 2;
+                    color: $text-color;
+                    font-weight: 400;
+                    margin-top: .75rem;
+                }
+
             }
     
             .main-text{
