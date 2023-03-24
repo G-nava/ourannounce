@@ -90,11 +90,31 @@
         
         
     }
+    .wtrclr-on-sctn-3, .wtrclr-on-sctn-3_1, .flwr_sctn-3-1{
+        position: absolute;
+    }
 
     .wtrclr-on-sctn-3{
-        position: absolute;
         bottom: -1rem;
         left: -2.5rem;
+    }
+    .wtrclr-on-sctn-3_1{
+        top: 0;
+        right: -3.5rem;
+        transform: rotateY(180deg);
+    }
+    .wtrclr-on-sctn-3_2{
+        top: -.5rem;
+        left: -7.5rem;
+        transform: rotate(45deg);
+    }
+
+    .flwr_sctn-3-1{
+        width:12%;
+        .f-s3{
+            position: relative;
+        }
+
     }
 }
 

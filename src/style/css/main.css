@@ -489,10 +489,28 @@ li {
 .sctn3 .content_sect3 .reserva_color {
   margin-top: 1.5rem;
 }
-.sctn3 .wtrclr-on-sctn-3 {
+.sctn3 .wtrclr-on-sctn-3, .sctn3 .wtrclr-on-sctn-3_1, .sctn3 .flwr_sctn-3-1 {
   position: absolute;
+}
+.sctn3 .wtrclr-on-sctn-3 {
   bottom: -1rem;
   left: -2.5rem;
+}
+.sctn3 .wtrclr-on-sctn-3_1 {
+  top: 0;
+  right: -3.5rem;
+  transform: rotateY(180deg);
+}
+.sctn3 .wtrclr-on-sctn-3_2 {
+  top: -0.5rem;
+  left: -7.5rem;
+  transform: rotate(45deg);
+}
+.sctn3 .flwr_sctn-3-1 {
+  width: 12%;
+}
+.sctn3 .flwr_sctn-3-1 .f-s3 {
+  position: relative;
 }
 
 .sctn4 {
@@ -575,7 +593,6 @@ li {
   position: absolute;
   align-items: center;
   justify-content: center;
-  transform: rotate(10deg);
 }
 .sctn4 .form .btn {
   all: unset;
