@@ -620,7 +620,7 @@ li {
   position: absolute;
   left: 0;
   top: 50%;
-  height: 25%;
+  height: 20%;
   width: 5px;
   background-color: #ffffff;
   content: "";
@@ -630,9 +630,9 @@ li {
 .sctn4 .form .check .label_check .rad:checked::after {
   position: absolute;
   left: 0;
-  bottom: 5px;
+  bottom: 7px;
   height: 5px;
-  width: 65%;
+  width: 60%;
   background-color: #ffffff;
   content: "";
   transform: translateX(15px) rotate(-45deg);
