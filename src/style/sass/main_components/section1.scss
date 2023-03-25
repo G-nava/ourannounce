@@ -182,8 +182,8 @@
     
             .main-text{
                 // height: min-content;
-                transition: .5s ease-in-out;
-                animation-delay: .5;
+                // transition: .5s ease-in-out;
+                // animation-delay: .5;
 
                 color: #ad9654;
                 display: grid;
@@ -194,6 +194,7 @@
                 text-transform: capitalize;
                 font-size: 4.5rem;
                 font-weight: 100;
+                opacity: 0;
                 // line-height: .8;
                 
                 
