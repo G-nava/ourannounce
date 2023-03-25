@@ -14,29 +14,27 @@ const locationValue = window.location.search;
 
 
 
+/*Intersection observer */
+
+
+const images = document.querySelectorAll('.anim');
+
+observer = new IntersectionObserver((entries) => {
+    // console.log(entries);
+    entries.forEach(entry =>{
+        if (entry.intersectionRatio > 0) {
+            entry.target.style.animation = `anim1 1s ${entry.target.dataset.delay} forwards ease-out`;
+        }
+        // else{
+        //     entry.target.style.animation = `none`;
+        // }
+    })
+});
+
+images.forEach(image =>{
+    observer.observe(image)
+})
 
 
 
-// const express = require('express');
 
-// const app = express();
-
-// const port = process.env.PORT || 5500;
-
-// //motor de plantillas
-// app.set('view engine','ejs');
-// app.set('views', `${__dirname}/src/views`);
-
-
-// app.use(express.static(__dirname + "/public"));
-
-// //rutas web
-// app.use('/', require('./src/router/routesWeb'))
-
-// app.use((req, res, next)=>{
-//     res.status(404).sendFile(`${__dirname}/public/404.html`)
-// })
-
-// app.listen(port,()=>{
-//     console.log(`listening in port: ${port}` );
-// });  

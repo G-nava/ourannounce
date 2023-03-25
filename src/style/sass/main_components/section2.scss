@@ -65,7 +65,41 @@
             bottom: 35%;
         }
     }
+    
+    .container-2{
+        display: grid;
+        place-items: center;
+        width: 90%;
+        margin: 0 auto;
+
+        .sub-content{
+            display: grid;
+            place-items: center;
+
+            .couple{
+                width: 115%;
+                opacity: .8; 
+            }
+            .anim{
+                opacity: 0;
+            }
+            
+
+
+        }
+    }
 
 
 
+}
+
+@keyframes anim1{
+    from {
+        // transform: translateX(100px);
+        opacity: 0;
+    }
+    to {
+        // transform: translateX(0);
+        opacity: 1;    
+    }
 }

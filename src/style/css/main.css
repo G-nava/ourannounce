@@ -50,20 +50,6 @@ li {
 .sctn .sc .abs {
   position: absolute;
 }
-.sctn .container-2 {
-  display: grid;
-  place-items: center;
-  width: 90%;
-  margin: 0 auto;
-}
-.sctn .container-2 .sub-content {
-  display: grid;
-  place-items: center;
-}
-.sctn .container-2 .sub-content .couple {
-  width: 115%;
-  opacity: 0.8;
-}
 
 .familyName {
   position: absolute;
@@ -419,7 +405,32 @@ li {
   right: 7%;
   bottom: 35%;
 }
+.sctn2 .container-2 {
+  display: grid;
+  place-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+.sctn2 .container-2 .sub-content {
+  display: grid;
+  place-items: center;
+}
+.sctn2 .container-2 .sub-content .couple {
+  width: 115%;
+  opacity: 0.8;
+}
+.sctn2 .container-2 .sub-content .anim {
+  opacity: 0;
+}
 
+@keyframes anim1 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .sctn3 {
   margin-top: -3rem;
 }
