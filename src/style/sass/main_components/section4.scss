@@ -83,15 +83,46 @@
 
                       
                     &:checked::before {
-                        width: 35px;
-                        height: 35px;
-                        display:flex;
-                        content: "\2714";
-                        font-size: 25px;
-                        font-weight:bold;
                         position: absolute;
-                        align-items:center;
-                        justify-content:center;
+                        left: 0;
+                        top: 50%;
+                        height: 25%;
+                        width: 5px;
+                        background-color: #ffffff;
+                        content: "";
+                        transform: translateX(12px) rotate(-45deg);
+                        transform-origin: left bottom;
+                        // width: 35px;
+                        // height: 35px;
+                        // display:flex;
+                        // content: "\2714";
+                        // font-size: 25px;
+                        // font-weight:bold;
+                        // position: absolute;
+                        // align-items:center;
+                        // justify-content:center;
+                        // transform: rotate(10deg);
+                        // font-family:'Font Awesome 5 Free';
+                    }
+                    &:checked::after {
+                        position: absolute;
+                        left: 0;
+                        bottom: 5px;
+                        height: 5px;
+                        width: 65%;
+                        background-color: #ffffff;
+                        content: "";
+                        transform: translateX(15px) rotate(-45deg);
+                        transform-origin: left bottom;
+                        // width: 35px;
+                        // height: 35px;
+                        // display:flex;
+                        // content: "\2714";
+                        // font-size: 25px;
+                        // font-weight:bold;
+                        // position: absolute;
+                        // align-items:center;
+                        // justify-content:center;
                         // transform: rotate(10deg);
                         // font-family:'Font Awesome 5 Free';
                     }
