@@ -141,31 +141,32 @@
     
             </div>
             <div class="sc sctn4">
-                <div class="form">
+                <form class="form" id="form">
                     <h2 class="form_title">
                         confirmar asistencia
                     </h2>
                     <p class="form_description">selecciona la cantidad de personas que asistirán</p>
 
-                    <div class="check">
-                                <label class="label_check" for=""><input class="rad" type="radio" name="numPerson">1</label>
-                                <label class="label_check" for=""><input class="rad" type="radio" name="numPerson">2</label>
-                                <label class="label_check" for=""><input class="rad" type="radio" name="numPerson">3</label>
-                                <label class="label_check" for=""><input class="rad" type="radio" name="numPerson">4</label>
-                                <label class="label_check" for=""><input class="rad" type="radio" name="numPerson">5</label>
-                                <label class="label_check" for=""><input class="rad" type="radio" name="numPerson">6</label>
-                                <label class="label_check" for=""><input class="rad" type="radio" name="numPerson">7</label>
+                    <div class="check hide-checkMark">
+                                <label class="label_check" for=""><input class="rad" type="radio" name="numPerson" id="select" value="1">1</label>
+                                <label class="label_check" for=""><input class="rad" type="radio" name="numPerson" id="select" value="2">2</label>
+                                <label class="label_check" for=""><input class="rad" type="radio" name="numPerson" id="select" value="3">3</label>
+                                <label class="label_check" for=""><input class="rad" type="radio" name="numPerson" id="select" value="4">4</label>
+                                <label class="label_check" for=""><input class="rad" type="radio" name="numPerson" id="select" value="5">5</label>
+                                <label class="label_check" for=""><input class="rad" type="radio" name="numPerson" id="select" value="6">6</label>
+                                <label class="label_check" for=""><input class="rad" type="radio" name="numPerson" id="select" value="7">7</label>
                     </div>
-                    <!-- <div class="invitado_1">
-                        <label for="">invitado</label>
-                        <input class="guest1" type="text">
+                    <div class="type-list">
+                            <input class="guest1" type="text" placeholder="invitado 1">
+                            <input class="guest1" type="text" placeholder="invitado 2">
+                            <input class="guest1" type="text" placeholder="invitado 3">
+                            <input class="guest1" type="text" placeholder="invitado 4">
+                            <input class="guest1" type="text" placeholder="invitado 5">
+                            <input class="guest1" type="text" placeholder="invitado 6">
+                            <input class="guest1" type="text" placeholder="invitado 7">
                     </div>
-                    <div class="invitado_1">
-                        <label for="">invitado</label>
-                        <input class="guest1" type="text">
-                    </div> -->
-                    <button class="btn" type="submit">CONFIRMAR</button>
-                </div>
+                    <button class="btn btn-confirm" type="submit">CONFIRMAR</button>
+                </form>
     
             </div>
     

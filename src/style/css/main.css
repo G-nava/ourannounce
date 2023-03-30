@@ -638,6 +638,15 @@ li {
   transform: translateX(15px) rotate(-45deg);
   transform-origin: left bottom;
 }
+.sctn4 .form .type-list {
+  display: grid;
+  place-items: center;
+  gap: 1.25rem;
+}
+.sctn4 .form .type-list .guest1 {
+  height: 1.95rem;
+  width: 14rem;
+}
 .sctn4 .form .btn {
   all: unset;
   background-color: #f3adb9;

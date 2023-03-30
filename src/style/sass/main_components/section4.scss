@@ -92,17 +92,7 @@
                         content: "";
                         transform: translateX(12px) rotate(-45deg);
                         transform-origin: left bottom;
-                        // width: 35px;
-                        // height: 35px;
-                        // display:flex;
-                        // content: "\2714";
-                        // font-size: 25px;
-                        // font-weight:bold;
-                        // position: absolute;
-                        // align-items:center;
-                        // justify-content:center;
-                        // transform: rotate(10deg);
-                        // font-family:'Font Awesome 5 Free';
+
                     }
                     &:checked::after {
                         position: absolute;
@@ -131,14 +121,18 @@
         }
 
 
-        .invitado_1{
+        .type-list{
 
+            display: grid;
+            place-items: center;
+            gap: 1.25rem;
+            
             .guest1{
-                // border
-                // border:none;
+                height: 1.95rem;
+                width: 14rem;
             }
-        }
 
+        }
 
         .btn{
             all: unset;
