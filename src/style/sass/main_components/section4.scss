@@ -29,6 +29,7 @@
             text-transform: lowercase;
             width: 95%;
             text-align: center;
+            margin-bottom: .75rem;
 
             &::first-letter{
                 text-transform: uppercase;
@@ -123,6 +124,17 @@
 
 
         .type-list{
+            .list-people{
+                display: block;
+                text-transform: lowercase;
+                width: 95%;
+                text-align: center;
+                margin-bottom: .75rem;
+    
+                &::first-letter{
+                    text-transform: uppercase;
+                }
+            }
 
             .list-name{
                 display: grid;
@@ -130,8 +142,9 @@
                 gap: 1.25rem;
                 
                 .guest1{
-                    height: 1.95rem;
-                    width: 14rem;
+                    font-size: 1rem;
+                    height: 2rem;
+                    width: 15.35rem;
                 }
             }
 

@@ -571,6 +571,7 @@ li {
   text-transform: lowercase;
   width: 95%;
   text-align: center;
+  margin-bottom: 0.75rem;
 }
 .sctn4 .form .form_description::first-letter {
   text-transform: uppercase;
@@ -638,14 +639,25 @@ li {
   transform: translateX(15px) rotate(-45deg);
   transform-origin: left bottom;
 }
+.sctn4 .form .type-list .list-people {
+  display: block;
+  text-transform: lowercase;
+  width: 95%;
+  text-align: center;
+  margin-bottom: 0.75rem;
+}
+.sctn4 .form .type-list .list-people::first-letter {
+  text-transform: uppercase;
+}
 .sctn4 .form .type-list .list-name {
   display: grid;
   place-items: center;
   gap: 1.25rem;
 }
 .sctn4 .form .type-list .list-name .guest1 {
-  height: 1.95rem;
-  width: 14rem;
+  font-size: 1rem;
+  height: 2rem;
+  width: 15.35rem;
 }
 .sctn4 .form .btn {
   all: unset;
