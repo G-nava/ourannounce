@@ -575,21 +575,21 @@ li {
 .sctn4 .form .form_description::first-letter {
   text-transform: uppercase;
 }
-.sctn4 .form .check {
+.sctn4 .form .group-choice {
   display: grid;
   width: 100%;
   grid-auto-flow: column;
   align-self: center;
   justify-content: space-between;
 }
-.sctn4 .form .check .label_check {
+.sctn4 .form .group-choice .label_check {
   display: grid;
   grid-auto-flow: row;
   gap: 0.95rem;
   justify-content: center;
   text-align: center;
 }
-.sctn4 .form .check .label_check .rad {
+.sctn4 .form .group-choice .label_check .rad {
   border-radius: 50%;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -613,10 +613,10 @@ li {
   position: relative;
   z-index: 1000;
 }
-.sctn4 .form .check .label_check .rad:checked {
+.sctn4 .form .group-choice .label_check .rad:checked {
   background: #f3adb9;
 }
-.sctn4 .form .check .label_check .rad:checked::before {
+.sctn4 .form .group-choice .label_check .rad:checked::before {
   position: absolute;
   left: 0;
   top: 50%;
@@ -627,7 +627,7 @@ li {
   transform: translateX(12px) rotate(-45deg);
   transform-origin: left bottom;
 }
-.sctn4 .form .check .label_check .rad:checked::after {
+.sctn4 .form .group-choice .label_check .rad:checked::after {
   position: absolute;
   left: 0;
   bottom: 7px;
@@ -638,12 +638,12 @@ li {
   transform: translateX(15px) rotate(-45deg);
   transform-origin: left bottom;
 }
-.sctn4 .form .type-list {
+.sctn4 .form .type-list .list-name {
   display: grid;
   place-items: center;
   gap: 1.25rem;
 }
-.sctn4 .form .type-list .guest1 {
+.sctn4 .form .type-list .list-name .guest1 {
   height: 1.95rem;
   width: 14rem;
 }

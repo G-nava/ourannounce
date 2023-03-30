@@ -24,6 +24,7 @@
 
 
         .form_description{
+            
             display: block;
             text-transform: lowercase;
             width: 95%;
@@ -34,7 +35,7 @@
             }
         }
 
-        .check{
+        .group-choice{
             display: grid;
             width: 100%;
             grid-auto-flow: column;
@@ -123,14 +124,17 @@
 
         .type-list{
 
-            display: grid;
-            place-items: center;
-            gap: 1.25rem;
-            
-            .guest1{
-                height: 1.95rem;
-                width: 14rem;
+            .list-name{
+                display: grid;
+                place-items: center;
+                gap: 1.25rem;
+                
+                .guest1{
+                    height: 1.95rem;
+                    width: 14rem;
+                }
             }
+
 
         }
 
