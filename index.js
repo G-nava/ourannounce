@@ -54,6 +54,46 @@ images.forEach(image =>{
 
 // });
 
+
+// showMenu.addEventListener('click', ()=>{
+//     //SI menu se encuentra ya desplegado
+//     if (document.querySelector('.hide-menu') == null){
+        
+//         blockPage.classList.remove('bdy-ovfw-hdn');
+//         blockPage.classList.add('bdy-ovfw-aut');
+
+//         toggleMenu.classList.add('hide-menu');
+//         arrowIcon.classList.remove('second-arrow');
+//         // block.classList.remove('bd-fxd');
+//         // console.log(block);
+            
+//     }else{
+//         toggleMenu.classList.remove('hide-menu')      
+//         arrowIcon.classList.add('second-arrow');
+
+//         blockPage.classList.remove('bdy-ovfw-aut');
+//         blockPage.classList.add('bdy-ovfw-hdn');
+//         // block.classList.add('bd-fxd');
+//     }
+// });
+
+const numb = document.getElementById("num-selection").addEventListener('click',(f)=>{
+    f.preventDefault();  
+    /*Si hay uun numero seleccionado en el checkbox quitar el
+    primer formulario y mostrar la opcion ede ingresar nombres
+    de acuerdo a la cantidad seleccionada */
+    const guestNumber = document.querySelectorAll('input[type="radio"][name="numPerson"]');
+    const selectedValue = Array.from(guestNumber).find(radio => radio.checked) && Array.from(guestNumber).find(radio => radio.checked).value;;
+    selectedValue == null || selectedValue == "" ? 
+    alert('debes seleccionar la cantidad total de invitados a asistir') 
+    : alert('done')
+    
+    console.log(selectedValue);
+
+
+
+});
+
 const form = document.getElementById('form').addEventListener('submit',(e)=>{
         
     e.preventDefault();  
@@ -66,5 +106,6 @@ const form = document.getElementById('form').addEventListener('submit',(e)=>{
         // alert('done');       
 
 })
+
 
 

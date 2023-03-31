@@ -566,31 +566,36 @@ li {
   color: #3f3f3f;
   font-size: 1.65rem;
 }
-.sctn4 .form .form_description {
+.sctn4 .form .check {
+  display: grid;
+  place-items: center;
+  margin-top: 2rem;
+}
+.sctn4 .form .check .form_description {
   display: block;
   text-transform: lowercase;
   width: 95%;
   text-align: center;
   margin-bottom: 0.75rem;
 }
-.sctn4 .form .form_description::first-letter {
+.sctn4 .form .check .form_description::first-letter {
   text-transform: uppercase;
 }
-.sctn4 .form .group-choice {
+.sctn4 .form .check .group-choice {
   display: grid;
   width: 100%;
   grid-auto-flow: column;
   align-self: center;
   justify-content: space-between;
 }
-.sctn4 .form .group-choice .label_check {
+.sctn4 .form .check .group-choice .label_check {
   display: grid;
   grid-auto-flow: row;
   gap: 0.95rem;
   justify-content: center;
   text-align: center;
 }
-.sctn4 .form .group-choice .label_check .rad {
+.sctn4 .form .check .group-choice .label_check .rad {
   border-radius: 50%;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -614,10 +619,10 @@ li {
   position: relative;
   z-index: 1000;
 }
-.sctn4 .form .group-choice .label_check .rad:checked {
+.sctn4 .form .check .group-choice .label_check .rad:checked {
   background: #f3adb9;
 }
-.sctn4 .form .group-choice .label_check .rad:checked::before {
+.sctn4 .form .check .group-choice .label_check .rad:checked::before {
   position: absolute;
   left: 0;
   top: 50%;
@@ -628,7 +633,7 @@ li {
   transform: translateX(12px) rotate(-45deg);
   transform-origin: left bottom;
 }
-.sctn4 .form .group-choice .label_check .rad:checked::after {
+.sctn4 .form .check .group-choice .label_check .rad:checked::after {
   position: absolute;
   left: 0;
   bottom: 7px;
@@ -638,6 +643,28 @@ li {
   content: "";
   transform: translateX(15px) rotate(-45deg);
   transform-origin: left bottom;
+}
+.sctn4 .form .check .selection-number {
+  margin-top: 2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #f3adb9;
+  font-family: "Work Sans";
+  width: 70%;
+  font-size: 1.25rem;
+  color: #3f3f3f;
+  text-align: center;
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  transition: 0.5s ease-in;
+}
+.sctn4 .form .check .selection-number:hover {
+  background-color: #3f3f3f;
+  color: white;
+}
+.sctn4 .form .type-list {
+  display: grid;
+  place-items: center;
 }
 .sctn4 .form .type-list .list-people {
   display: block;
@@ -655,12 +682,14 @@ li {
   gap: 1.25rem;
 }
 .sctn4 .form .type-list .list-name .guest1 {
+  text-transform: capitalize;
   font-size: 1rem;
   height: 2rem;
   width: 15.35rem;
 }
-.sctn4 .form .btn {
+.sctn4 .form .type-list .btn-confirm {
   all: unset;
+  margin-top: 2rem;
   background-color: #f3adb9;
   font-family: "Work Sans";
   width: 70%;
@@ -670,9 +699,15 @@ li {
   cursor: pointer;
   transition: 0.5s ease-in;
 }
-.sctn4 .form .btn:hover {
+.sctn4 .form .type-list .btn-confirm:hover {
   background-color: #3f3f3f;
   color: white;
+}
+.sctn4 .form .lst-hide {
+  display: none;
+}
+.sctn4 .form .lst-show {
+  display: inline;
 }
 
 .sctn-map {
