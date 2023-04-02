@@ -78,15 +78,28 @@ images.forEach(image =>{
 // });
 
 const numb = document.getElementById("num-selection").addEventListener('click',(f)=>{
-    f.preventDefault();  
+    const numberSelector = document.getElementById('check');
+    const listSelector = document.querySelector('.type-list');
+    f.preventDefault();
+
     /*Si hay uun numero seleccionado en el checkbox quitar el
     primer formulario y mostrar la opcion ede ingresar nombres
     de acuerdo a la cantidad seleccionada */
     const guestNumber = document.querySelectorAll('input[type="radio"][name="numPerson"]');
     const selectedValue = Array.from(guestNumber).find(radio => radio.checked) && Array.from(guestNumber).find(radio => radio.checked).value;;
-    selectedValue == null || selectedValue == "" ? 
-    alert('debes seleccionar la cantidad total de invitados a asistir') 
-    : alert('done')
+    
+    if (selectedValue == null || selectedValue == "" || selectedValue == undefined ) {
+        alert('debes seleccionar la cantidad total de invitados a asistir')
+        // alert(selectedValue)
+        
+    }else{
+        numberSelector.classList.add('hide-checkMark');  // remover el css que oculta y poner el menu que está oculto
+        listSelector.classList.remove('lst-hide');  // remover el css que oculta y poner el menu que está oculto
+        listSelector.classList.add('lst-show');  // remover el css que oculta y poner el menu que está oculto
+
+    }
+    
+    
     
     console.log(selectedValue);
 

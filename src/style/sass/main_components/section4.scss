@@ -119,6 +119,7 @@
             }
 
             .selection-number{  // thi is a button
+                // display: inline-block;
                 margin-top: 2rem;
                 text-decoration: none;
                 text-transform: uppercase;
@@ -138,6 +139,10 @@
                 }
             }
 
+        }
+
+        .hide-checkMark{
+            display:none;
         }
 
 
@@ -171,9 +176,10 @@
                     width: 15.35rem;
                 }
             }
-
+                
             .btn-confirm{
                 all: unset;
+                place-self: center;
                 margin-top: 2rem;
                 background-color: $pink;
                 font-family: $work-sans;
