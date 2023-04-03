@@ -93,15 +93,37 @@ const numb = document.getElementById("num-selection").addEventListener('click',(
         // alert(selectedValue)
         
     }else{
+        
+        const insertPerson = document.getElementById('list-name');
+        for (let i = 0; i < selectedValue; i++) {
+            const quantityInput = ()=>{
+                const intupLabel = document.createElement('input');
+                intupLabel.className ='guest1';
+                intupLabel.type ='text';
+                intupLabel.placeholder =`invitado ${i+1}`;
+
+                insertPerson.appendChild(intupLabel)
+
+                console.log(insertPerson);
+            }
+            quantityInput();
+            
+        }
+
+        // array.forEach(element => {
+            
+        // });
+
+
         numberSelector.classList.add('hide-checkMark');  // remover el css que oculta y poner el menu que está oculto
         listSelector.classList.remove('lst-hide');  // remover el css que oculta y poner el menu que está oculto
-        listSelector.classList.add('lst-show');  // remover el css que oculta y poner el menu que está oculto
+        // listSelector.classList.add('lst-show');  // remover el css que oculta y poner el menu que está oculto
 
     }
     
     
     
-    console.log(selectedValue);
+    // console.log(selectedValue);
 
 
 

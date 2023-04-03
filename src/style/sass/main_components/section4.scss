@@ -152,6 +152,7 @@
 
 
 
+
             .list-people{
                 display: block;
                 text-transform: lowercase;
@@ -179,7 +180,6 @@
                 
             .btn-confirm{
                 all: unset;
-                place-self: center;
                 margin-top: 2rem;
                 background-color: $pink;
                 font-family: $work-sans;
@@ -200,12 +200,13 @@
         }
 
         .lst-hide{
+            // visibility: hidden;
             display: none;
         }
-
-        .lst-show{
-            display: inline;
-        }
+        
+        // .lst-show{
+            // visibility: visible;
+        // }
 
 
     }

@@ -692,7 +692,6 @@ li {
 }
 .sctn4 .form .type-list .btn-confirm {
   all: unset;
-  place-self: center;
   margin-top: 2rem;
   background-color: #f3adb9;
   font-family: "Work Sans";
@@ -709,9 +708,6 @@ li {
 }
 .sctn4 .form .lst-hide {
   display: none;
-}
-.sctn4 .form .lst-show {
-  display: inline;
 }
 
 .sctn-map {
