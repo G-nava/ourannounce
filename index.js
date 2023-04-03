@@ -111,23 +111,10 @@ if (nombreInvitado != null || nombreInvitado != undefined && cantidad == null ||
             inputLabelCheck.appendChild(inputCheck);
             const numeroCheckBox = document.createTextNode(`${i+1}`)
             inputLabelCheck.appendChild(numeroCheckBox)
-            // insertcheck.appendChild(intupLabel);
-
-            //html = inputLabelChecks
-
-            //console.log(html);
-            // inputCheck.appendChild(inputLabelCheck);
-            // console.log(inputLabelCheck);
-            // inputCheck.append(inputLabelCheck)
             insertcheck.appendChild(inputLabelCheck)
         }
-        quantityCheck();
-        
+        quantityCheck();      
     }
-
-    // numberSelector.classList.add('hide-checkMark');  // remover el css que oculta y poner el menu que está oculto
-    // listSelector.classList.remove('lst-hide');
-
 }
 
 const numb = document.getElementById("num-selection").addEventListener('click',(f)=>{
@@ -140,9 +127,7 @@ const numb = document.getElementById("num-selection").addEventListener('click',(
     de acuerdo a la cantidad seleccionada */
     const guestNumber = document.querySelectorAll('input[type="radio"][name="numPerson"]');
     const selectedValue = Array.from(guestNumber).find(radio => radio.checked) && Array.from(guestNumber).find(radio => radio.checked).value;;
-    
-    
-    
+      
     if (selectedValue == null || selectedValue == "" || selectedValue == undefined ) {
         alert('debes seleccionar la cantidad total de invitados a asistir')
     }else{
@@ -169,16 +154,9 @@ const numb = document.getElementById("num-selection").addEventListener('click',(
             insertPerson.innerHTML = '';
         });
     }
-
-    
-    
-    
-    
-    // console.log(selectedValue);
-
-
-
 });
+
+// Get access to the form
 
 const form = document.getElementById('form').addEventListener('submit',(e)=>{
         
@@ -186,11 +164,6 @@ const form = document.getElementById('form').addEventListener('submit',(e)=>{
     const guestNumber = document.querySelectorAll('input[type="radio"][name="numPerson"]');
     const selectedValue = Array.from(guestNumber).find(radio => radio.checked) && Array.from(guestNumber).find(radio => radio.checked).value;;
     console.log(selectedValue);
-    // guestNumber.forEach((g)=>{
-    // });
-
-        // alert('done');       
-
 })
 
 
