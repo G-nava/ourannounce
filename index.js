@@ -5,12 +5,28 @@ const locationValue = window.location.search;
 
     const urlParams = new URLSearchParams(locationValue);
 
-    const primerApellido = urlParams.get('pa')
-    const segundApellido = urlParams.get('sa')
+    const nombreInvitado = urlParams.get('n');
+    const primerApellido = urlParams.get('p');
+    const segundApellido = urlParams.get('s');
+    const cantidad = urlParams.get('c');
+    const singlePerson = 1;
+    // console.log(cantidad);
 
-    primerApellido == null && segundApellido == null ?
-        document.getElementById('value').style.display = 'none' :
-        document.getElementById('value').innerHTML = `Familia: ${primerApellido} ${segundApellido}`
+    if (primerApellido == null && segundApellido == null) {
+        document.getElementById('value').style.display = 'none';
+    }else{
+
+        if (nombreInvitado != null || nombreInvitado != undefined) {
+            document.getElementById('value').innerHTML = `${nombreInvitado} ${primerApellido} ${segundApellido}`
+            // return
+        }else{
+            document.getElementById('value').innerHTML = `Familia: ${primerApellido} ${segundApellido}`
+        }
+
+    }
+
+    // nombreInvitado == null && primerApellido == null && segundApellido == null ?
+        // document.getElementById('value').style.display = 'none' :
 
 
 
@@ -46,37 +62,54 @@ images.forEach(image =>{
 
 // https://sheet.best/api/sheets/3e1004e4-657b-49d3-8a85-a9e84f1f220b
 
-
-// const formulario = document.getElementById('form');
-
-// formulario.addEventListener('submit',(e)=>{
-//     e.preventDefault();  
-
-// });
-
-
-// showMenu.addEventListener('click', ()=>{
-//     //SI menu se encuentra ya desplegado
-//     if (document.querySelector('.hide-menu') == null){
-        
-//         blockPage.classList.remove('bdy-ovfw-hdn');
-//         blockPage.classList.add('bdy-ovfw-aut');
-
-//         toggleMenu.classList.add('hide-menu');
-//         arrowIcon.classList.remove('second-arrow');
-//         // block.classList.remove('bd-fxd');
-//         // console.log(block);
+if (nombreInvitado != null || nombreInvitado != undefined) {
+    // poner en confirmar asistencia solamente el nombre de la persona
+    // acompañada del botón enviar
+    
+}else{
+    // generar los check box deacuerdo al parametro ingresado por URL
+    // seguido del código de abajo
+    const insertcheck = document.getElementById('group-choice');
+    let = html = ''
+    for (let i = 0; i < cantidad; i++) {
+        const quantityCheck = ()=>{
+            const inputCheck = document.createElement('input');
+            // input class="rad" type="radio" name="numPerson" id="select" value="1"
             
-//     }else{
-//         toggleMenu.classList.remove('hide-menu')      
-//         arrowIcon.classList.add('second-arrow');
+            inputCheck.className ="rad";
+            inputCheck.type ='radio';
+            inputCheck.name ='numPerson';
+            inputCheck.id ='select';
+            inputCheck.value =`${i+1}`;
+            
+            const inputLabelCheck = document.createElement('label');
+            inputLabelCheck.className = 'label_check';
+            // label class="label_check"
 
-//         blockPage.classList.remove('bdy-ovfw-aut');
-//         blockPage.classList.add('bdy-ovfw-hdn');
-//         // block.classList.add('bd-fxd');
-//     }
-// });
+            inputLabelCheck.appendChild(inputCheck);
+            const numeroCheckBox = document.createTextNode(`${i+1}`)
+            inputLabelCheck.appendChild(numeroCheckBox)
+            // insertcheck.appendChild(intupLabel);
 
+            //html = inputLabelChecks
+
+            //console.log(html);
+            // inputCheck.appendChild(inputLabelCheck);
+            // console.log(inputLabelCheck);
+            // inputCheck.append(inputLabelCheck)
+            insertcheck.appendChild(inputLabelCheck)
+        }
+        quantityCheck();
+        
+
+
+        
+    }
+
+    // numberSelector.classList.add('hide-checkMark');  // remover el css que oculta y poner el menu que está oculto
+    // listSelector.classList.remove('lst-hide');
+
+}
 const numb = document.getElementById("num-selection").addEventListener('click',(f)=>{
     const numberSelector = document.getElementById('check');
     const listSelector = document.querySelector('.type-list');
@@ -92,28 +125,24 @@ const numb = document.getElementById("num-selection").addEventListener('click',(
         alert('debes seleccionar la cantidad total de invitados a asistir')
         // alert(selectedValue)
         
+        
     }else{
         
         const insertPerson = document.getElementById('list-name');
         for (let i = 0; i < selectedValue; i++) {
             const quantityInput = ()=>{
-                const intupLabel = document.createElement('input');
-                intupLabel.className ='guest1';
-                intupLabel.type ='text';
-                intupLabel.placeholder =`invitado ${i+1}`;
-
-                insertPerson.appendChild(intupLabel)
+                const inputLabel = document.createElement('input');
+                inputLabel.className ='guest1';
+                inputLabel.type ='text';
+                inputLabel.placeholder =`invitado ${i+1}`;
+                
+                insertPerson.appendChild(inputLabel)
 
                 console.log(insertPerson);
             }
             quantityInput();
             
         }
-
-        // array.forEach(element => {
-            
-        // });
-
 
         numberSelector.classList.add('hide-checkMark');  // remover el css que oculta y poner el menu que está oculto
         listSelector.classList.remove('lst-hide');  // remover el css que oculta y poner el menu que está oculto
