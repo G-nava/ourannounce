@@ -5,10 +5,10 @@ const locationValue = window.location.search;
 
     const urlParams = new URLSearchParams(locationValue);
 
-    const nombreInvitado = urlParams.get('n');
-    const primerApellido = urlParams.get('p');
-    const segundApellido = urlParams.get('s');
-    const cantidad = urlParams.get('c');
+    const nombreInvitado = urlParams.get('n'); //detecta si hay nombre
+    const primerApellido = urlParams.get('p'); // detecta si hay primer apellido
+    const segundApellido = urlParams.get('s'); // detecta si hay segundo apellido
+    const cantidad = urlParams.get('c'); // detecta si hay cantidad o cupos
     const singlePerson = 1;
     // console.log(cantidad);
 
@@ -62,7 +62,29 @@ images.forEach(image =>{
 
 // https://sheet.best/api/sheets/3e1004e4-657b-49d3-8a85-a9e84f1f220b
 
-if (nombreInvitado != null || nombreInvitado != undefined) {
+if (nombreInvitado != null || nombreInvitado != undefined && cantidad == null || cantidad == undefined) {
+    const singleName = document.querySelector('.sinlePerson');
+    singleName.innerHTML = '';
+
+    const singleP = ()=>{
+
+        const singleNamePerson = document.createElement('h5');
+        singleNamePerson.className = 'onliNameGuest'
+        singleNamePerson.innerHTML = `${nombreInvitado} ${primerApellido} ${segundApellido}`
+        
+        const justConfirm = document.createElement('a');
+        justConfirm.type = 'submit'
+        justConfirm.className = 'btn-single_person'
+        justConfirm.innerHTML = 'confirmar'
+        
+        singleName.appendChild(singleNamePerson);
+        singleName.appendChild(justConfirm);
+    }
+
+    singleP();
+
+
+
     // poner en confirmar asistencia solamente el nombre de la persona
     // acompañada del botón enviar
     
@@ -101,31 +123,28 @@ if (nombreInvitado != null || nombreInvitado != undefined) {
         }
         quantityCheck();
         
-
-
-        
     }
 
     // numberSelector.classList.add('hide-checkMark');  // remover el css que oculta y poner el menu que está oculto
     // listSelector.classList.remove('lst-hide');
 
 }
+
 const numb = document.getElementById("num-selection").addEventListener('click',(f)=>{
     const numberSelector = document.getElementById('check');
     const listSelector = document.querySelector('.type-list');
     f.preventDefault();
-
+    
     /*Si hay uun numero seleccionado en el checkbox quitar el
     primer formulario y mostrar la opcion ede ingresar nombres
     de acuerdo a la cantidad seleccionada */
     const guestNumber = document.querySelectorAll('input[type="radio"][name="numPerson"]');
     const selectedValue = Array.from(guestNumber).find(radio => radio.checked) && Array.from(guestNumber).find(radio => radio.checked).value;;
     
+    
+    
     if (selectedValue == null || selectedValue == "" || selectedValue == undefined ) {
         alert('debes seleccionar la cantidad total de invitados a asistir')
-        // alert(selectedValue)
-        
-        
     }else{
         
         const insertPerson = document.getElementById('list-name');
@@ -135,20 +154,23 @@ const numb = document.getElementById("num-selection").addEventListener('click',(
                 inputLabel.className ='guest1';
                 inputLabel.type ='text';
                 inputLabel.placeholder =`invitado ${i+1}`;
-                
                 insertPerson.appendChild(inputLabel)
-
-                console.log(insertPerson);
             }
             quantityInput();
-            
         }
 
         numberSelector.classList.add('hide-checkMark');  // remover el css que oculta y poner el menu que está oculto
         listSelector.classList.remove('lst-hide');  // remover el css que oculta y poner el menu que está oculto
-        // listSelector.classList.add('lst-show');  // remover el css que oculta y poner el menu que está oculto
-
+        //recresar y cambiar la oipcion de numero de invitados
+        document.querySelector('.goBack').addEventListener('click', ()=>{
+        
+            listSelector.classList.add('lst-hide');
+            numberSelector.classList.remove('hide-checkMark');  // remover el css que oculta y poner el menu que está oculto
+            insertPerson.innerHTML = '';
+        });
     }
+
+    
     
     
     
