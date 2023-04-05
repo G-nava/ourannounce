@@ -2,18 +2,7 @@
 
 .sctn1{
     background: none;
-    
-    .familyName{
-        font-size: 1.25rem;
-        background: white;
-        padding: .5rem 1rem;
-        margin-top: 1.5rem;
-        text-transform: capitalize;
-        font-family: $work-sans;
-        color:$text-color;
-        box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
-    }
-    
+    height: 100%;  
     
     .flower-container{
         // display:inline-table;
@@ -128,6 +117,7 @@
     .content{
         z-index: 100;
         display: grid;
+        gap: 3rem;
         place-items: center;
         justify-content: center;
         align-items: center;
@@ -136,6 +126,37 @@
         padding: 1rem 0;
         background-color: rgba(255, 255, 255, 0.726); // PONBER MÁS TRANSPARENTE
         margin:0 auto;
+
+
+        .versiculo{
+
+            width: 90%;
+            text-align: center;
+            background: white;
+            padding: .5rem 1rem;    
+            // text-transform: lowercase;
+            font-family: $work-sans;
+            color:$text-color;
+            box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+            z-index: 100;
+            font-size: 1.125rem;
+            font-weight: 300;
+
+            // &::first-letter{
+            //     // text-transform: capitalize;
+            // }
+    
+
+    
+            .cita{
+                text-transform: capitalize;
+                line-height: 2;
+                color: $text-color;
+                font-weight: 400;
+                margin-top: .75rem;
+            }
+        }
+        
         
         .first-container{
             position: relative;
@@ -155,6 +176,19 @@
                 font-family: $work-sans;
 
             }
+
+            .familyName{
+                text-transform: capitalize;
+                position: relative;
+                text-align: center;
+                font-family: $work-sans;
+                font-size: 1.5rem;
+                font-weight: 400;
+                padding-bottom: 1rem;
+                color: $text-color;
+
+            }
+
             .reason{
                 // position: relative;
                 margin-top: .5rem;
@@ -168,18 +202,6 @@
                 }
             }
             
-            .versiculo{
-                font-size: 1.125rem;
-                font-weight: 300;
-
-                .cita{
-                    line-height: 2;
-                    color: $text-color;
-                    font-weight: 400;
-                    margin-top: .75rem;
-                }
-
-            }
     
             .main-text{
                 // height: min-content;
@@ -193,7 +215,7 @@
                 align-items: center;
                 font-family: $parisiene;
                 text-transform: capitalize;
-                font-size: 4.5rem;
+                font-size: 4.75rem;
                 font-weight: 100;
                 opacity: 0;
                 // line-height: .8;

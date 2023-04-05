@@ -4,6 +4,10 @@
 .sctn4{
     margin-top: -3rem;
 
+    .borderGold{
+        // border: 2px solid $gold;
+    }
+
     .form{
         background-color: white;
         width: 80%;
@@ -16,10 +20,24 @@
         gap: 2.75rem  1.5rem;
         place-items: center; //////////////
 
+        .message{
+            font-size: 1.5rem;
+            text-align: center;
+
+            
+        }
+        .messageImg{
+            width: 80%;
+            // height: 50%;
+            
+            // background-image: url(../../elements/Recurso\ 1message.png);
+        }
+
         .form_title{
             font-weight: 400;
             color: $text-color;
             font-size: 1.65rem;
+        
         }
 
         .sinlePerson{

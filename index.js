@@ -76,7 +76,18 @@ fetch(FULL_URL)
             const linkUsed = document.querySelector('.form');
 
             if (result.toLowerCase() === dataForGuest && used === 'si'){
-                linkUsed.innerHTML = 'gracias por confirmar tu asistencia';
+                linkUsed.innerHTML = '';
+                const messageTicketUsed = document.createElement('div');
+                messageTicketUsed.className = 'message';
+                messageTicketUsed.innerHTML = 'gracias por confirmar tu asistencia';
+
+                const messageImg = document.createElement('img');
+                messageImg.className = 'messageImg';
+                messageImg.src ='src/style/elements/Recurso 1message.png'
+                
+                linkUsed.classList.add('borderGold')
+                linkUsed.appendChild(messageTicketUsed);
+                linkUsed.appendChild(messageImg);
             }
 
             // si aparece "si" quitar el formulario de confirmación para que no vuelva a ser llenado
@@ -89,7 +100,10 @@ fetch(FULL_URL)
 
 /*================================================================*/
 
-
+/*
+coloca solamente el nombre de la persona y el boton de confirmar 
+cuando la invitacion es individual
+*/
 if (nombreInvitado != null || nombreInvitado != undefined && cantidad == null || cantidad == undefined) {
     const singleName = document.querySelector('.sinlePerson');
     singleName.innerHTML = '';
@@ -111,14 +125,14 @@ if (nombreInvitado != null || nombreInvitado != undefined && cantidad == null ||
     }
     singleP();
 
+/*
+generar los check box deacuerdo al parametro ingresado por URL
+seguido del código de abajo
+en este caso solo serian lo appellidos de las familas y la cantidad 
+de cupos disponbibles
+*/
 
-
-    // poner en confirmar asistencia solamente el nombre de la persona
-    // acompañada del botón enviar
-    
 }else{
-    // generar los check box deacuerdo al parametro ingresado por URL
-    // seguido del código de abajo
     const insertcheck = document.getElementById('group-choice');
     let = html = ''
     for (let i = 0; i < cantidad; i++) {
@@ -145,6 +159,12 @@ if (nombreInvitado != null || nombreInvitado != undefined && cantidad == null ||
     }
 }
 
+/**
+ * Segundo paso: despues de haber seleccionado la cantidad final de
+ * de invitados que van a asistir se cambia el formulario para el 
+ * ingreso de los nombres...
+ */
+
 const numb = document.getElementById("num-selection");
 if (numb) {
     numb.addEventListener('click',(f)=>{
@@ -152,7 +172,7 @@ if (numb) {
         const numberSelector = document.getElementById('check');
         const listSelector = document.querySelector('.type-list');
         
-        /*Si hay uun numero seleccionado en el checkbox quitar el
+        /*Si hay un numero seleccionado en el checkbox quitar el
         primer formulario y mostrar la opcion ede ingresar nombres
         de acuerdo a la cantidad seleccionada */
         const guestNumber = document.querySelectorAll('input[type="radio"][name="numPerson"]');
@@ -187,24 +207,11 @@ if (numb) {
     });
 }
 
-// Get access to the form
 
 const form = document.getElementById('form').addEventListener('submit',(e)=>{
         
     e.preventDefault(); 
     
-    fetch('https://sheet.best/api/sheets/3e1004e4-657b-49d3-8a85-a9e84f1f220b', {
-        method: 'POST',
-        mode: 'cors',
-        headers:{
-            'Content-Type': 'application/json'
-        }
-
-    })
-    // const guestNumber = document.querySelectorAll('input[type="radio"][name="numPerson"]');
-    // const selectedValue = Array.from(guestNumber).find(radio => radio.checked) && Array.from(guestNumber).find(radio => radio.checked).value;;
-    // console.log(selectedValue);
-
 
 })
 
