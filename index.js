@@ -8,13 +8,17 @@ const segundApellido = urlParams.get('s'); // detecta si hay segundo apellido
 const cantidad = urlParams.get('c'); // detecta si hay cantidad o cupos
 const singlePerson = 1;
 
-
+/*
+Muestra la etiqueta de "familia" en caso de existir apellidos solamente
+de lo contrario solo muertra el nombre del invitado
+*/
 if (primerApellido == null && segundApellido == null) {
     document.getElementById('value').style.display = 'none';
 }else{
 
     if (nombreInvitado != null || nombreInvitado != undefined) {
-        document.getElementById('value').innerHTML = `${nombreInvitado} ${primerApellido} ${segundApellido}`
+        const guestHeader = segundApellido == null ? `${nombreInvitado} ${primerApellido}`: `${nombreInvitado} ${primerApellido} ${segundApellido}`;
+        document.getElementById('value').innerHTML = guestHeader;
         // return
     }else{
         document.getElementById('value').innerHTML = `Familia: ${primerApellido} ${segundApellido}`
@@ -43,7 +47,6 @@ observer = new IntersectionObserver((entries) => {
 images.forEach(image =>{
     observer.observe(image)
 })
-
 
 
 const SHEET_ID = '1tRxbmhamPZzTM3vhzsFfcpclvcxygmToIt5mfKahnKE';
@@ -92,10 +95,11 @@ if (nombreInvitado != null || nombreInvitado != undefined && cantidad == null ||
     singleName.innerHTML = '';
 
     const singleP = ()=>{
+        const singleGuestForm = segundApellido == null ? `${nombreInvitado} ${primerApellido}`: `${nombreInvitado} ${primerApellido} ${segundApellido}`;
 
         const singleNamePerson = document.createElement('h5');
-        singleNamePerson.className = 'onliNameGuest'
-        singleNamePerson.innerHTML = `${nombreInvitado} ${primerApellido} ${segundApellido}`
+        singleNamePerson.className = 'onlyNameGuest'
+        singleNamePerson.innerHTML = singleGuestForm;
         
         const justConfirm = document.createElement('a');
         justConfirm.type = 'submit'

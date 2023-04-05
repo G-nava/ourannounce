@@ -570,7 +570,7 @@ li {
   display: grid;
   place-items: center;
 }
-.sctn4 .form .sinlePerson .onliNameGuest {
+.sctn4 .form .sinlePerson .onlyNameGuest {
   font-size: 1.75rem;
   color: #3f3f3f;
   text-align: center;
