@@ -1,33 +1,28 @@
 const locationValue = window.location.search;
-    // console.log(locationValue);
-    
-    //separar datos
 
-    const urlParams = new URLSearchParams(locationValue);
+const urlParams = new URLSearchParams(locationValue);
 
-    const nombreInvitado = urlParams.get('n'); //detecta si hay nombre
-    const primerApellido = urlParams.get('p'); // detecta si hay primer apellido
-    const segundApellido = urlParams.get('s'); // detecta si hay segundo apellido
-    const cantidad = urlParams.get('c'); // detecta si hay cantidad o cupos
-    const singlePerson = 1;
-    // console.log(cantidad);
+const nombreInvitado = urlParams.get('n'); //detecta si hay nombre
+const primerApellido = urlParams.get('p'); // detecta si hay primer apellido
+const segundApellido = urlParams.get('s'); // detecta si hay segundo apellido
+const cantidad = urlParams.get('c'); // detecta si hay cantidad o cupos
+const singlePerson = 1;
 
-    if (primerApellido == null && segundApellido == null) {
-        document.getElementById('value').style.display = 'none';
+
+if (primerApellido == null && segundApellido == null) {
+    document.getElementById('value').style.display = 'none';
+}else{
+
+    if (nombreInvitado != null || nombreInvitado != undefined) {
+        document.getElementById('value').innerHTML = `${nombreInvitado} ${primerApellido} ${segundApellido}`
+        // return
     }else{
-
-        if (nombreInvitado != null || nombreInvitado != undefined) {
-            document.getElementById('value').innerHTML = `${nombreInvitado} ${primerApellido} ${segundApellido}`
-            // return
-        }else{
-            document.getElementById('value').innerHTML = `Familia: ${primerApellido} ${segundApellido}`
-        }
-
+        document.getElementById('value').innerHTML = `Familia: ${primerApellido} ${segundApellido}`
     }
+}
 
     // nombreInvitado == null && primerApellido == null && segundApellido == null ?
         // document.getElementById('value').style.display = 'none' :
-
 
 
 /*Intersection observer */
@@ -50,17 +45,47 @@ images.forEach(image =>{
 })
 
 
-/*EXCEL DB */
 
-// const SHEET_ID = "1tRxbmhamPZzTM3vhzsFfcpclvcxygmToIt5mfKahnKE";
-// const SHEET_TITTLE = "data_guests";
+const SHEET_ID = '1tRxbmhamPZzTM3vhzsFfcpclvcxygmToIt5mfKahnKE';
+const SHEET_TITTLE = 'data_guests';
+const SHEET_RANGE ='A1:C49';
 
-// const SHEET_RANGE = ""; // for concatenate :/
-// const URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}`
+const FULL_URL = (`https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?sheet=${SHEET_TITTLE}&range=${SHEET_RANGE}`);
 
-// https://docs.google.com/spreadsheets/d/1tRxbmhamPZzTM3vhzsFfcpclvcxygmToIt5mfKahnKE/edit?usp=sharing
+/*
+Codigo que que consulta al google sheet si el link ya fue usado
+tomando como base los datos ingresados a la URL
+*/
+fetch(FULL_URL)
+    .then(res => res.text())
+    .then(rep =>{
+        const data = JSON.parse(rep.slice(47).slice(0,-2))
 
-// https://sheet.best/api/sheets/3e1004e4-657b-49d3-8a85-a9e84f1f220b
+        data.table.rows.forEach((element, index)=>{
+            // const objct = data.table.rows
+            // const dataForGuest = nombreInvitado ? `${nombreInvitado} ${primerApellido} ${segundApellido}` : ` ${primerApellido} ${segundApellido}`
+
+            // console.log(element.c[0].v == dataForGuest)
+            const dataForGuest = nombreInvitado ? `${nombreInvitado} ${primerApellido} ${segundApellido}` : `${primerApellido} ${segundApellido}`
+            const result = element.c[0].v
+            const used = element.c[2].v  // si vs null
+
+            const linkUsed = document.querySelector('.form');
+
+            if (result.toLowerCase() === dataForGuest && used === 'si'){
+                linkUsed.innerHTML = 'gracias por confirmar tu asistencia';
+            }
+
+            // si aparece "si" quitar el formulario de confirmación para que no vuelva a ser llenado
+            console.log(used);
+            console.log(result.toLowerCase() === dataForGuest)
+            
+        });
+
+    });
+
+/*================================================================*/
+
 
 if (nombreInvitado != null || nombreInvitado != undefined && cantidad == null || cantidad == undefined) {
     const singleName = document.querySelector('.sinlePerson');
@@ -80,7 +105,6 @@ if (nombreInvitado != null || nombreInvitado != undefined && cantidad == null ||
         singleName.appendChild(singleNamePerson);
         singleName.appendChild(justConfirm);
     }
-
     singleP();
 
 
@@ -117,54 +141,67 @@ if (nombreInvitado != null || nombreInvitado != undefined && cantidad == null ||
     }
 }
 
-const numb = document.getElementById("num-selection").addEventListener('click',(f)=>{
-    const numberSelector = document.getElementById('check');
-    const listSelector = document.querySelector('.type-list');
-    f.preventDefault();
-    
-    /*Si hay uun numero seleccionado en el checkbox quitar el
-    primer formulario y mostrar la opcion ede ingresar nombres
-    de acuerdo a la cantidad seleccionada */
-    const guestNumber = document.querySelectorAll('input[type="radio"][name="numPerson"]');
-    const selectedValue = Array.from(guestNumber).find(radio => radio.checked) && Array.from(guestNumber).find(radio => radio.checked).value;;
-      
-    if (selectedValue == null || selectedValue == "" || selectedValue == undefined ) {
-        alert('debes seleccionar la cantidad total de invitados a asistir')
-    }else{
+const numb = document.getElementById("num-selection");
+if (numb) {
+    numb.addEventListener('click',(f)=>{
+        f.preventDefault();
+        const numberSelector = document.getElementById('check');
+        const listSelector = document.querySelector('.type-list');
         
-        const insertPerson = document.getElementById('list-name');
-        for (let i = 0; i < selectedValue; i++) {
-            const quantityInput = ()=>{
-                const inputLabel = document.createElement('input');
-                inputLabel.className ='guest1';
-                inputLabel.type ='text';
-                inputLabel.placeholder =`invitado ${i+1}`;
-                insertPerson.appendChild(inputLabel)
+        /*Si hay uun numero seleccionado en el checkbox quitar el
+        primer formulario y mostrar la opcion ede ingresar nombres
+        de acuerdo a la cantidad seleccionada */
+        const guestNumber = document.querySelectorAll('input[type="radio"][name="numPerson"]');
+        const selectedValue = Array.from(guestNumber).find(radio => radio.checked) && Array.from(guestNumber).find(radio => radio.checked).value;;
+          
+        if (selectedValue == null || selectedValue == "" || selectedValue == undefined ) {
+            alert('debes seleccionar la cantidad total de invitados a asistir')
+        }else{
+            
+            const insertPerson = document.getElementById('list-name');
+            for (let i = 0; i < selectedValue; i++) {
+                const quantityInput = ()=>{
+                    const inputLabel = document.createElement('input');
+                    inputLabel.className ='guest1';
+                    inputLabel.type ='text';
+                    inputLabel.placeholder =`invitado ${i+1}`;
+                    insertPerson.appendChild(inputLabel)
+                }
+                quantityInput();
             }
-            quantityInput();
+    
+            numberSelector.classList.add('hide-checkMark');  // remover el css que oculta y poner el menu que está oculto
+            listSelector.classList.remove('lst-hide');  // remover el css que oculta y poner el menu que está oculto
+            //recresar y cambiar la oipcion de numero de invitados
+            document.querySelector('.goBack').addEventListener('click', ()=>{
+            
+                listSelector.classList.add('lst-hide');
+                numberSelector.classList.remove('hide-checkMark');  // remover el css que oculta y poner el menu que está oculto
+                insertPerson.innerHTML = '';
+            });
         }
-
-        numberSelector.classList.add('hide-checkMark');  // remover el css que oculta y poner el menu que está oculto
-        listSelector.classList.remove('lst-hide');  // remover el css que oculta y poner el menu que está oculto
-        //recresar y cambiar la oipcion de numero de invitados
-        document.querySelector('.goBack').addEventListener('click', ()=>{
-        
-            listSelector.classList.add('lst-hide');
-            numberSelector.classList.remove('hide-checkMark');  // remover el css que oculta y poner el menu que está oculto
-            insertPerson.innerHTML = '';
-        });
-    }
-});
+    });
+}
 
 // Get access to the form
 
 const form = document.getElementById('form').addEventListener('submit',(e)=>{
         
-    e.preventDefault();  
-    const guestNumber = document.querySelectorAll('input[type="radio"][name="numPerson"]');
-    const selectedValue = Array.from(guestNumber).find(radio => radio.checked) && Array.from(guestNumber).find(radio => radio.checked).value;;
-    console.log(selectedValue);
-})
+    e.preventDefault(); 
+    
+    fetch('https://sheet.best/api/sheets/3e1004e4-657b-49d3-8a85-a9e84f1f220b', {
+        method: 'POST',
+        mode: 'cors',
+        headers:{
+            'Content-Type': 'application/json'
+        }
 
+    })
+    // const guestNumber = document.querySelectorAll('input[type="radio"][name="numPerson"]');
+    // const selectedValue = Array.from(guestNumber).find(radio => radio.checked) && Array.from(guestNumber).find(radio => radio.checked).value;;
+    // console.log(selectedValue);
+
+
+})
 
 
