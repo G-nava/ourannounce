@@ -9,3 +9,8 @@
     from = "/*"
     to   = "/:splat"
     status = 200
+
+[[redirects]]
+    from = "/*"
+    to   = "asistencia.html"
+    status = 200

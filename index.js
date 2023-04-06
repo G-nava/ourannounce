@@ -52,6 +52,7 @@ images.forEach(image =>{
 const SHEET_ID = '1tRxbmhamPZzTM3vhzsFfcpclvcxygmToIt5mfKahnKE';
 const SHEET_TITTLE = 'data_guests';
 const SHEET_RANGE ='A1:C49';
+const SHEET_RANGE_INSERT ='C2:J49';
 
 const FULL_URL = (`https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?sheet=${SHEET_TITTLE}&range=${SHEET_RANGE}`);
 
@@ -91,22 +92,50 @@ fetch(FULL_URL)
             }
 
             // si aparece "si" quitar el formulario de confirmación para que no vuelva a ser llenado
-            console.log(used);
-            console.log(result.toLowerCase() === dataForGuest)
-            
+            // console.log(used);
+            // console.log(result.toLowerCase() === dataForGuest)    
         });
-
     });
 
 /*================================================================*/
-
 /*
 coloca solamente el nombre de la persona y el boton de confirmar 
 cuando la invitacion es individual
 */
-if (nombreInvitado != null || nombreInvitado != undefined && cantidad == null || cantidad == undefined) {
+
+const insertcheck = document.getElementById('group-choice');
+
+const funct = ()=>{
+
+    for (let i = 0; i < cantidad; i++) {
+        const quantityCheck = ()=>{
+            const inputCheck = document.createElement('input');
+            // input class="rad" type="radio" name="numPerson" id="select" value="1"
+            
+            inputCheck.className ="rad";
+            inputCheck.type ='radio';
+            inputCheck.name ='numPerson';
+            inputCheck.id ='select';
+            inputCheck.value =`${i+1}`;
+            
+            const inputLabelCheck = document.createElement('label');
+            inputLabelCheck.className = 'label_check';
+            // label class="label_check"
+        
+            inputLabelCheck.appendChild(inputCheck);
+            const numeroCheckBox = document.createTextNode(`${i+1}`)
+            inputLabelCheck.appendChild(numeroCheckBox)
+            insertcheck.appendChild(inputLabelCheck)
+        }
+       
+        quantityCheck();      
+    }
+}
+
+if (nombreInvitado != null  && cantidad == null ) {
     const singleName = document.querySelector('.sinlePerson');
     singleName.innerHTML = '';
+    
 
     const singleP = ()=>{
         const singleGuestForm = segundApellido == null ? `${nombreInvitado} ${primerApellido}`: `${nombreInvitado} ${primerApellido} ${segundApellido}`;
@@ -132,31 +161,11 @@ en este caso solo serian lo appellidos de las familas y la cantidad
 de cupos disponbibles
 */
 
-}else{
-    const insertcheck = document.getElementById('group-choice');
-    let = html = ''
-    for (let i = 0; i < cantidad; i++) {
-        const quantityCheck = ()=>{
-            const inputCheck = document.createElement('input');
-            // input class="rad" type="radio" name="numPerson" id="select" value="1"
-            
-            inputCheck.className ="rad";
-            inputCheck.type ='radio';
-            inputCheck.name ='numPerson';
-            inputCheck.id ='select';
-            inputCheck.value =`${i+1}`;
-            
-            const inputLabelCheck = document.createElement('label');
-            inputLabelCheck.className = 'label_check';
-            // label class="label_check"
+}else if (nombreInvitado != null || nombreInvitado != undefined && cantidad != null || cantidad != undefined) {
+    funct(); // persona invitada con acompañante
 
-            inputLabelCheck.appendChild(inputCheck);
-            const numeroCheckBox = document.createTextNode(`${i+1}`)
-            inputLabelCheck.appendChild(numeroCheckBox)
-            insertcheck.appendChild(inputLabelCheck)
-        }
-        quantityCheck();      
-    }
+}else{
+    funct(); // familia invitada con cupos
 }
 
 /**
@@ -188,6 +197,7 @@ if (numb) {
                     const inputLabel = document.createElement('input');
                     inputLabel.className ='guest1';
                     inputLabel.type ='text';
+                    inputLabel.setAttribute('required','required');
                     inputLabel.placeholder =`invitado ${i+1}`;
                     insertPerson.appendChild(inputLabel)
                 }
@@ -208,6 +218,8 @@ if (numb) {
 }
 
 
+// console.log(rep);
+
 const form = document.getElementById('form').addEventListener('submit',(e)=>{
         
     e.preventDefault(); 
@@ -216,3 +228,41 @@ const form = document.getElementById('form').addEventListener('submit',(e)=>{
 })
 
 
+function familyJSON(){
+    fetch('src/family.json')
+    .then(res=>{
+        return res.json();
+    })
+    .then(data=>{
+        data.forEach(d=>{
+            console.log(d);
+        })
+
+    })
+}
+
+
+familyJSON();
+
+
+
+const conf = 'si';
+
+fetch('src/family.json')
+    .then(response => response.json())
+    .then(data => {
+        data.confirm = 'si'; // Modificamos la edad
+        return data; // Retornamos el objeto modificado
+    })
+    .then(data => {
+        fetch('src/family.json', {
+        method: 'PUT', // Método para modificar el archivo
+        body: JSON.stringify(data), // Convertimos el objeto a JSON
+        headers: {
+            'Content-Type': 'application/json'
+        }
+        })
+        .then(() => console.log('Archivo modificado con éxito'))
+        .catch(error => console.error('Error al modificar el archivo:', error));
+    })
+.catch(error => console.error('Error al cargar el archivo:', error));
