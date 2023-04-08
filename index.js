@@ -228,41 +228,95 @@ const form = document.getElementById('form').addEventListener('submit',(e)=>{
 })
 
 
-function familyJSON(){
-    fetch('src/family.json')
-    .then(res=>{
-        return res.json();
-    })
-    .then(data=>{
-        data.forEach(d=>{
-            console.log(d);
-        })
+// function familyJSON(){
+//     fetch('src/family.json')
+//     .then(res=>{
+//         return res.json();
+//     })
+//     .then(data=>{
+//         data.forEach(d=>{
+//             console.log(d);
+//         })
 
-    })
-}
-
-
-familyJSON();
+//     })
+// }
 
 
+// familyJSON();
 
-const conf = 'si';
 
-fetch('src/family.json')
-    .then(response => response.json())
-    .then(data => {
-        data.confirm = 'si'; // Modificamos la edad
-        return data; // Retornamos el objeto modificado
-    })
-    .then(data => {
-        fetch('src/family.json', {
-        method: 'PUT', // Método para modificar el archivo
-        body: JSON.stringify(data), // Convertimos el objeto a JSON
-        headers: {
-            'Content-Type': 'application/json'
-        }
-        })
-        .then(() => console.log('Archivo modificado con éxito'))
-        .catch(error => console.error('Error al modificar el archivo:', error));
-    })
-.catch(error => console.error('Error al cargar el archivo:', error));
+
+
+
+// fetch('src/family.json')
+//     .then(response => response.json())
+//     .then(data => {
+//         data[0].confirm = 'si'; // Modificamos la edad
+//         return data; // Retornamos el objeto modificado
+//     })
+//     .then(data => {
+//         fetch('src/family.JSON', {
+//         method: 'POST', // Método para modificar el archivo
+//         body: JSON.stringify(data), // Convertimos el objeto a JSON
+//         headers: {
+//             'Content-Type': 'application/json'
+//         }
+//         })
+//         .then(() => console.log('Archivo modificado con éxito'))
+//         .catch(error => console.error('Error al modificar el archivo:', error));
+//     })
+// .catch(error => console.error('Error al cargar el archivo:', error));
+
+// const fileJson = "/src/family.json"
+
+// // visualizar datos
+// fetch(fileJson)
+//     .then(function(resp){
+//         return resp.json();
+//     })
+//     .then((data)=>{
+//         console.log(data);
+//     });
+
+//     const data = 'yolo'
+
+// fetch(fileJson, {
+//     method: 'POST',
+//     // headers: {
+//     //     'Content-Type' : 'application/json'
+//     // },
+//     body: JSON.stringify(data)
+
+// })
+    // .then(function(resp){
+    //     return resp.json();
+    // })
+    // .then((data)=>{
+    //     console.log(data);
+    // });
+
+
+    const gitName = 'g-nava'
+    const repoName = 'guest.json'
+    const urlGit = `https://${gitName}.github.io/dataFileGuest/${repoName}`
+    
+    // visualizar datos
+    // fetch(urlGit)
+    //     .then(function(resp){
+    //         return resp.json();
+    //     })
+    //     .then((data)=>{
+    //         console.log(data);
+    //     });
+    
+
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET', urlGit);
+    xhr.onload = function() {
+      if (xhr.status === 200) {
+        console.log(JSON.parse(xhr.responseText));
+      } else {
+        console.log('Error: ' + xhr.status);
+      }
+    };
+    xhr.send();
