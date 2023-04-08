@@ -314,7 +314,7 @@ const form = document.getElementById('form').addEventListener('submit',(e)=>{
     xhr.open('GET', urlGit);
     xhr.onload = function() {
       if (xhr.status === 200) {
-        console.log(JSON.parse(xhr.responseText));
+        // console.log(JSON.parse(xhr.responseText));
       } else {
         console.log('Error: ' + xhr.status);
       }

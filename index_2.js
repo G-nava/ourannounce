@@ -1,4 +1,30 @@
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js";
 
+  const firebaseConfig = {
+    apiKey: "AIzaSyAqMrmoMVuydj3EyA2UclpV54SNXfwkfjM",
+    authDomain: "data-storage-a60be.firebaseapp.com",
+    databaseURL: "https://data-storage-a60be-default-rtdb.firebaseio.com",
+    projectId: "data-storage-a60be",
+    storageBucket: "data-storage-a60be.appspot.com",
+    messagingSenderId: "303177073307",
+    appId: "1:303177073307:web:cb5229274a3074aa1bbc3e"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+
+//   import {getDataBase,  ref, child, onValue, get, post} from "https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js";
+
+//   const getDB = getDataBase();
+
+//   function getAllData(){
+//     const dbRef = ref(getDB);
+
+//     get(child(dbRef, "data-storage" ))
+//     .then((snapshot)=>{
+//         let s
+//     })
+//   }
 
 // const gitName = 'g-nava'
 // const repoName = 'guest.json'
@@ -12,7 +38,7 @@
 //     .then((data)=>{
 //         console.log(data);
 //     });
-
+console.log('bingbong');
 
 
 
