@@ -1,18 +1,21 @@
  // Import the functions you need from the SDKs you need
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js";
 
-import {getFirestore,
-        collection, 
-        addDoc,
-        getDocs } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-firestore.js"
+// import {getFirestore,
+//         collection, 
+//         addDoc,
+//         getDocs } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-firestore.js"
 
 import { getDatabase, 
          ref,
          set,
+         get,
          child,
          push,
          update,
-         remove } from 'https://www.gstatic.com/firebasejs/9.19.1/firebase-database.js'
+         remove,
+         onValue  } from 'https://www.gstatic.com/firebasejs/9.19.1/firebase-database.js'
+        //  import { } from "https://www.gstatic.com/firebasejs/9.18.0/firebase-database.js"
  // TODO: Add SDKs for Firebase products that you want to use
  // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -28,29 +31,38 @@ import { getDatabase,
 
  // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const db = getFirestore();
+// const db = getFirestore();
 
 
- export const saveTask = (guest1)=>{
-  addDoc(collection(db, 'guests'),{
-    guest1
-  });
- }
+//  export const saveTask = (guest1)=>{
+//   addDoc(collection(db, 'guests'),{
+//     guest1
+//   });
+//  }
 
- export const getTasks = ()=> getDocs(collection(db,'guests'))
+//  export const getTasks = ()=> getDocs(collection(db,'guests'))
+//  export 
+// const database = firebase.database();
 
-const dbJson = getDatabase();
+// import { getDatabase, ref, onValue} from "firebase/database";
+
+const dbRead = getDatabase();
+const starCountRef = ref(dbRead, 'guestWedding/');
+onValue(starCountRef, (snapshot) => {
+  const data = snapshot.val();
+  console.log(data);
+});
+
+
+/*===================== FUNCTION FOR SUBMIT DATA ================== */
+/**  */
 const formData = document.getElementById('form')
-
-/** FUNCTION FOR SUBMIT DATA */
    
 formData.addEventListener('submit',(e)=>{
   e.preventDefault(); // previene el recargue de la página
   
   const formDataGuests = document.querySelectorAll('[id*="input-task"]')
-  // console.log(fdg.value);
-  
-  /* */
+
   update(ref(dbJson, `guestWedding/5/`),{
     confirm: 'si'
   });

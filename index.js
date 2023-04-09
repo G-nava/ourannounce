@@ -1,8 +1,8 @@
-// import { saveTask , getTasks} from './firebase.js'
+// import { getGuests } from './firebase.js'
 
 
 window.addEventListener('DOMContentLoaded', async ()=>{
-    // const querySnapshot = await getTasks()
+    // const querySnapshot = await getGuests()
     // querySnapshot.forEach(query =>{
     //     console.log(query.data());
     // })
