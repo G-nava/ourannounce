@@ -1,12 +1,20 @@
-// import { getGuests } from './firebase.js'
+import { queryData } from './firebase.js'
 
 
-window.addEventListener('DOMContentLoaded', async ()=>{
-    // const querySnapshot = await getGuests()
-    // querySnapshot.forEach(query =>{
+// window.addEventListener('DOMContentLoaded', async ()=>{
+    // const queryPeople = await starCountRef()
+    // queryPeople.forEach(query =>{
     //     console.log(query.data());
+    // console.log(starCountRef);
+    // console.log(starCountRef.val());
     // })
-});
+                    // const main = async () => {
+                    //     const data = await queryData();
+                    //     console.log(data);
+                    //   };
+
+                    //   main();
+// });
 
 const locationValue = window.location.search;
 
@@ -51,6 +59,21 @@ const FULL_URL = (`https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?sh
 Codigo que que consulta al google sheet si el link ya fue usado
 tomando como base los datos ingresados a la URL
 */
+const main = async () => {
+    const data = await queryData();
+    data.forEach((dt)=>{
+
+        console.log(dt.name);
+    })
+};
+  
+main();
+
+
+
+
+
+
 fetch(FULL_URL)
     .then(res => res.text())
     .then(rep =>{

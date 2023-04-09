@@ -31,27 +31,19 @@ import { getDatabase,
 
  // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-// const db = getFirestore();
 
-
-//  export const saveTask = (guest1)=>{
-//   addDoc(collection(db, 'guests'),{
-//     guest1
-//   });
-//  }
-
-//  export const getTasks = ()=> getDocs(collection(db,'guests'))
-//  export 
-// const database = firebase.database();
-
-// import { getDatabase, ref, onValue} from "firebase/database";
-
-const dbRead = getDatabase();
-const starCountRef = ref(dbRead, 'guestWedding/');
-onValue(starCountRef, (snapshot) => {
-  const data = snapshot.val();
-  console.log(data);
-});
+/*=========================== READ DATA ===========================*/
+ export const queryData = async ()=>{
+  const dbRead = getDatabase();
+  const starCountRef = ref(dbRead, 'guestWedding/');
+  const snapshot = await get(starCountRef);
+  const data = snapshot.val()
+  return data
+  // onValue(starCountRef, (snapshot) => {
+  //   const data = snapshot.val();
+  //   console.log(data);
+  // });
+}
 
 
 /*===================== FUNCTION FOR SUBMIT DATA ================== */
