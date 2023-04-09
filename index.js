@@ -1,3 +1,13 @@
+// import { saveTask , getTasks} from './firebase.js'
+
+
+window.addEventListener('DOMContentLoaded', async ()=>{
+    // const querySnapshot = await getTasks()
+    // querySnapshot.forEach(query =>{
+    //     console.log(query.data());
+    // })
+});
+
 const locationValue = window.location.search;
 
 const urlParams = new URLSearchParams(locationValue);
@@ -28,25 +38,6 @@ if (primerApellido == null && segundApellido == null) {
     // nombreInvitado == null && primerApellido == null && segundApellido == null ?
         // document.getElementById('value').style.display = 'none' :
 
-
-/*Intersection observer */
-const images = document.querySelectorAll('.anim');
-
-observer = new IntersectionObserver((entries) => {
-    // console.log(entries);
-    entries.forEach(entry =>{
-        if (entry.intersectionRatio > 0) {
-            entry.target.style.animation = `anim1 1.5s ${entry.target.dataset.delay} forwards ease-out`;
-        }
-        // else{
-        //     entry.target.style.animation = `none`;
-        // }
-    })
-});
-
-images.forEach(image =>{
-    observer.observe(image)
-})
 
 
 const SHEET_ID = '1tRxbmhamPZzTM3vhzsFfcpclvcxygmToIt5mfKahnKE';
@@ -196,6 +187,7 @@ if (numb) {
                 const quantityInput = ()=>{
                     const inputLabel = document.createElement('input');
                     inputLabel.className ='guest1';
+                    inputLabel.id = `input-task userGuest${i+1}`;
                     inputLabel.type ='text';
                     inputLabel.setAttribute('required','required');
                     inputLabel.placeholder =`invitado ${i+1}`;
@@ -220,12 +212,19 @@ if (numb) {
 
 // console.log(rep);
 
-const form = document.getElementById('form').addEventListener('submit',(e)=>{
+// const formData = document.getElementById('form')
+// formData.addEventListener('submit',(e)=>{
         
-    e.preventDefault(); 
-    
+//     e.preventDefault(); // previene el recargue de la página
+//     const formDataGuests = document.querySelectorAll('[id*="input-task"]')
+//     formDataGuests.forEach((fdg)=>{
+//         // console.log(fdg.value);
+//         saveTask(fdg.value)
+        
+//     });
 
-})
+//     formData.reset();// clean the form
+// });
 
 
 // function familyJSON(){
@@ -296,9 +295,9 @@ const form = document.getElementById('form').addEventListener('submit',(e)=>{
     // });
 
 
-    const gitName = 'g-nava'
-    const repoName = 'guest.json'
-    const urlGit = `https://${gitName}.github.io/dataFileGuest/${repoName}`
+    // const gitName = 'g-nava'
+    // const repoName = 'guest.json'
+    // const urlGit = `https://${gitName}.github.io/dataFileGuest/${repoName}`
     
     // visualizar datos
     // fetch(urlGit)
@@ -310,13 +309,13 @@ const form = document.getElementById('form').addEventListener('submit',(e)=>{
     //     });
     
 
-    const xhr = new XMLHttpRequest();
-    xhr.open('GET', urlGit);
-    xhr.onload = function() {
-      if (xhr.status === 200) {
-        // console.log(JSON.parse(xhr.responseText));
-      } else {
-        console.log('Error: ' + xhr.status);
-      }
-    };
-    xhr.send();
+    // const xhr = new XMLHttpRequest();
+    // xhr.open('GET', urlGit);
+    // xhr.onload = function() {
+    //   if (xhr.status === 200) {
+    //     // console.log(JSON.parse(xhr.responseText)); 
+    //   } else {
+    //     console.log('Error: ' + xhr.status);
+    //   }
+    // };
+    // xhr.send();
