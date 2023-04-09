@@ -48,80 +48,63 @@ if (primerApellido == null && segundApellido == null) {
 
 
 
-const SHEET_ID = '1tRxbmhamPZzTM3vhzsFfcpclvcxygmToIt5mfKahnKE';
-const SHEET_TITTLE = 'data_guests';
-const SHEET_RANGE ='A1:C49';
-const SHEET_RANGE_INSERT ='C2:J49';
+// const SHEET_ID = '1tRxbmhamPZzTM3vhzsFfcpclvcxygmToIt5mfKahnKE';
+// const SHEET_TITTLE = 'data_guests';
+// const SHEET_RANGE ='A1:C49';
+// const SHEET_RANGE_INSERT ='C2:J49';
 
-const FULL_URL = (`https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?sheet=${SHEET_TITTLE}&range=${SHEET_RANGE}`);
+// const FULL_URL = (`https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?sheet=${SHEET_TITTLE}&range=${SHEET_RANGE}`);
 
 /*
 Codigo que que consulta al google sheet si el link ya fue usado
 tomando como base los datos ingresados a la URL
 */
+const verf1 = `${primerApellido} ${segundApellido}`;
+const verf2 = `${nombreInvitado} ${primerApellido}`;
+const verf3 = `${nombreInvitado} ${primerApellido} ${segundApellido}`;
+
+// console.log((verf1 || verf2 || verf3));
+
 const main = async () => {
     const data = await queryData();
     data.forEach((dt)=>{
+        const linkUsed = document.querySelector('.form');
+        // console.log(dt.name);
+        // console.log(dt.capacity);
+        // console.log(dt.confirm === 'si');
 
-        console.log(dt.name);
-    })
-};
-  
-main();
+        if ((dt.confirm === 'si' && dt.name == verf1)||(dt.confirm === 'si' && dt.name == verf2)||(dt.confirm === 'si' && dt.name == verf3)){
+            linkUsed.innerHTML = '';
+            const messageTicketUsed = document.createElement('div');
+            messageTicketUsed.className = 'message';
+            messageTicketUsed.innerHTML = 'gracias por confirmar tu asistencia';
 
-
-
-
-
-
-fetch(FULL_URL)
-    .then(res => res.text())
-    .then(rep =>{
-        const data = JSON.parse(rep.slice(47).slice(0,-2))
-
-        data.table.rows.forEach((element, index)=>{
-            // const objct = data.table.rows
-            // const dataForGuest = nombreInvitado ? `${nombreInvitado} ${primerApellido} ${segundApellido}` : ` ${primerApellido} ${segundApellido}`
-
-            // console.log(element.c[0].v == dataForGuest)
-            const dataForGuest = nombreInvitado ? `${nombreInvitado} ${primerApellido} ${segundApellido}` : `${primerApellido} ${segundApellido}`
-            const result = element.c[0].v
-            const used = element.c[2].v  // si vs null
-
-            const linkUsed = document.querySelector('.form');
-
-            if (result.toLowerCase() === dataForGuest && used === 'si'){
-                linkUsed.innerHTML = '';
-                const messageTicketUsed = document.createElement('div');
-                messageTicketUsed.className = 'message';
-                messageTicketUsed.innerHTML = 'gracias por confirmar tu asistencia';
-
-                const messageImg = document.createElement('img');
-                messageImg.className = 'messageImg';
-                messageImg.src ='src/style/elements/Recurso 1message.png'
-                
-                linkUsed.classList.add('borderGold')
-                linkUsed.appendChild(messageTicketUsed);
-                linkUsed.appendChild(messageImg);
-            }
-
+            const messageImg = document.createElement('img');
+            messageImg.className = 'messageImg';
+            messageImg.src ='src/style/elements/Recurso 1message.png'
+            
+            linkUsed.classList.add('borderGold')
+            linkUsed.appendChild(messageTicketUsed);
+            linkUsed.appendChild(messageImg);
             // si aparece "si" quitar el formulario de confirmación para que no vuelva a ser llenado
             // console.log(used);
-            // console.log(result.toLowerCase() === dataForGuest)    
-        });
-    });
-
-/*================================================================*/
-/*
-coloca solamente el nombre de la persona y el boton de confirmar 
-cuando la invitacion es individual
-*/
+            // console.log(result.toLowerCase() === dataForGuest)  
+        }
+            /**
+             * en el caso tal de no haber ningun dato confirmado
+             * se procede a desplegar la seccion de checkboxes
+             */
+            
+        })
+    };
+    main();
+    
 
 const insertcheck = document.getElementById('group-choice');
 
-const funct = ()=>{
+const funct = ()=>{ // fncion para generar los checkboxes
 
-    for (let i = 0; i < cantidad; i++) {
+    for (let i = 0; i < cantidad; i++) { //por cada numero indicado en URL
         const quantityCheck = ()=>{
             const inputCheck = document.createElement('input');
             // input class="rad" type="radio" name="numPerson" id="select" value="1"
@@ -140,47 +123,89 @@ const funct = ()=>{
             const numeroCheckBox = document.createTextNode(`${i+1}`)
             inputLabelCheck.appendChild(numeroCheckBox)
             insertcheck.appendChild(inputLabelCheck)
-        }
-       
+        }          
         quantityCheck();      
     }
 }
-
-if (nombreInvitado != null  && cantidad == null ) {
-    const singleName = document.querySelector('.sinlePerson');
-    singleName.innerHTML = '';
     
-
-    const singleP = ()=>{
-        const singleGuestForm = segundApellido == null ? `${nombreInvitado} ${primerApellido}`: `${nombreInvitado} ${primerApellido} ${segundApellido}`;
-
-        const singleNamePerson = document.createElement('h5');
-        singleNamePerson.className = 'onlyNameGuest'
-        singleNamePerson.innerHTML = singleGuestForm;
+console.log('here')
+    if (nombreInvitado != null  && cantidad == null ) {
+        const singleName = document.querySelector('.sinlePerson');
+        singleName.innerHTML = '';
         
-        const justConfirm = document.createElement('a');
-        justConfirm.type = 'submit'
-        justConfirm.className = 'btn-single_person'
-        justConfirm.innerHTML = 'confirmar'
-        
-        singleName.appendChild(singleNamePerson);
-        singleName.appendChild(justConfirm);
+        const singleP = ()=>{
+            const singleGuestForm = segundApellido == null ? `${nombreInvitado} ${primerApellido}`: `${nombreInvitado} ${primerApellido} ${segundApellido}`;
+
+            const singleNamePerson = document.createElement('h5');
+            singleNamePerson.className = 'onlyNameGuest'
+            singleNamePerson.innerHTML = singleGuestForm;
+            
+            const justConfirm = document.createElement('a');
+            justConfirm.type = 'submit'
+            justConfirm.className = 'btn-single_person'
+            justConfirm.innerHTML = 'confirmar'
+            
+            singleName.appendChild(singleNamePerson);
+            singleName.appendChild(justConfirm);
+        }
+        singleP();
+
+    /*
+    generar los check box deacuerdo al parametro ingresado por URL
+    seguido del código de abajo
+    en este caso solo serian lo appellidos de las familas y la cantidad 
+    de cupos disponbibles
+    */
+
+    }else if (nombreInvitado != null || nombreInvitado != undefined && cantidad != null || cantidad != undefined) {
+        funct(); // persona invitada con acompañante
+
+    }else{
+        funct(); // familia invitada con cupos
     }
-    singleP();
 
+// fetch(FULL_URL)
+//     .then(res => res.text())
+//     .then(rep =>{
+//         const data = JSON.parse(rep.slice(47).slice(0,-2))
+
+//         data.table.rows.forEach((element, index)=>{// <----------------
+
+//             // const dataForGuest = nombreInvitado ? `${nombreInvitado} ${primerApellido} ${segundApellido}` : `${primerApellido} ${segundApellido}`
+//             const result = element.c[0].v
+//             const used = element.c[2].v  // si vs null
+
+//             // const linkUsed = document.querySelector('.form');
+
+//             if (result.toLowerCase() === dataForGuest && used === 'si'){
+//                 linkUsed.innerHTML = '';
+//                 const messageTicketUsed = document.createElement('div');
+//                 messageTicketUsed.className = 'message';
+//                 messageTicketUsed.innerHTML = 'gracias por confirmar tu asistencia';
+
+//                 const messageImg = document.createElement('img');
+//                 messageImg.className = 'messageImg';
+//                 messageImg.src ='src/style/elements/Recurso 1message.png'
+                
+//                 linkUsed.classList.add('borderGold')
+//                 linkUsed.appendChild(messageTicketUsed);
+//                 linkUsed.appendChild(messageImg);
+//             }
+
+//             // si aparece "si" quitar el formulario de confirmación para que no vuelva a ser llenado
+//             // console.log(used);
+//             // console.log(result.toLowerCase() === dataForGuest)    
+//         });
+//     });
+
+/*================================================================*/
 /*
-generar los check box deacuerdo al parametro ingresado por URL
-seguido del código de abajo
-en este caso solo serian lo appellidos de las familas y la cantidad 
-de cupos disponbibles
+coloca solamente el nombre de la persona y el boton de confirmar 
+cuando la invitacion es individual
 */
 
-}else if (nombreInvitado != null || nombreInvitado != undefined && cantidad != null || cantidad != undefined) {
-    funct(); // persona invitada con acompañante
 
-}else{
-    funct(); // familia invitada con cupos
-}
+
 
 /**
  * Segundo paso: despues de haber seleccionado la cantidad final de
@@ -205,6 +230,10 @@ if (numb) {
             alert('debes seleccionar la cantidad total de invitados a asistir')
         }else{
             
+            /**
+             * Genera los inputs de acuerdo a la cantidad de 
+             * datos seleccionados en los checkboxes  
+             */
             const insertPerson = document.getElementById('list-name');
             for (let i = 0; i < selectedValue; i++) {
                 const quantityInput = ()=>{
