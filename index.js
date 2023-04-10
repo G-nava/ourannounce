@@ -38,6 +38,7 @@ function resultData(result){
     de lo contrario solo muertra el nombre del invitado
     */
    const gender = document.getElementById('reason')
+   console.log(result);
    if (result.name == null || result.name == undefined) {
        document.getElementById('value').style.display = 'none';
     }else{
