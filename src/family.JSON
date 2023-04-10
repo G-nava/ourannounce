@@ -1,289 +1,344 @@
 {
     "guestWedding": [
         {
+            "name":"",
+            "familia": "no",
+            "capacity" : 1,
+            "confirm": "",
+            "numPer": ""
+        },
+        {
             "name":"rutto duarte",
+            "familia": "si",
             "capacity" : 2,
             "confirm": "",
             "numPer": ""
         },
         {
             "name":"forte rutto",
+            "familia": "si",
             "capacity" : 2,
             "confirm": "",
             "numPer": ""
         },
         {
             "name":"rutto martínez.",
+            "familia": "si",
             "capacity" : 7,
             "confirm": "",
             "numPer": ""
         },
         {
             "name":"rutto martínez",
+            "familia": "si",
             "capacity" : 2,
             "confirm": "",
             "numPer": ""
         },
         {
             "name":"ernesto martínez",
+            "familia": "no",
             "capacity" : 2,
             "confirm": "",
             "numPer": ""
         },
         {
             "name":"ismail rutto",
+            "familia": "si",
             "capacity" : 2,
             "confirm": "",
             "numPer": ""
         },
         {
             "name":"rutto ortega",
+            "familia": "si",
             "capacity" : 2,
             "confirm": "",
             "numPer": ""
         },
         {
             "name":"sotomayor canchano",
+            "familia": "si",
             "capacity" : 2,
             "confirm": "",
             "numPer": ""
         },
         {
             "name":"caicedo vanegas",
+            "familia": "si",
             "capacity" : 2,
             "confirm": "",
             "numPer": ""
         },
         {
             "name":"manotas caicedo",
+            "familia": "si",
             "capacity" : 3,
             "confirm": "",
             "numPer": ""
         },
         {
             "name":"alcira caicedo vanegas",
+            "familia": "no",
             "capacity" : 1,
             "confirm": "",
             "numPer": ""
         },
         {
             "name":"prieto reyes",
+            "familia": "si",
             "capacity" : 3,
             "confirm": "",
             "numPer": ""
         },
         {
             "name":"thobinson caicedo",
+            "familia": "si",
             "capacity" : 2,
             "confirm": "",
             "numPer": ""
         },
         {
             "name":"daniela ojeda hernández",
+            "familia": "no",
             "capacity" : 1,
             "confirm": "",
             "numPer": ""
         },
         {
             "name":"hernandez hernandez",
+            "familia": "si",
             "capacity" : 4,
             "confirm": "",
             "numPer": ""
         },
         {
             "name":"denci sierra vanegas",
+            "familia": "no",
             "capacity" : 1,
             "confirm": "",
             "numPer": ""
         },
         {
             "name":"tom pacheco jiménez",
+            "familia": "no",
             "capacity" : 1,
             "confirm": "",
             "numPer": ""
         },
         {
             "name":"manjarrez suárez",
+            "familia": "si",
             "capacity" : 5,
             "confirm": "",
             "numPer": ""
         },
         {
             "name":"ivanna villareal cuesta",
+            "familia": "no",
             "capacity" : 1,
             "confirm": "",
             "numPer": ""
         },
         {
             "name":"yomaris brito",
+            "familia": "no",
             "capacity" : 1,
             "confirm": "",
             "numPer": ""
         },
         {
             "name": "cuesta tamayo",
+            "familia": "si",
             "capacity": 2,
             "confirm": "",
             "numPer": ""
         },
         {
             "name": "josé gabriel rivera zabala",
+            "familia": "no",
             "capacity": 1,
             "confirm": "",
             "numPer": ""
         },
         {
             "name": "yolidy navarro martínez",
+            "familia": "no",
             "capacity": 1,
             "confirm": "",
             "numPer": ""
         },
         {
             "name": "campo correa",
+            "familia": "si",
             "capacity": 2,
             "confirm": "",
             "numPer": ""
         },
         {
             "name": "tatiana villazón julio",
+            "familia": "no",
             "capacity": 2,
             "confirm": "",
             "numPer": ""
         },
         {
             "name": "andrea gutierrez gonzález",
+            "familia": "no",
             "capacity": 1,
             "confirm": "",
             "numPer": ""
         },
         {
             "name": "toncel molina",
+            "familia": "si",
             "capacity": 2,
             "confirm": "",
             "numPer": ""
         },
         {
             "name": "maría mónica cuellar camero",
+            "familia": "no",
             "capacity": 1,
             "confirm": "",
             "numPer": ""
         },
         {
             "name": "yara de la cruz",
+            "familia": "no",
             "capacity": 1,
             "confirm": "",
             "numPer": ""
         },
         {
             "name": "maideth marchena",
+            "familia": "no",
             "capacity": 1,
             "confirm": "",
             "numPer": ""
         },
         {
             "name": "eva ospino",
+            "familia": "no",
             "capacity": 1,
             "confirm": "",
             "numPer": ""
         },
         {
             "name": "santiago muñoz",
+            "familia": "no",
             "capacity": 1,
             "confirm": "",
             "numPer": ""
         },
         {
             "name": "muñoz jímenez",
+            "familia": "si",
             "capacity": 2,
             "confirm": "",
             "numPer": ""
         },
         {
             "name": "muñoz pedroza",
+            "familia": "si",
             "capacity": 4,
             "confirm": "",
             "numPer": ""
         },
         {
             "name": "karen muñoz",
+            "familia": "no",
             "capacity": 5,
             "confirm": "",
             "numPer": ""
         },
         {
             "name": "muñoz bastidas",
+            "familia": "si",
             "capacity": 2,
             "confirm": "",
             "numPer": ""
         },
         {
             "name": "ana rivera",
+            "familia": "no",
             "capacity": 1,
             "confirm": "",
             "numPer": ""
         },
         {
             "name": "uribe rivera ",
+            "familia": "si",
             "capacity": 4,
             "confirm": "",
             "numPer": ""
         },
         {
             "name": "castillo barreto",
+            "familia": "si",
             "capacity": 2,
             "confirm": "",
             "numPer": ""
         },
         {
             "name": "uriel pájaro",
+            "familia": "si",
             "capacity": 1,
             "confirm": "",
             "numPer": ""
         },
         {
             "name": "estefania osorio",
+            "familia": "no",
             "capacity": 2,
             "confirm": "",
             "numPer": ""
         },
         {
             "name": "jilian iglesias",
+            "familia": "no",
             "capacity": 1,
             "confirm": "",
             "numPer": ""
         },
         {
             "name": "carlos cano",
+            "familia": "no",
             "capacity": 1,
             "confirm": "",
             "numPer": ""
         },
         {
             "name": "gabriel caro",
+            "familia": "no",
             "capacity": 1,
             "confirm": "",
             "numPer": ""
         },
         {
             "name": "barbara garces",
+            "familia": "no",
             "capacity": 2,
             "confirm": "",
             "numPer": ""
         },
         {
             "name": "carlos quintero",
+            "familia": "no",
             "capacity": 2,
             "confirm": "",
             "numPer": ""
         },
         {
             "name": "dawin jiménez",
+            "familia": "no",
             "capacity": 2,
             "confirm": "",
             "numPer": ""
         },
         {
             "name": "yerlis saldarriaga ",
+            "familia": "no",
             "capacity": 1,
             "confirm": "",
             "numPer": ""

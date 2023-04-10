@@ -360,6 +360,11 @@ li {
   display: grid;
   grid-auto-flow: row;
 }
+.sctn1 .content .first-container .bold-lugar {
+  text-transform: capitalize;
+  color: #3f3f3f;
+  font-weight: 400;
+}
 .sctn1 .content .first-container .city {
   font-weight: 300;
   font-size: 1.135rem;

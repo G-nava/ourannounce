@@ -308,6 +308,12 @@
                     grid-auto-flow: row;                
                 }
             }
+            .bold-lugar{
+                text-transform: capitalize;
+                color: $text-color;
+                font-weight: 400;
+
+            }
             .city{
                 font-weight: 300;
                 font-size: 1.135rem;
@@ -317,6 +323,7 @@
                 width: 100%;
                 // opacity: 0;
                 // color: #202020;
+                
                 .parroquia{
                     text-transform: capitalize;
                     color: $text-color;
