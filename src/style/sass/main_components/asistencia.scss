@@ -1,6 +1,7 @@
 @use "variables.scss" as *;
 
 .asistencia_body{
+    color: $text-color;
     font-family: $work-sans;
     display: grid;
     height: 100vh;
