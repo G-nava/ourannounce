@@ -467,14 +467,15 @@ li {
   display: grid;
   place-items: center;
   width: 80%;
-  padding: 3rem 1rem;
+  padding: 3.5rem 1rem;
+  opacity: 0;
 }
 .sctn3 .content_sect3 .dress_icon {
   max-width: 18%;
   fill: #202020;
 }
 .sctn3 .content_sect3 .dresscode {
-  margin-top: 1rem;
+  margin-top: 2rem;
   width: 100%;
   padding: 0.5rem 1rem;
   background-color: #f3adb9;
@@ -527,7 +528,7 @@ li {
   text-transform: uppercase;
 }
 .sctn3 .content_sect3 .reserva_color {
-  margin-top: 1.5rem;
+  margin-top: 2rem;
 }
 .sctn3 .wtrclr-on-sctn-3, .sctn3 .wtrclr-on-sctn-3_1, .sctn3 .flwr_sctn-3-1 {
   position: absolute;
@@ -573,6 +574,7 @@ li {
   padding: 3rem 1rem;
   gap: 2.75rem 1.5rem;
   place-items: center;
+  opacity: 0;
 }
 .sctn4 .form .message {
   font-size: 1.5rem;

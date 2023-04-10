@@ -90,7 +90,8 @@ const main = async () => {
             messageTicketUsed.innerHTML = 'gracias por confirmar tu asistencia,<br>nos vemos en cartagena.';
 
             const messageImg = document.createElement('img');
-            messageImg.className = 'messageImg';
+            messageImg.className = 'messageImg anim';
+            // messageImg.setAttribute('data-delay','.5s');
             messageImg.src ='src/style/elements/Recurso 1message.png'
             
             linkUsed.classList.add('borderGold')
