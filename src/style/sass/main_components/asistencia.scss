@@ -1,0 +1,29 @@
+@use "variables.scss" as *;
+
+.asistencia_body{
+    font-family: $work-sans;
+    display: grid;
+    height: 100vh;
+    // justify-content: center;
+    // align-items: center;
+    place-items: center;
+    margin: 0 auto;
+    
+    .asistencia_main{
+        // place-items: center;
+        width: 90%;
+        display: inline-block;
+        margin: 0 auto;
+
+        .asistencia_header{
+            display:flex;
+
+            .asistencia_h1-titulo{
+                display: grid;
+                text-align: center;
+                font-size: 1.5rem;
+                text-transform: uppercase;
+            }
+        }
+    }
+}

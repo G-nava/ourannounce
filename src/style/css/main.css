@@ -795,4 +795,26 @@ li {
   margin-top: -3rem;
 }
 
+.asistencia_body {
+  font-family: "Work Sans";
+  display: grid;
+  height: 100vh;
+  place-items: center;
+  margin: 0 auto;
+}
+.asistencia_body .asistencia_main {
+  width: 90%;
+  display: inline-block;
+  margin: 0 auto;
+}
+.asistencia_body .asistencia_main .asistencia_header {
+  display: flex;
+}
+.asistencia_body .asistencia_main .asistencia_header .asistencia_h1-titulo {
+  display: grid;
+  text-align: center;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
 /*# sourceMappingURL=main.css.map */

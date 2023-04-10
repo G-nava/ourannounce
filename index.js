@@ -37,16 +37,20 @@ function resultData(result){
     Muestra la etiqueta de "familia" en caso de existir apellidos solamente
     de lo contrario solo muertra el nombre del invitado
     */
-    if (result.name == null || result.name == undefined) {
-        document.getElementById('value').style.display = 'none';
+   const gender = document.getElementById('reason')
+   if (result.name == null || result.name == undefined) {
+       document.getElementById('value').style.display = 'none';
     }else{
-    
+        
         if (result.familia == 'no') {
+            const getGender = result.genero === 'f' ? 'estas invitada a celebrar nuestra boda': 'estas invitado a celebrar nuestra boda'
+            gender.innerHTML = getGender;
             // const guestHeader = segundApellido == null ? `${nombreInvitado} ${primerApellido}`: `${nombreInvitado} ${primerApellido} ${segundApellido}`;
             document.getElementById('value').innerHTML = result.name;
             // return
         }else{
             document.getElementById('value').innerHTML = `Familia: ${result.name}`
+            gender.innerHTML = 'estan invitados a celebrar nuestra boda'
         }
     }
     
@@ -54,10 +58,6 @@ function resultData(result){
     Codigo que que consulta al google sheet si el link ya fue usado
     tomando como base los datos ingresados a la URL
     */
-    const verf1 = `${primerApellido} ${segundApellido}`;
-    const verf2 = `${nombreInvitado} ${primerApellido}`;
-    const verf3 = `${nombreInvitado} ${primerApellido} ${segundApellido}`;
-    
     // console.log((verf1 || verf2 || verf3));
     
     const main = async () => {
@@ -288,17 +288,3 @@ function resultData(result){
 };
 
 
-
-/*================= LISTAR EN PAGINA DE ASISTENCIA =================*/
-document.getElementById('asistencia_list-container').innerHTML = 'hola'
-const asistenciaList = ()=>{
-    const ulList = document.createElement('ul');
-    const liList = document.createElement('li');
-    inputLabel.className ='guest1';
-    inputLabel.id = `input-task userGuest${i+1}`;
-    inputLabel.type ='text';
-    inputLabel.setAttribute('required','required');
-    inputLabel.placeholder =`invitado ${i+1}`;
-    insertPerson.appendChild(inputLabel)
-}
-quantityInput();

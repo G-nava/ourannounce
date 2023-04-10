@@ -2,6 +2,7 @@
     "guestWedding": [
         {
             "name":"",
+            "genero": "",
             "familia": "no",
             "capacity" : 1,
             "confirm": "",
@@ -9,6 +10,7 @@
         },
         {
             "name":"rutto duarte",
+            "genero": "",
             "familia": "si",
             "capacity" : 2,
             "confirm": "",
@@ -16,6 +18,7 @@
         },
         {
             "name":"forte rutto",
+            "genero": "",
             "familia": "si",
             "capacity" : 2,
             "confirm": "",
@@ -23,6 +26,7 @@
         },
         {
             "name":"rutto martínez.",
+            "genero": "",
             "familia": "si",
             "capacity" : 7,
             "confirm": "",
@@ -30,6 +34,7 @@
         },
         {
             "name":"rutto martínez",
+            "genero": "",
             "familia": "si",
             "capacity" : 2,
             "confirm": "",
@@ -37,6 +42,7 @@
         },
         {
             "name":"ernesto martínez",
+            "genero": "m",
             "familia": "no",
             "capacity" : 2,
             "confirm": "",
@@ -44,6 +50,7 @@
         },
         {
             "name":"ismail rutto",
+            "genero": "",
             "familia": "si",
             "capacity" : 2,
             "confirm": "",
@@ -51,6 +58,7 @@
         },
         {
             "name":"rutto ortega",
+            "genero": "",
             "familia": "si",
             "capacity" : 2,
             "confirm": "",
@@ -58,6 +66,7 @@
         },
         {
             "name":"sotomayor canchano",
+            "genero": "",
             "familia": "si",
             "capacity" : 2,
             "confirm": "",
@@ -65,6 +74,7 @@
         },
         {
             "name":"caicedo vanegas",
+            "genero": "",
             "familia": "si",
             "capacity" : 2,
             "confirm": "",
@@ -72,6 +82,7 @@
         },
         {
             "name":"manotas caicedo",
+            "genero": "",
             "familia": "si",
             "capacity" : 3,
             "confirm": "",
@@ -79,6 +90,7 @@
         },
         {
             "name":"alcira caicedo vanegas",
+            "genero": "f",
             "familia": "no",
             "capacity" : 1,
             "confirm": "",
@@ -86,6 +98,7 @@
         },
         {
             "name":"prieto reyes",
+            "genero": "",
             "familia": "si",
             "capacity" : 3,
             "confirm": "",
@@ -93,6 +106,7 @@
         },
         {
             "name":"thobinson caicedo",
+            "genero": "",
             "familia": "si",
             "capacity" : 2,
             "confirm": "",
@@ -100,6 +114,7 @@
         },
         {
             "name":"daniela ojeda hernández",
+            "genero": "f",
             "familia": "no",
             "capacity" : 1,
             "confirm": "",
@@ -107,6 +122,7 @@
         },
         {
             "name":"hernandez hernandez",
+            "genero": "",
             "familia": "si",
             "capacity" : 4,
             "confirm": "",
@@ -114,6 +130,7 @@
         },
         {
             "name":"denci sierra vanegas",
+            "genero": "f",
             "familia": "no",
             "capacity" : 1,
             "confirm": "",
@@ -121,6 +138,7 @@
         },
         {
             "name":"tom pacheco jiménez",
+            "genero": "m",
             "familia": "no",
             "capacity" : 1,
             "confirm": "",
@@ -128,6 +146,7 @@
         },
         {
             "name":"manjarrez suárez",
+            "genero": "",
             "familia": "si",
             "capacity" : 5,
             "confirm": "",
@@ -135,6 +154,7 @@
         },
         {
             "name":"ivanna villareal cuesta",
+            "genero": "f",
             "familia": "no",
             "capacity" : 1,
             "confirm": "",
@@ -142,6 +162,7 @@
         },
         {
             "name":"yomaris brito",
+            "genero": "f",
             "familia": "no",
             "capacity" : 1,
             "confirm": "",
@@ -149,6 +170,7 @@
         },
         {
             "name": "cuesta tamayo",
+            "genero": "",
             "familia": "si",
             "capacity": 2,
             "confirm": "",
@@ -156,6 +178,7 @@
         },
         {
             "name": "josé gabriel rivera zabala",
+            "genero": "m",
             "familia": "no",
             "capacity": 1,
             "confirm": "",
@@ -163,6 +186,7 @@
         },
         {
             "name": "yolidy navarro martínez",
+            "genero": "f",
             "familia": "no",
             "capacity": 1,
             "confirm": "",
@@ -170,6 +194,7 @@
         },
         {
             "name": "campo correa",
+            "genero": "",
             "familia": "si",
             "capacity": 2,
             "confirm": "",
@@ -177,6 +202,7 @@
         },
         {
             "name": "tatiana villazón julio",
+            "genero": "f",
             "familia": "no",
             "capacity": 2,
             "confirm": "",
@@ -184,6 +210,7 @@
         },
         {
             "name": "andrea gutierrez gonzález",
+            "genero": "f",
             "familia": "no",
             "capacity": 1,
             "confirm": "",
@@ -191,6 +218,7 @@
         },
         {
             "name": "toncel molina",
+            "genero": "",
             "familia": "si",
             "capacity": 2,
             "confirm": "",
@@ -198,6 +226,7 @@
         },
         {
             "name": "maría mónica cuellar camero",
+            "genero": "f",
             "familia": "no",
             "capacity": 1,
             "confirm": "",
@@ -205,6 +234,7 @@
         },
         {
             "name": "yara de la cruz",
+            "genero": "",
             "familia": "no",
             "capacity": 1,
             "confirm": "",
@@ -212,6 +242,7 @@
         },
         {
             "name": "maideth marchena",
+            "genero": "f",
             "familia": "no",
             "capacity": 1,
             "confirm": "",
@@ -219,6 +250,7 @@
         },
         {
             "name": "eva ospino",
+            "genero": "f",
             "familia": "no",
             "capacity": 1,
             "confirm": "",
@@ -226,6 +258,7 @@
         },
         {
             "name": "santiago muñoz",
+            "genero": "m",
             "familia": "no",
             "capacity": 1,
             "confirm": "",
@@ -233,6 +266,7 @@
         },
         {
             "name": "muñoz jímenez",
+            "genero": "",
             "familia": "si",
             "capacity": 2,
             "confirm": "",
@@ -240,6 +274,7 @@
         },
         {
             "name": "muñoz pedroza",
+            "genero": "",
             "familia": "si",
             "capacity": 4,
             "confirm": "",
@@ -247,6 +282,7 @@
         },
         {
             "name": "karen muñoz",
+            "genero": "f",
             "familia": "no",
             "capacity": 5,
             "confirm": "",
@@ -254,6 +290,7 @@
         },
         {
             "name": "muñoz bastidas",
+            "genero": "",
             "familia": "si",
             "capacity": 2,
             "confirm": "",
@@ -261,6 +298,7 @@
         },
         {
             "name": "ana rivera",
+            "genero": "f",
             "familia": "no",
             "capacity": 1,
             "confirm": "",
@@ -268,6 +306,7 @@
         },
         {
             "name": "uribe rivera ",
+            "genero": "",
             "familia": "si",
             "capacity": 4,
             "confirm": "",
@@ -275,6 +314,7 @@
         },
         {
             "name": "castillo barreto",
+            "genero": "",
             "familia": "si",
             "capacity": 2,
             "confirm": "",
@@ -282,6 +322,7 @@
         },
         {
             "name": "uriel pájaro",
+            "genero": "",
             "familia": "si",
             "capacity": 1,
             "confirm": "",
@@ -289,6 +330,7 @@
         },
         {
             "name": "estefania osorio",
+            "genero": "f",
             "familia": "no",
             "capacity": 2,
             "confirm": "",
@@ -296,13 +338,15 @@
         },
         {
             "name": "jilian iglesias",
-            "familia": "no",
+            "genero": "",
+            "familia": "si",
             "capacity": 1,
             "confirm": "",
             "numPer": ""
         },
         {
             "name": "carlos cano",
+            "genero": "m",
             "familia": "no",
             "capacity": 1,
             "confirm": "",
@@ -310,6 +354,7 @@
         },
         {
             "name": "gabriel caro",
+            "genero": "m",
             "familia": "no",
             "capacity": 1,
             "confirm": "",
@@ -317,6 +362,7 @@
         },
         {
             "name": "barbara garces",
+            "genero": "f",
             "familia": "no",
             "capacity": 2,
             "confirm": "",
@@ -324,6 +370,7 @@
         },
         {
             "name": "carlos quintero",
+            "genero": "m",
             "familia": "no",
             "capacity": 2,
             "confirm": "",
@@ -331,6 +378,7 @@
         },
         {
             "name": "dawin jiménez",
+            "genero": "m",
             "familia": "no",
             "capacity": 2,
             "confirm": "",
@@ -338,6 +386,7 @@
         },
         {
             "name": "yerlis saldarriaga ",
+            "genero": "f",
             "familia": "no",
             "capacity": 1,
             "confirm": "",
