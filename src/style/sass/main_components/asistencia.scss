@@ -25,5 +25,30 @@
                 text-transform: uppercase;
             }
         }
+
+        .asistencia_list-container{
+
+            .table{
+                width: 100%;
+                // border: 1px solid #999;
+                text-align: left;
+                border-collapse: collapse;
+                margin: 2rem 0 1rem 0;
+                caption-side: top;
+                thead, tbody{
+                    text-transform: capitalize
+                    ;
+                }
+
+                td, th {
+                    // all: unset;
+                    // display: table-column;
+                    padding: 0.3em;
+                    border-bottom: 1px solid #999;
+                    width: min-content;
+                }
+            }
+        }
+
     }
 }

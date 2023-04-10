@@ -816,5 +816,20 @@ li {
   font-size: 1.5rem;
   text-transform: uppercase;
 }
+.asistencia_body .asistencia_main .asistencia_list-container .table {
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+  margin: 2rem 0 1rem 0;
+  caption-side: top;
+}
+.asistencia_body .asistencia_main .asistencia_list-container .table thead, .asistencia_body .asistencia_main .asistencia_list-container .table tbody {
+  text-transform: capitalize;
+}
+.asistencia_body .asistencia_main .asistencia_list-container .table td, .asistencia_body .asistencia_main .asistencia_list-container .table th {
+  padding: 0.3em;
+  border-bottom: 1px solid #999;
+  width: min-content;
+}
 
 /*# sourceMappingURL=main.css.map */

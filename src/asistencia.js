@@ -1,19 +1,6 @@
 
 /*================= LISTAR EN PAGINA DE ASISTENCIA =================*/
 import { queryData} from '../firebase.js'
-const main = async () => {
-    const data = await queryData();
-    // data.forEach((dt, index)=>{
-    //     // const linkUsed = document.querySelector('.form');
-    //     // console.log(dt.name);
-    //     asistenciaList(dt)
-    
-    // });
-        asistenciaList(data)
-}
-main();
-
-const asistHeadetTitle = []
 let html = '';
 const asistenciaList = (data)=>{
 
@@ -31,6 +18,7 @@ const asistenciaList = (data)=>{
     const tbody = document.createElement('tbody');
     const td = document.createElement('td');
     const table = document.createElement('table');
+    table.className = 'table'
 
     th.innerHTML = '#';
 
@@ -43,9 +31,54 @@ const asistenciaList = (data)=>{
     let th4 = th.cloneNode(true);
     th4.innerHTML = 'nombres';
 
-    tr.append(th, th2, th3, th4);
+    let th5 = th.cloneNode(true);
+    th5.innerHTML = 'total';
+    
+    let tr1 = tr.cloneNode(true);
+    tr1.append(th, th2, th3, th4, th5);
 
-    table.appendChild(tr)
+    thead.appendChild(tr1)
+    table.appendChild(thead)
+
+    const main = async () => {
+        const data = await queryData();
+        const objeto = data.slice(1);
+        objeto.forEach((dt, index)=>{
+            // const linkUsed = document.querySelector('.form');
+            // console.log(dt.name);
+            // asistenciaList(dt)
+            let thN = th.cloneNode(true);
+            thN.innerHTML = `${index+1}`;
+            
+            let td1 = td.cloneNode(true);
+            td1.innerHTML = `${dt.name}`;
+
+            let td2 = td.cloneNode(true);
+            td2.innerHTML = `${dt.confirm}`;
+
+            let td3 = td.cloneNode(true);
+            td3.innerHTML = `${Object.values(dt.numPer)}`;
+            
+            let td4 = td.cloneNode(true);
+            // console.log(Object.keys(td.numPer));
+            // const obj = JSON.parse(dt);
+            console.log(Object.keys(dt.numPer).length);
+            const numPerLength = Object.keys(dt.numPer).length;
+            td4.innerHTML = `${Object.keys(dt.numPer).length}`;
+            // console.log(dt);
+            let tr2 = tr.cloneNode(true);
+            tr2.append(thN, td1, td2, td3, td4);
+
+            // tr2.appendChild;
+
+            tbody.appendChild(tr2)
+            table.appendChild(tbody)
+
+        
+        });
+            // asistenciaList(data)
+    }
+    main();
     
 
 
