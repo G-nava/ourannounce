@@ -291,3 +291,14 @@ function resultData(result){
 
 /*================= LISTAR EN PAGINA DE ASISTENCIA =================*/
 document.getElementById('asistencia_list-container').innerHTML = 'hola'
+const asistenciaList = ()=>{
+    const ulList = document.createElement('ul');
+    const liList = document.createElement('li');
+    inputLabel.className ='guest1';
+    inputLabel.id = `input-task userGuest${i+1}`;
+    inputLabel.type ='text';
+    inputLabel.setAttribute('required','required');
+    inputLabel.placeholder =`invitado ${i+1}`;
+    insertPerson.appendChild(inputLabel)
+}
+quantityInput();
