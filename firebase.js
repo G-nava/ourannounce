@@ -46,44 +46,60 @@ const app = initializeApp(firebaseConfig);
 }
 
 
-/*===================== FUNCTION FOR SUBMIT DATA ================== */
-/**  */
-const formData = document.getElementById('form')
+/*===================== SUBMIT DATA ================== */
+// export const dbJson = getDatabase();
+// const updateJson = update(dbJson)
+export { getDatabase, 
+         ref,
+         set,
+         get,
+         child,
+         push,
+         update,
+         remove,
+         onValue  
+}
+
+// const refDir = ref(dbJson,`guestWedding/5/`)
+
+
+
+// const formData = document.getElementById('form')
    
-formData.addEventListener('submit',(e)=>{
-  e.preventDefault(); // previene el recargue de la página
+// formData.addEventListener('submit',(e)=>{
+//   e.preventDefault(); 
   
-  const formDataGuests = document.querySelectorAll('[id*="input-task"]')
+//   const formDataGuests = document.querySelectorAll('[id*="input-task"]')
 
-  update(ref(dbJson, `guestWedding/5/`),{
-    confirm: 'si'
-  });
+//   update(ref(dbJson, `guestWedding/5/`),{
+//     confirm: 'si'
+//   });
 
-  const refDir = ref(dbJson,`guestWedding/5/`);
-  const newArray = []; //  Agregar un array vacio
-  set(child(refDir, 'numPer'), newArray);
+//   const refDir = ref(dbJson,`guestWedding/5/`);
+//   const newArray = []; //  Agregar un array vacio
+//   set(child(refDir, 'numPer'), newArray);
 
-  /**
-   * - La funcion 'child' de firebase está siendo usada para construir 
-   * una referencia al nodo 'numPer' en la ruta 'refDir'
-   * - La funcion set de firebase se usa para escribir un valor en la base 
-   * de datos de firebase. En este caso el valor que se está creando es 
-   * un array vacío 'newArray', y se está escribiendo en la ruta construida
-   * por la funcion child
-   */
+//   /**
+//    * - La funcion 'child' de firebase está siendo usada para construir 
+//    * una referencia al nodo 'numPer' en la ruta 'refDir'
+//    * - La funcion set de firebase se usa para escribir un valor en la base 
+//    * de datos de firebase. En este caso el valor que se está creando es 
+//    * un array vacío 'newArray', y se está escribiendo en la ruta construida
+//    * por la funcion child
+//    */
 
 
-  formDataGuests.forEach((fdg, index)=>{
-    const newGuest = {[`invitado${index+1}`]:fdg.value}
-    update(child(refDir,'numPer' ),newGuest);
-    /**
-     * refDir: referencia al nodo principal en la base de datos
-     * numPer: es el nombre del subnodo que se quiere actualizar 
-     *         dentro de refDir.
-     * newGuest: es el objeto que contiene los nuevos datos que se desean
-     *           agregar a numPer
-     */
-  });
+//   formDataGuests.forEach((fdg, index)=>{
+//     const newGuest = {[`invitado${index+1}`]:fdg.value}
+//     update(child(refDir,'numPer' ),newGuest);
+//     /**
+//      * refDir: referencia al nodo principal en la base de datos
+//      * numPer: es el nombre del subnodo que se quiere actualizar 
+//      *         dentro de refDir.
+//      * newGuest: es el objeto que contiene los nuevos datos que se desean
+//      *           agregar a numPer
+//      */
+//   });
 
-    formData.reset();// clean the form
-});
+//     formData.reset();// clean the form
+// });

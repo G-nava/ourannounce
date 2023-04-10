@@ -1,5 +1,13 @@
-import { queryData } from './firebase.js'
-
+import { queryData} from './firebase.js'
+import { getDatabase, 
+    ref,
+    set,
+    get,
+    child,
+    push,
+    update,
+    remove,
+    onValue  } from './firebase.js'
 
 // window.addEventListener('DOMContentLoaded', async ()=>{
     // const queryPeople = await starCountRef()
@@ -67,17 +75,19 @@ const verf3 = `${nombreInvitado} ${primerApellido} ${segundApellido}`;
 
 const main = async () => {
     const data = await queryData();
-    data.forEach((dt)=>{
+    data.forEach((dt, index)=>{
         const linkUsed = document.querySelector('.form');
-        // console.log(dt.name);
+
+
         // console.log(dt.capacity);
         // console.log(dt.confirm === 'si');
 
         if ((dt.confirm === 'si' && dt.name == verf1)||(dt.confirm === 'si' && dt.name == verf2)||(dt.confirm === 'si' && dt.name == verf3)){
             linkUsed.innerHTML = '';
+            
             const messageTicketUsed = document.createElement('div');
             messageTicketUsed.className = 'message';
-            messageTicketUsed.innerHTML = 'gracias por confirmar tu asistencia';
+            messageTicketUsed.innerHTML = 'gracias por confirmar tu asistencia,<br>nos vemos en cartagena.';
 
             const messageImg = document.createElement('img');
             messageImg.className = 'messageImg';
@@ -128,41 +138,42 @@ const funct = ()=>{ // fncion para generar los checkboxes
     }
 }
     
-console.log('here')
-    if (nombreInvitado != null  && cantidad == null ) {
-        const singleName = document.querySelector('.sinlePerson');
-        singleName.innerHTML = '';
+
+if (nombreInvitado != null  && cantidad == null ) {
+    const singleName = document.querySelector('.singlePerson');
+    singleName.innerHTML = '';
+    
+    const singleP = ()=>{
+        const singleGuestForm = segundApellido == null ? `${nombreInvitado} ${primerApellido}`: `${nombreInvitado} ${primerApellido} ${segundApellido}`;
+
+        const singleNamePerson = document.createElement('h5');
+        singleNamePerson.className = 'onlyNameGuest'
+        singleNamePerson.id = 'input-task'
+        singleNamePerson.innerHTML = singleGuestForm;
         
-        const singleP = ()=>{
-            const singleGuestForm = segundApellido == null ? `${nombreInvitado} ${primerApellido}`: `${nombreInvitado} ${primerApellido} ${segundApellido}`;
-
-            const singleNamePerson = document.createElement('h5');
-            singleNamePerson.className = 'onlyNameGuest'
-            singleNamePerson.innerHTML = singleGuestForm;
-            
-            const justConfirm = document.createElement('a');
-            justConfirm.type = 'submit'
-            justConfirm.className = 'btn-single_person'
-            justConfirm.innerHTML = 'confirmar'
-            
-            singleName.appendChild(singleNamePerson);
-            singleName.appendChild(justConfirm);
-        }
-        singleP();
-
-    /*
-    generar los check box deacuerdo al parametro ingresado por URL
-    seguido del código de abajo
-    en este caso solo serian lo appellidos de las familas y la cantidad 
-    de cupos disponbibles
-    */
-
-    }else if (nombreInvitado != null || nombreInvitado != undefined && cantidad != null || cantidad != undefined) {
-        funct(); // persona invitada con acompañante
-
-    }else{
-        funct(); // familia invitada con cupos
+        const justConfirm = document.createElement('button');
+        justConfirm.type = 'submit'
+        justConfirm.className = 'btn-single_person'
+        justConfirm.innerHTML = 'confirmar'
+        
+        singleName.appendChild(singleNamePerson);
+        singleName.appendChild(justConfirm);
     }
+singleP();
+
+/*
+generar los check box deacuerdo al parametro ingresado por URL
+seguido del código de abajo
+en este caso solo serian lo appellidos de las familas y la cantidad 
+de cupos disponbibles
+*/
+
+}else if (nombreInvitado != null || nombreInvitado != undefined && cantidad != null || cantidad != undefined) {
+    funct(); // persona invitada con acompañante
+
+}else{
+    funct(); // familia invitada con cupos
+}
 
 // fetch(FULL_URL)
 //     .then(res => res.text())
@@ -371,3 +382,64 @@ if (numb) {
     //   }
     // };
     // xhr.send();
+
+    const formData = document.getElementById('form');
+    
+    formData.addEventListener('submit', async (e)=>{
+        console.log('done');
+        
+        e.preventDefault();
+        const formDataGuests = document.querySelectorAll('[id*="input-task"]')
+        /**traer posicion del array al que corresponde el nombre */ 
+        const dbJson = getDatabase()
+        const getForSubmit = await queryData();
+    getForSubmit.forEach((getSubm, index)=>{
+        // console.log(verf3);
+        
+        if (( getSubm.name == verf1)||( getSubm.name == verf2)||(getSubm.name == verf3)) {
+            // console.log(index);
+            if(getSubm.capacity === 1){
+                update(ref(dbJson, `guestWedding/${index}/`),{
+                  confirm: 'si'
+                });
+
+            }else{
+
+                update(ref(dbJson, `guestWedding/${index}/`),{
+                  confirm: 'si'
+                });
+            
+                const refDir = ref(dbJson,`guestWedding/${index}/`);
+                const newArray = []; //  Agregar un array vacio
+                
+                set(child(refDir, 'numPer'), newArray);
+              
+                /**
+                 * - La funcion 'child' de firebase está siendo usada para construir 
+                 * una referencia al nodo 'numPer' en la ruta 'refDir'
+                 * - La funcion set de firebase se usa para escribir un valor en la base 
+                 * de datos de firebase. En este caso el valor que se está creando es 
+                 * un array vacío 'newArray', y se está escribiendo en la ruta construida
+                 * por la funcion child
+                 */
+                
+              
+                formDataGuests.forEach((fdg, index)=>{
+                    console.log(fdg.value);// geting undefined
+                  const newGuest = {[`invitado${index+1}`]:fdg.value}
+                  update(child(refDir,'numPer' ),newGuest);
+                  /**
+                   * refDir: referencia al nodo principal en la base de datos
+                   * numPer: es el nombre del subnodo que se quiere actualizar 
+                   *         dentro de refDir.
+                   * newGuest: es el objeto que contiene los nuevos datos que se desean
+                   *           agregar a numPer
+                   */
+                });
+            }
+        }
+    
+    });
+    
+    formData.reset();// clean the form
+});

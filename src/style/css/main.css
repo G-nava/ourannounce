@@ -236,6 +236,7 @@ li {
   z-index: 100;
   font-size: 1.125rem;
   font-weight: 300;
+  opacity: 0;
 }
 .sctn1 .content .versiculo .cita {
   text-transform: capitalize;
@@ -267,6 +268,7 @@ li {
   font-weight: 400;
   padding-bottom: 1rem;
   color: #3f3f3f;
+  opacity: 0;
 }
 .sctn1 .content .first-container .reason {
   margin-top: 0.5rem;
@@ -577,23 +579,23 @@ li {
   text-align: center;
 }
 .sctn4 .form .messageImg {
-  width: 80%;
+  width: 70%;
 }
 .sctn4 .form .form_title {
   font-weight: 400;
   color: #3f3f3f;
   font-size: 1.65rem;
 }
-.sctn4 .form .sinlePerson {
+.sctn4 .form .singlePerson {
   display: grid;
   place-items: center;
 }
-.sctn4 .form .sinlePerson .onlyNameGuest {
+.sctn4 .form .singlePerson .onlyNameGuest {
   font-size: 1.75rem;
   color: #3f3f3f;
   text-align: center;
 }
-.sctn4 .form .sinlePerson .btn-single_person {
+.sctn4 .form .singlePerson .btn-single_person {
   all: unset;
   margin-top: 2rem;
   background-color: #f3adb9;
@@ -605,40 +607,40 @@ li {
   cursor: pointer;
   transition: 0.5s ease-in;
 }
-.sctn4 .form .sinlePerson .btn-single_person:hover {
+.sctn4 .form .singlePerson .btn-single_person:hover {
   background-color: #3f3f3f;
   color: white;
 }
-.sctn4 .form .sinlePerson .check {
+.sctn4 .form .singlePerson .check {
   display: grid;
   place-items: center;
   margin-top: 2rem;
 }
-.sctn4 .form .sinlePerson .check .form_description {
+.sctn4 .form .singlePerson .check .form_description {
   display: block;
   text-transform: lowercase;
   width: 95%;
   text-align: center;
   margin-bottom: 0.75rem;
 }
-.sctn4 .form .sinlePerson .check .form_description::first-letter {
+.sctn4 .form .singlePerson .check .form_description::first-letter {
   text-transform: uppercase;
 }
-.sctn4 .form .sinlePerson .check .group-choice {
+.sctn4 .form .singlePerson .check .group-choice {
   display: grid;
   width: 100%;
   grid-auto-flow: column;
   align-self: center;
   justify-content: space-around;
 }
-.sctn4 .form .sinlePerson .check .group-choice .label_check {
+.sctn4 .form .singlePerson .check .group-choice .label_check {
   display: grid;
   grid-auto-flow: row;
   gap: 0.95rem;
   justify-content: center;
   text-align: center;
 }
-.sctn4 .form .sinlePerson .check .group-choice .label_check .rad {
+.sctn4 .form .singlePerson .check .group-choice .label_check .rad {
   border-radius: 50%;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -662,10 +664,10 @@ li {
   position: relative;
   z-index: 1000;
 }
-.sctn4 .form .sinlePerson .check .group-choice .label_check .rad:checked {
+.sctn4 .form .singlePerson .check .group-choice .label_check .rad:checked {
   background: #f3adb9;
 }
-.sctn4 .form .sinlePerson .check .group-choice .label_check .rad:checked::before {
+.sctn4 .form .singlePerson .check .group-choice .label_check .rad:checked::before {
   position: absolute;
   left: 0;
   top: 50%;
@@ -676,7 +678,7 @@ li {
   transform: translateX(12px) rotate(-45deg);
   transform-origin: left bottom;
 }
-.sctn4 .form .sinlePerson .check .group-choice .label_check .rad:checked::after {
+.sctn4 .form .singlePerson .check .group-choice .label_check .rad:checked::after {
   position: absolute;
   left: 0;
   bottom: 7px;
@@ -687,7 +689,7 @@ li {
   transform: translateX(15px) rotate(-45deg);
   transform-origin: left bottom;
 }
-.sctn4 .form .sinlePerson .check .selection-number {
+.sctn4 .form .singlePerson .check .selection-number {
   margin-top: 2rem;
   text-decoration: none;
   text-transform: uppercase;
@@ -701,18 +703,18 @@ li {
   cursor: pointer;
   transition: 0.5s ease-in;
 }
-.sctn4 .form .sinlePerson .check .selection-number:hover {
+.sctn4 .form .singlePerson .check .selection-number:hover {
   background-color: #3f3f3f;
   color: white;
 }
-.sctn4 .form .sinlePerson .hide-checkMark {
+.sctn4 .form .singlePerson .hide-checkMark {
   display: none;
 }
-.sctn4 .form .sinlePerson .type-list {
+.sctn4 .form .singlePerson .type-list {
   display: grid;
   place-items: center;
 }
-.sctn4 .form .sinlePerson .type-list .goBack {
+.sctn4 .form .singlePerson .type-list .goBack {
   display: grid;
   place-items: center;
   background-color: #f3adb9;
@@ -720,33 +722,33 @@ li {
   border-radius: 50%;
   margin-bottom: 1.5rem;
 }
-.sctn4 .form .sinlePerson .type-list .goBack .arrow {
+.sctn4 .form .singlePerson .type-list .goBack .arrow {
   width: 2rem;
   height: 2rem;
   fill: #202020;
 }
-.sctn4 .form .sinlePerson .type-list .list-people {
+.sctn4 .form .singlePerson .type-list .list-people {
   display: block;
   text-transform: lowercase;
   width: 95%;
   text-align: center;
   margin-bottom: 0.75rem;
 }
-.sctn4 .form .sinlePerson .type-list .list-people::first-letter {
+.sctn4 .form .singlePerson .type-list .list-people::first-letter {
   text-transform: uppercase;
 }
-.sctn4 .form .sinlePerson .type-list .list-name {
+.sctn4 .form .singlePerson .type-list .list-name {
   display: grid;
   place-items: center;
   gap: 1.25rem;
 }
-.sctn4 .form .sinlePerson .type-list .list-name .guest1 {
+.sctn4 .form .singlePerson .type-list .list-name .guest1 {
   text-transform: capitalize;
   font-size: 1rem;
   height: 2rem;
   width: 15.35rem;
 }
-.sctn4 .form .sinlePerson .type-list .btn-confirm {
+.sctn4 .form .singlePerson .type-list .btn-confirm {
   all: unset;
   margin-top: 2rem;
   background-color: #f3adb9;
@@ -758,11 +760,11 @@ li {
   cursor: pointer;
   transition: 0.5s ease-in;
 }
-.sctn4 .form .sinlePerson .type-list .btn-confirm:hover {
+.sctn4 .form .singlePerson .type-list .btn-confirm:hover {
   background-color: #3f3f3f;
   color: white;
 }
-.sctn4 .form .sinlePerson .lst-hide {
+.sctn4 .form .singlePerson .lst-hide {
   display: none;
 }
 

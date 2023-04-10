@@ -4,10 +4,6 @@
 .sctn4{
     margin-top: -3rem;
 
-    .borderGold{
-        // border: 2px solid $gold;
-    }
-
     .form{
         background-color: white;
         width: 80%;
@@ -27,7 +23,7 @@
             
         }
         .messageImg{
-            width: 80%;
+            width: 70%;
             // height: 50%;
             
             // background-image: url(../../elements/Recurso\ 1message.png);
@@ -40,7 +36,7 @@
         
         }
 
-        .sinlePerson{
+        .singlePerson{
             display: grid;
             place-items: center;
             .onlyNameGuest{
