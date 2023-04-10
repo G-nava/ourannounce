@@ -215,7 +215,7 @@ li {
 .sctn1 .content {
   z-index: 100;
   display: grid;
-  gap: 3rem;
+  gap: 2rem;
   place-items: center;
   justify-content: center;
   align-items: center;
@@ -362,9 +362,24 @@ li {
 }
 .sctn1 .content .first-container .city {
   font-weight: 300;
-  font-size: 1.25rem;
+  font-size: 1.135rem;
   margin-top: 1rem;
   font-family: "Work Sans";
+  width: 100%;
+}
+.sctn1 .content .first-container .city .parroquia {
+  text-transform: capitalize;
+  color: #3f3f3f;
+}
+.sctn1 .content .first-container .city .parroquia .parrBold {
+  font-weight: 400;
+}
+.sctn1 .content .first-container .city .recepcion {
+  color: #3f3f3f;
+  text-transform: capitalize;
+}
+.sctn1 .content .first-container .city .recepcion .recepBold {
+  font-weight: 400;
 }
 
 @keyframes anim1 {

@@ -117,7 +117,7 @@
     .content{
         z-index: 100;
         display: grid;
-        gap: 3rem;
+        gap: 2rem;
         place-items: center;
         justify-content: center;
         align-items: center;
@@ -144,12 +144,6 @@
             // display: none;
             opacity: 0;
 
-            // &::first-letter{
-            //     // text-transform: capitalize;
-            // }
-    
-
-    
             .cita{
                 text-transform: capitalize;
                 line-height: 2;
@@ -316,12 +310,29 @@
             }
             .city{
                 font-weight: 300;
-                font-size: 1.25rem;
+                font-size: 1.135rem;
                 // font-weight: 400;
                 margin-top: 1rem;
                 font-family: $work-sans;
+                width: 100%;
                 // opacity: 0;
                 // color: #202020;
+                .parroquia{
+                    text-transform: capitalize;
+                    color: $text-color;
+                    .parrBold{
+
+                        font-weight: 400;
+                    }
+                }
+                .recepcion{
+                    color: $text-color;
+                    text-transform: capitalize;
+                    .recepBold{
+                        font-weight: 400;
+                    }
+                    
+                }
             }
         }
     }
