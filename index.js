@@ -26,7 +26,8 @@ const localList = '/src/family.JSON'
 fetch(localList)
     .then(resp =>resp.json())
     .then(data=>{
-        const result = data.guestWedding[`${cantidad}`];
+        const result = cantidad != undefined ? data.guestWedding[`${cantidad}`]: data.guestWedding[0];
+        // console.log(data.guestWedding[3]);
         resultData(result);
         
     })
@@ -38,9 +39,10 @@ function resultData(result){
     de lo contrario solo muertra el nombre del invitado
     */
    const gender = document.getElementById('reason')
-   console.log(result);
-   if (result.name == null || result.name == undefined) {
+//    console.log(result.name);
+    if (result.name == '') {
        document.getElementById('value').style.display = 'none';
+       document.getElementById('sctn4').style.display = 'none';
     }else{
         
         if (result.familia == 'no') {

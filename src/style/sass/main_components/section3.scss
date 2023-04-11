@@ -127,6 +127,102 @@
         // margin: auto;
     }
 
+    .sctn-3_flowers{
+        // position: relative;
+        transform: rotateY(-180deg);
+        // -webkit-transform: scaleX(-1);
+        // transform: scaleX(-1);
+        z-index: 10;
+        width: 45%;
+        bottom: 0;
+        left: -10%;
+        // animation: hole_flowers 30s alternate infinite ease-in;
+        // transform-origin: center bottom;
+        // transform: scaleX(-1);
+
+        .sctn-2_flwr2{
+            width: 45%;
+            // top: 100%;
+            right: 53%;
+            bottom: 8%;
+            animation: leaves_sct3 9.5s alternate infinite ease-in;
+            transform-origin: right bottom;
+        }
+        .sctn-2_flwr3{
+            width: 12%;
+            // top: 100%;
+            right: 50%;
+            bottom: 50%;
+            animation: leaves_sct3 9s alternate infinite ease-in;
+            transform-origin: right bottom;
+        }
+        // .sctn-2_flwr4{
+        //     width: 35%;
+        //     // top: 100%;
+        //     left: 1.5%;
+        //     bottom: 55%;
+        //     animation: leaves_sct4 7s alternate infinite ease-in;
+        //     transform-origin: center top;
+        // }
+        .sctn-2_flwr5{
+            position: absolute;
+            transform: rotate(180deg);
+            width: 35%;
+            // top: 100%;
+            right: 18.5%;
+            top: -7%;
+            animation: leaves_sct3_alt 8s alternate infinite ease-in;
+            transform-origin: center;
+        }
+        .sctn-2_flwr6{
+            width: 8%;
+            // top: 100%;
+            right: 38%;
+            top: 18%;
+            animation: leaves_sct3 8.5s alternate infinite ease-in;
+            transform-origin: right bottom;
+        }
+        .sctn-2_flwr7{
+            width: 10%;
+            // top: 100%;
+            right: 27%;
+            top: 25%;
+            animation: leaves_sct3 8.5s alternate infinite ease-in;
+            transform-origin: left bottom;
+        }
+        .sctn-2_flwr8{
+            width: 15%;
+            // top: 100%;
+            right: 7%;
+            bottom: 35%;
+            animation: leaves_sct3 10s alternate infinite ease-in;
+            transform-origin: left top;
+        }
+    }
+
 }
 
+@keyframes leaves_sct3 {
+    0%{
+        transform: rotate(9deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-9deg);
+    }
+}
+
+// @keyframes leaves_sct3_alt {
+//     0%{
+//         transform: rotate(-186deg);
+//     }
+//     50%{
+//         transform: rotate(180deg);
+//     }
+//     100%{
+//         transform: rotate(186deg);
+//     }
+// }
 

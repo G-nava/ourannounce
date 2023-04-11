@@ -249,10 +249,8 @@
                             &:hover{
                                 background-color: $text-color;
                                 color: white;
-                    
                             }
                         }
-            
                     }
             
                     .lst-hide{
@@ -263,12 +261,151 @@
                     // .lst-show{
                         // visibility: visible;
                     // }
-
         }
-
-
     }
+    .flower-container-2{
+        z-index: 100;
+        width: 16.5%;
+        bottom: -10%;
+        left: 8%;
+        animation: hole_flowers 40s alternate infinite ease-in;
+        transform-origin: center bottom;
+        // top: -1rem;
+        // right: -1rem;
+        
+        .capullo-3{
+            // position: absolute;
+            width: 130%;
+            left: -65%;
+            top: -19%;
+            animation: leaves3 10s alternate infinite ease-in;
+            transform-origin: center;
+        }
+        
+        .capullo-4{
+            // position: absolute;
+            width: 120%;
+            left: 32%;
+            bottom: 65%;
+            animation: leaves3 14s alternate-reverse infinite ease-in-out;
+            transform-origin: center bottom;
+        }
+        
+        .leave-right-down{
+            width: 38%;
+    
+            top: 2%;
+            left: -30%;
+            animation: leaves4 8s alternate infinite ease-in-out;
+            transform-origin: bottom right;
+        }
+        
+        .leave-right-down-left{
+            width: 30%;
+            // transform: rotate(-20deg);
+            top: 25%;
+            left: 10%;
+            animation: leaves5 8s alternate infinite ease-in-out;
+            transform-origin: bottom right;
+        }
+        
+        .leave-left-down-left{
+            width: 65%;
+            top: 40%;
+            left: 27%;
+            animation: leaves6 8s alternate infinite ease-in-out;
+            transform-origin: bottom right;
+            
+        }
+    
+    }
+    
+    .sctn-2_flowers{
+        z-index: 10;
+        width: 45%;
+        bottom: 0;
+        right: -3%;
+        animation: hole_flowers 30s alternate infinite ease-in;
+        transform-origin: center bottom;
 
+        .sctn-2_flwr2{
+            width: 45%;
+            // top: 100%;
+            right: 53%;
+            bottom: 8%;
+            animation: leaves_sct4 9.5s alternate infinite ease-in;
+            transform-origin: right bottom;
+        }
+        .sctn-2_flwr3{
+            width: 12%;
+            // top: 100%;
+            right: 50%;
+            bottom: 50%;
+            animation: leaves_sct4 9s alternate infinite ease-in;
+            transform-origin: right bottom;
+        }
+        .sctn-2_flwr4{
+            width: 35%;
+            // top: 100%;
+            left: 1.5%;
+            bottom: 55%;
+            animation: leaves_sct4 7s alternate infinite ease-in;
+            transform-origin: center top;
+        }
+        .sctn-2_flwr5{
+            width: 35%;
+            // top: 100%;
+            right: 22.5%;
+            top: -7%;
+            animation: leaves_sct4 8s alternate infinite ease-in;
+            transform-origin: center;
+        }
+        .sctn-2_flwr6{
+            width: 8%;
+            // top: 100%;
+            right: 38%;
+            top: 18%;
+            animation: leaves_sct4 8.5s alternate infinite ease-in;
+            transform-origin: right bottom;
+        }
+        .sctn-2_flwr7{
+            width: 10%;
+            // top: 100%;
+            right: 27%;
+            top: 25%;
+            animation: leaves_sct4 8.5s alternate infinite ease-in;
+            transform-origin: left bottom;
+        }
+        .sctn-2_flwr8{
+            width: 15%;
+            // top: 100%;
+            right: 7%;
+            bottom: 35%;
+            animation: leaves_sct4 10s alternate infinite ease-in;
+            transform-origin: left top;
+        }
+    }
+}
 
-
+@keyframes leaves_sct4 {
+    0%{
+        transform: rotate(9deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-9deg);
+    }
+}
+@keyframes hole_flowers {
+    0%{
+        transform: rotate(3deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-3deg);
+    }
 }

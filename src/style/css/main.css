@@ -88,17 +88,6 @@ li {
     transform: rotate(-20deg);
   }
 }
-@keyframes leaves3 {
-  0% {
-    transform: rotate(9deg);
-  }
-  50% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(-9deg);
-  }
-}
 @keyframes leaves4 {
   0% {
     transform: rotate(-25deg);
@@ -395,6 +384,17 @@ li {
     opacity: 1;
   }
 }
+@keyframes leaves3 {
+  0% {
+    transform: rotate(9deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-9deg);
+  }
+}
 .sctn2 {
   margin-top: -3rem;
 }
@@ -408,45 +408,61 @@ li {
   bottom: -3.5rem;
 }
 .sctn2 .sctn-2_flowers {
-  z-index: 10;
-  width: 40%;
+  z-index: 100;
+  width: 45%;
   bottom: 0;
   right: -3%;
+  animation: hole_flowers 30s alternate infinite ease-in;
+  transform-origin: center bottom;
 }
 .sctn2 .sctn-2_flowers .sctn-2_flwr2 {
   width: 45%;
   right: 53%;
   bottom: 8%;
+  animation: leaves_sct4 9.5s alternate infinite ease-in;
+  transform-origin: right bottom;
 }
 .sctn2 .sctn-2_flowers .sctn-2_flwr3 {
   width: 12%;
   right: 50%;
   bottom: 50%;
+  animation: leaves_sct4 9s alternate infinite ease-in;
+  transform-origin: right bottom;
 }
 .sctn2 .sctn-2_flowers .sctn-2_flwr4 {
   width: 35%;
   left: 1.5%;
   bottom: 55%;
+  animation: leaves_sct4 7s alternate infinite ease-in;
+  transform-origin: center top;
 }
 .sctn2 .sctn-2_flowers .sctn-2_flwr5 {
   width: 35%;
   right: 22.5%;
   top: -7%;
+  animation: leaves_sct4 8s alternate infinite ease-in;
+  transform-origin: center;
 }
 .sctn2 .sctn-2_flowers .sctn-2_flwr6 {
   width: 8%;
   right: 38%;
   top: 18%;
+  animation: leaves_sct4 8.5s alternate infinite ease-in;
+  transform-origin: right bottom;
 }
 .sctn2 .sctn-2_flowers .sctn-2_flwr7 {
   width: 10%;
   right: 27%;
   top: 25%;
+  animation: leaves_sct4 8.5s alternate infinite ease-in;
+  transform-origin: left bottom;
 }
 .sctn2 .sctn-2_flowers .sctn-2_flwr8 {
   width: 15%;
   right: 7%;
   bottom: 35%;
+  animation: leaves_sct4 10s alternate infinite ease-in;
+  transform-origin: left top;
 }
 .sctn2 .container-2 {
   display: grid;
@@ -472,6 +488,28 @@ li {
   }
   to {
     opacity: 1;
+  }
+}
+@keyframes leaves_sct4 {
+  0% {
+    transform: rotate(9deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-9deg);
+  }
+}
+@keyframes hole_flowers {
+  0% {
+    transform: rotate(3deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-3deg);
   }
 }
 .sctn3 {
@@ -579,7 +617,69 @@ li {
   left: 1rem;
   top: 1rem;
 }
+.sctn3 .sctn-3_flowers {
+  transform: rotateY(-180deg);
+  z-index: 10;
+  width: 45%;
+  bottom: 0;
+  left: -10%;
+}
+.sctn3 .sctn-3_flowers .sctn-2_flwr2 {
+  width: 45%;
+  right: 53%;
+  bottom: 8%;
+  animation: leaves_sct3 9.5s alternate infinite ease-in;
+  transform-origin: right bottom;
+}
+.sctn3 .sctn-3_flowers .sctn-2_flwr3 {
+  width: 12%;
+  right: 50%;
+  bottom: 50%;
+  animation: leaves_sct3 9s alternate infinite ease-in;
+  transform-origin: right bottom;
+}
+.sctn3 .sctn-3_flowers .sctn-2_flwr5 {
+  position: absolute;
+  transform: rotate(180deg);
+  width: 35%;
+  right: 18.5%;
+  top: -7%;
+  animation: leaves_sct3_alt 8s alternate infinite ease-in;
+  transform-origin: center;
+}
+.sctn3 .sctn-3_flowers .sctn-2_flwr6 {
+  width: 8%;
+  right: 38%;
+  top: 18%;
+  animation: leaves_sct3 8.5s alternate infinite ease-in;
+  transform-origin: right bottom;
+}
+.sctn3 .sctn-3_flowers .sctn-2_flwr7 {
+  width: 10%;
+  right: 27%;
+  top: 25%;
+  animation: leaves_sct3 8.5s alternate infinite ease-in;
+  transform-origin: left bottom;
+}
+.sctn3 .sctn-3_flowers .sctn-2_flwr8 {
+  width: 15%;
+  right: 7%;
+  bottom: 35%;
+  animation: leaves_sct3 10s alternate infinite ease-in;
+  transform-origin: left top;
+}
 
+@keyframes leaves_sct3 {
+  0% {
+    transform: rotate(9deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-9deg);
+  }
+}
 .sctn4 {
   margin-top: -3rem;
 }
@@ -789,7 +889,129 @@ li {
 .sctn4 .form .singlePerson .lst-hide {
   display: none;
 }
+.sctn4 .flower-container-2 {
+  z-index: 100;
+  width: 16.5%;
+  bottom: -10%;
+  left: 8%;
+  animation: hole_flowers 40s alternate infinite ease-in;
+  transform-origin: center bottom;
+}
+.sctn4 .flower-container-2 .capullo-3 {
+  width: 130%;
+  left: -65%;
+  top: -19%;
+  animation: leaves3 10s alternate infinite ease-in;
+  transform-origin: center;
+}
+.sctn4 .flower-container-2 .capullo-4 {
+  width: 120%;
+  left: 32%;
+  bottom: 65%;
+  animation: leaves3 14s alternate-reverse infinite ease-in-out;
+  transform-origin: center bottom;
+}
+.sctn4 .flower-container-2 .leave-right-down {
+  width: 38%;
+  top: 2%;
+  left: -30%;
+  animation: leaves4 8s alternate infinite ease-in-out;
+  transform-origin: bottom right;
+}
+.sctn4 .flower-container-2 .leave-right-down-left {
+  width: 30%;
+  top: 25%;
+  left: 10%;
+  animation: leaves5 8s alternate infinite ease-in-out;
+  transform-origin: bottom right;
+}
+.sctn4 .flower-container-2 .leave-left-down-left {
+  width: 65%;
+  top: 40%;
+  left: 27%;
+  animation: leaves6 8s alternate infinite ease-in-out;
+  transform-origin: bottom right;
+}
+.sctn4 .sctn-2_flowers {
+  z-index: 10;
+  width: 45%;
+  bottom: 0;
+  right: -3%;
+  animation: hole_flowers 30s alternate infinite ease-in;
+  transform-origin: center bottom;
+}
+.sctn4 .sctn-2_flowers .sctn-2_flwr2 {
+  width: 45%;
+  right: 53%;
+  bottom: 8%;
+  animation: leaves_sct4 9.5s alternate infinite ease-in;
+  transform-origin: right bottom;
+}
+.sctn4 .sctn-2_flowers .sctn-2_flwr3 {
+  width: 12%;
+  right: 50%;
+  bottom: 50%;
+  animation: leaves_sct4 9s alternate infinite ease-in;
+  transform-origin: right bottom;
+}
+.sctn4 .sctn-2_flowers .sctn-2_flwr4 {
+  width: 35%;
+  left: 1.5%;
+  bottom: 55%;
+  animation: leaves_sct4 7s alternate infinite ease-in;
+  transform-origin: center top;
+}
+.sctn4 .sctn-2_flowers .sctn-2_flwr5 {
+  width: 35%;
+  right: 22.5%;
+  top: -7%;
+  animation: leaves_sct4 8s alternate infinite ease-in;
+  transform-origin: center;
+}
+.sctn4 .sctn-2_flowers .sctn-2_flwr6 {
+  width: 8%;
+  right: 38%;
+  top: 18%;
+  animation: leaves_sct4 8.5s alternate infinite ease-in;
+  transform-origin: right bottom;
+}
+.sctn4 .sctn-2_flowers .sctn-2_flwr7 {
+  width: 10%;
+  right: 27%;
+  top: 25%;
+  animation: leaves_sct4 8.5s alternate infinite ease-in;
+  transform-origin: left bottom;
+}
+.sctn4 .sctn-2_flowers .sctn-2_flwr8 {
+  width: 15%;
+  right: 7%;
+  bottom: 35%;
+  animation: leaves_sct4 10s alternate infinite ease-in;
+  transform-origin: left top;
+}
 
+@keyframes leaves_sct4 {
+  0% {
+    transform: rotate(9deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-9deg);
+  }
+}
+@keyframes hole_flowers {
+  0% {
+    transform: rotate(3deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-3deg);
+  }
+}
 .sctn-map {
   height: calc(100vh - 3rem);
   margin-top: -3rem;

@@ -44,9 +44,7 @@ const asistenciaList = (data)=>{
         const data = await queryData();
         const objeto = data.slice(1);
         objeto.forEach((dt, index)=>{
-            // const linkUsed = document.querySelector('.form');
-            // console.log(dt.name);
-            // asistenciaList(dt)
+
             let thN = th.cloneNode(true);
             thN.innerHTML = `${index+1}`;
             
@@ -60,40 +58,23 @@ const asistenciaList = (data)=>{
             td3.innerHTML = `${Object.values(dt.numPer)}`;
             
             let td4 = td.cloneNode(true);
-            // console.log(Object.keys(td.numPer));
-            // const obj = JSON.parse(dt);
+
             console.log(Object.keys(dt.numPer).length);
             const numPerLength = Object.keys(dt.numPer).length;
             td4.innerHTML = `${Object.keys(dt.numPer).length}`;
-            // console.log(dt);
+
             let tr2 = tr.cloneNode(true);
             tr2.append(thN, td1, td2, td3, td4);
 
-            // tr2.appendChild;
-
             tbody.appendChild(tr2)
             table.appendChild(tbody)
-
         
         });
             // asistenciaList(data)
     }
     main();
-    
-
-
-
-    
+     
     html = table;
-    // tableRow.appendChild();
-    
-
-    // inputLabel.className ='guest1';
-    // inputLabel.id = `input-task userGuest${i+1}`;
-    // inputLabel.type ='text';
-    // inputLabel.setAttribute('required','required');
-    // inputLabel.placeholder =`invitado ${i+1}`;
-    // insertPerson.appendChild(inputLabel)
 }
 asistenciaList();
 document.getElementById('asistencia_list-container').appendChild(html)

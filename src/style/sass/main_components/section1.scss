@@ -357,4 +357,17 @@
     }
 }
 
+@keyframes leaves3 {
+    0%{
+        transform: rotate(9deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-9deg);
+    }
+}
+
+
 
