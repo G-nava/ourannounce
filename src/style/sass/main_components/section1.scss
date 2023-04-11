@@ -180,7 +180,7 @@
                 font-family: $work-sans;
                 font-size: 1.5rem;
                 font-weight: 400;
-                padding-bottom: 1rem;
+                padding-bottom: .5rem;
                 color: $text-color;
                 opacity: 0;
 
@@ -335,7 +335,7 @@
                 .recepcion{
                     color: $text-color;
                     text-transform: capitalize;
-                    .recepBold{
+                    .recepBold, .boldHora{
                         font-weight: 400;
                     }
                     

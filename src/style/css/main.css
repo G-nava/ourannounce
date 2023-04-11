@@ -255,7 +255,7 @@ li {
   font-family: "Work Sans";
   font-size: 1.5rem;
   font-weight: 400;
-  padding-bottom: 1rem;
+  padding-bottom: 0.5rem;
   color: #3f3f3f;
   opacity: 0;
 }
@@ -372,7 +372,7 @@ li {
   color: #3f3f3f;
   text-transform: capitalize;
 }
-.sctn1 .content .first-container .city .recepcion .recepBold {
+.sctn1 .content .first-container .city .recepcion .recepBold, .sctn1 .content .first-container .city .recepcion .boldHora {
   font-weight: 400;
 }
 
