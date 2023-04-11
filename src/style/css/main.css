@@ -1092,18 +1092,21 @@ li {
   top: 2%;
 }
 .sctn4 .veryPink {
+  opacity: 0;
   position: absolute;
   right: -40%;
   bottom: -2%;
   opacity: 0.9;
 }
 .sctn4 .veryPink2 {
+  opacity: 0;
   position: absolute;
   left: -30%;
   bottom: 2%;
   opacity: 0.9;
 }
 .sctn4 .veryPink3 {
+  opacity: 0;
   width: 65%;
   z-index: 1;
   position: absolute;
@@ -1112,6 +1115,7 @@ li {
   opacity: 0.9;
 }
 .sctn4 .veryPink4 {
+  opacity: 0;
   z-index: 1;
   position: absolute;
   right: -20%;
