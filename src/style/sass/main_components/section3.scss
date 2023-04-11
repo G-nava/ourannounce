@@ -18,7 +18,7 @@
         opacity: 0;
 
         .dress_icon{
-            max-width: 18%;
+            max-width: 20%;
             fill: #202020;
 
         }
@@ -116,12 +116,59 @@
         width: 45%;
         bottom: 0%;
         right: 0;
+        z-index: 100;
+        animation: hole_flowers 35s alternate infinite ease-in;
+        transform-origin: center bottom;
         // margin: auto;
-        
-        .3rdElementPlant{
-            position: relative;
-            width: 45%;
+        .rootplant{
+            position: absolute;
+            bottom: 0;
+            // width: 30%;
             
+        }
+        
+        .thirdrdElementPlant{
+            position: relative;
+            
+        }
+        .thirdrdElementPlant{
+            bottom: 0;
+
+            
+        }
+        .leaveThird_one{
+            width: 40%;
+            right: -10%;
+            animation: leaves_sct4 9.75s alternate infinite ease-in;
+            transform-origin: right bottom;
+            
+        }
+        
+        .leaveThird_two{
+            width: 35%;
+            right: -8%;
+            animation: leaves_sct4 10s alternate infinite ease-in;
+            transform-origin: right bottom;
+            
+        }
+
+        .flowerthird{
+            position: absolute;
+            width: 33%;
+            // top: 0;
+            left: 30%;
+            bottom: 80%;
+            animation: leaves_sct4 8.7s alternate infinite ease-in;
+            transform-origin: center;
+        }
+        .flowerthirdtwo{
+            position: absolute;
+            width: 40%;
+            top: -80%;
+            left: 57%;
+            animation: leaves_sct4 8.5s alternate infinite ease-in;
+            transform-origin: center bottom;
+
         }
     }
 
