@@ -113,11 +113,20 @@
     .f-s3_3{
         position: absolute;
         // display:inline-block;
-        width: 60%;
-        bottom: -2rem;
+        width: 45%;
+        bottom: 0%;
         right: 0;
         // margin: auto;
+        
+        .3rdElementPlant{
+            position: relative;
+            width: 45%;
+            
+        }
     }
+
+    
+
     .f-s3_4{
         position: absolute;
         // display:inline-block;
@@ -128,17 +137,12 @@
     }
 
     .sctn-3_flowers{
-        // position: relative;
         transform: rotateY(-180deg);
-        // -webkit-transform: scaleX(-1);
-        // transform: scaleX(-1);
         z-index: 10;
         width: 45%;
         bottom: 0;
         left: -10%;
-        // animation: hole_flowers 30s alternate infinite ease-in;
-        // transform-origin: center bottom;
-        // transform: scaleX(-1);
+
 
         .sctn-2_flwr2{
             width: 45%;
@@ -153,15 +157,15 @@
             // top: 100%;
             right: 50%;
             bottom: 50%;
-            animation: leaves_sct3 9s alternate infinite ease-in;
+            animation: leaves_sct3 10s alternate infinite ease-in;
             transform-origin: right bottom;
         }
         .sctn-2_flwr4{
             width: 30%;
             // top: 100%;
-            left: 1.5%;
+            left: 4%;
             bottom: 60%;
-            animation: leaves_sct4 7s alternate infinite ease-in;
+            animation: leaves_sct4 9.8s alternate infinite ease-in;
             transform-origin: center;
         }
         .sctn-2_flwr5{
@@ -179,7 +183,7 @@
             // top: 100%;
             right: 38%;
             top: 18%;
-            animation: leaves_sct3 8.5s alternate infinite ease-in;
+            animation: leaves_sct3 9.5s alternate infinite ease-in;
             transform-origin: right bottom;
         }
         .sctn-2_flwr7{
@@ -187,7 +191,7 @@
             // top: 100%;
             right: 27%;
             top: 25%;
-            animation: leaves_sct3 8.5s alternate infinite ease-in;
+            animation: leaves_sct3 9.75s alternate infinite ease-in;
             transform-origin: left bottom;
         }
         .sctn-2_flwr8{
@@ -195,7 +199,7 @@
             // top: 100%;
             right: 7%;
             bottom: 35%;
-            animation: leaves_sct3 10s alternate infinite ease-in;
+            animation: leaves_sct3 10.5s alternate infinite ease-in;
             transform-origin: left top;
         }
     }
