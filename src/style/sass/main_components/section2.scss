@@ -99,10 +99,22 @@
             .anim{
                 opacity: 0;
             }
+
             
-
-
+            
+            .star{
+                animation: starshine 5s alternate infinite ease-in;          
+                z-index: 100;
+                top: 71.77%;
+                left: 39.5%;
+                width: 10%;
+                position: absolute;
+                fill: none;
+                stroke: rgb(112, 112, 89);
+                // stroke-width: 2px;  
+            }
         }
+        
     }
 
 
@@ -140,5 +152,18 @@
     }
     100%{
         transform: rotate(-3deg);
+    }
+}
+
+@keyframes starshine {
+    0%{
+        
+        transform: rotate(20deg) scale(40%);
+    }
+    50%{
+        transform: rotate(0deg) scale(15%);
+    }
+    100%{
+        transform: rotate(-8deg) scale(40%);
     }
 }

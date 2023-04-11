@@ -481,6 +481,16 @@ li {
 .sctn2 .container-2 .sub-content .anim {
   opacity: 0;
 }
+.sctn2 .container-2 .sub-content .star {
+  animation: starshine 5s alternate infinite ease-in;
+  z-index: 100;
+  top: 71.77%;
+  left: 39.5%;
+  width: 10%;
+  position: absolute;
+  fill: none;
+  stroke: rgb(112, 112, 89);
+}
 
 @keyframes anim1 {
   from {
@@ -510,6 +520,17 @@ li {
   }
   100% {
     transform: rotate(-3deg);
+  }
+}
+@keyframes starshine {
+  0% {
+    transform: rotate(20deg) scale(40%);
+  }
+  50% {
+    transform: rotate(0deg) scale(15%);
+  }
+  100% {
+    transform: rotate(-8deg) scale(40%);
   }
 }
 .sctn3 {
@@ -609,7 +630,7 @@ li {
   position: absolute;
   width: 45%;
   bottom: 0%;
-  right: 0;
+  right: -3%;
   z-index: 100;
   animation: hole_flowers 35s alternate infinite ease-in;
   transform-origin: center bottom;
@@ -728,7 +749,7 @@ li {
   }
 }
 .sctn4 {
-  margin-top: -3rem;
+  margin-top: -2rem;
 }
 .sctn4 .form {
   background-color: white;
@@ -754,6 +775,7 @@ li {
   font-weight: 400;
   color: #3f3f3f;
   font-size: 1.65rem;
+  text-align: center;
 }
 .sctn4 .form .singlePerson {
   display: grid;
@@ -1035,6 +1057,34 @@ li {
   bottom: 35%;
   animation: leaves_sct4 10s alternate infinite ease-in;
   transform-origin: left top;
+}
+.sctn4 .up_flower {
+  width: 90%;
+  position: absolute;
+  top: 3%;
+  right: -50%;
+}
+.sctn4 .up_flower .up_flowerSub {
+  position: relative;
+}
+.sctn4 .up_flower .uf1 {
+  width: 15%;
+  top: -20%;
+  right: -2%;
+  animation: leaves_sct4 10s alternate infinite ease-in;
+  transform-origin: bottom right;
+}
+.sctn4 .up_flower .uf2 {
+  width: 7%;
+  right: -7%;
+  top: 15.5%;
+  animation: leaves_sct4 10s alternate infinite ease-in;
+  transform-origin: left top;
+}
+.sctn4 .up_flower .uf3 {
+  width: 40%;
+  right: 15%;
+  top: 2%;
 }
 
 @keyframes leaves_sct4 {

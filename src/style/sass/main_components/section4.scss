@@ -2,7 +2,7 @@
 
 
 .sctn4{
-    margin-top: -3rem;
+    margin-top: -2rem;
 
     .form{
         background-color: white;
@@ -34,6 +34,7 @@
             font-weight: 400;
             color: $text-color;
             font-size: 1.65rem;
+            text-align: center;
         
         }
 
@@ -383,6 +384,43 @@
             bottom: 35%;
             animation: leaves_sct4 10s alternate infinite ease-in;
             transform-origin: left top;
+        }
+    }
+    .up_flower{
+        width: 90%;
+        // display: inline-block;
+        position: absolute;
+
+        
+        top: 3%;
+        right: -50%;
+        // animation: leaves_sct4 20s alternate infinite ease-in;
+        // transform-origin: center top;
+        
+        .up_flowerSub{
+            position: relative;
+            // width: 40%;
+            // top: 3%;
+            // right: -3.75%;
+        }
+        .uf1{
+            width: 15%;
+            top: -20%;
+            right: -2%;
+            animation: leaves_sct4 10s alternate infinite ease-in;
+            transform-origin: bottom right;
+        }
+        .uf2{
+            width: 7%;
+            right: -7%;
+            top: 15.5%;
+            animation: leaves_sct4 10s alternate infinite ease-in;
+            transform-origin: left top;
+        }
+        .uf3{
+            width: 40%;
+            right: 15%;
+            top: 2%;
         }
     }
 }
