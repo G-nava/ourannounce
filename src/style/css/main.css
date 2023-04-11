@@ -1143,6 +1143,26 @@ li {
   height: calc(100vh - 3rem);
   margin-top: -3rem;
 }
+.sctn-map .data_recep {
+  width: 90%;
+  font-family: "Work Sans";
+  text-align: center;
+  text-transform: capitalize;
+}
+.sctn-map .data_recep .mapIcon {
+  fill: #3f3f3f;
+  width: 2.75rem;
+  padding: 1rem 0 0.5rem;
+}
+.sctn-map .data_recep .recepTitle {
+  margin-bottom: 0.75rem;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+.sctn-map .data_recep .texDir {
+  font-weight: 300;
+  font-size: 1.125rem;
+}
 
 .asistencia_body {
   color: #3f3f3f;

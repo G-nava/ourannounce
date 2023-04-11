@@ -2,4 +2,30 @@
 .sctn-map{
     height: calc(100vh - 3rem);
     margin-top: -3rem;
+
+    .data_recep{
+        width: 90%;
+        font-family: $work-sans;
+        text-align: center;
+        text-transform: capitalize;
+
+        .mapIcon{
+            fill: $text-color;
+            width: 2.75rem;
+            padding: 1rem 0 .5rem;
+        }
+
+        .recepTitle{
+            margin-bottom: .75rem;
+            font-weight: 400;
+            font-size: 1.5rem;
+        }
+
+        .texDir{
+            font-weight: 300 ;
+            font-size: 1.125rem;
+        }
+    }
+
+
 }
