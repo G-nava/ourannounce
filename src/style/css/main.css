@@ -537,17 +537,12 @@ li {
 .sctn3 {
   margin-top: -3rem;
 }
-.sctn3 .bottom-sctn-3 {
-  position: absolute;
-  width: 130%;
-  top: 0;
-}
 .sctn3 .content_sect3 {
   background-color: white;
   display: grid;
   place-items: center;
   width: 80%;
-  padding: 3.5rem 1rem;
+  padding: 4.5rem 1rem;
   opacity: 0;
 }
 .sctn3 .content_sect3 .dress_icon {
@@ -762,7 +757,7 @@ li {
   text-transform: capitalize;
   display: grid;
   grid-auto-flow: row;
-  padding: 3rem 1rem;
+  padding: 4.5rem 1rem;
   gap: 2.75rem 1.5rem;
   place-items: center;
   opacity: 0;
