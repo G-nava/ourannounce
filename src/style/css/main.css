@@ -472,6 +472,7 @@ li {
 }
 .sctn2 .container-2 .sub-content {
   display: grid;
+  position: absolute;
   place-items: center;
 }
 .sctn2 .container-2 .sub-content .couple {
@@ -484,8 +485,8 @@ li {
 .sctn2 .container-2 .sub-content .star {
   animation: starshine 5s alternate infinite ease-in;
   z-index: 100;
-  top: 71.77%;
-  left: 39.5%;
+  top: 62.35%;
+  left: 39%;
   width: 10%;
   position: absolute;
   fill: none;

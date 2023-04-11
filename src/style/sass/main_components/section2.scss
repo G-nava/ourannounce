@@ -90,6 +90,7 @@
 
         .sub-content{
             display: grid;
+            position: absolute;
             place-items: center;
 
             .couple{
@@ -105,8 +106,8 @@
             .star{
                 animation: starshine 5s alternate infinite ease-in;          
                 z-index: 100;
-                top: 71.77%;
-                left: 39.5%;
+                top: 62.35%;
+                left: 39%;
                 width: 10%;
                 position: absolute;
                 fill: none;
