@@ -173,7 +173,6 @@
     }
 
     
-
     .f-s3_4{
         position: absolute;
         // display:inline-block;
@@ -181,6 +180,7 @@
         left: 1rem;
         top: -5%;
         transform: rotateY(180deg);
+        z-index: 100;
         // margin: auto;
     }
 
