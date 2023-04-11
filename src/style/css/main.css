@@ -638,14 +638,20 @@ li {
   animation: leaves_sct3 9s alternate infinite ease-in;
   transform-origin: right bottom;
 }
+.sctn3 .sctn-3_flowers .sctn-2_flwr4 {
+  width: 30%;
+  left: 1.5%;
+  bottom: 60%;
+  animation: leaves_sct4 7s alternate infinite ease-in;
+  transform-origin: center;
+}
 .sctn3 .sctn-3_flowers .sctn-2_flwr5 {
   position: absolute;
-  transform: rotate(180deg);
   width: 35%;
-  right: 18.5%;
+  right: 19.5%;
   top: -7%;
-  animation: leaves_sct3_alt 8s alternate infinite ease-in;
-  transform-origin: center;
+  animation: leaves_sct3 11s alternate infinite ease-in;
+  transform-origin: center bottom;
 }
 .sctn3 .sctn-3_flowers .sctn-2_flwr6 {
   width: 8%;
@@ -936,7 +942,7 @@ li {
   z-index: 10;
   width: 41.5%;
   bottom: 0;
-  right: -3%;
+  right: -4%;
   animation: hole_flowers 30s alternate infinite ease-in;
   transform-origin: center bottom;
 }
