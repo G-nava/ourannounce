@@ -678,7 +678,8 @@ li {
   position: absolute;
   width: 25%;
   left: 1rem;
-  top: 1rem;
+  top: -5%;
+  transform: rotateY(180deg);
 }
 .sctn3 .sctn-3_flowers {
   transform: rotateY(-180deg);
