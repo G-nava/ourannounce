@@ -620,6 +620,7 @@ li {
   place-items: center;
   width: 80%;
   padding: 2rem 1rem;
+  opacity: 0;
 }
 .sctn3 .sc3 .lluviaSobres .envelope {
   fill: #3f3f3f;
