@@ -786,6 +786,7 @@ li {
 }
 .sctn4 {
   margin-top: -2rem;
+  height: 70vh;
 }
 .sctn4 .form {
   background-color: white;
@@ -1101,7 +1102,7 @@ li {
   position: absolute;
   transform: rotateZ(20deg);
   top: 5%;
-  right: -58%;
+  right: -60%;
 }
 .sctn4 .up_flower .up_flowerSub {
   position: relative;
@@ -1180,7 +1181,7 @@ li {
 }
 .sctn-map {
   height: calc(100vh - 3rem);
-  margin-top: -3rem;
+  margin-top: -1rem;
 }
 .sctn-map .data_recep {
   width: 90%;
