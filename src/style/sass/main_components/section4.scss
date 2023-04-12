@@ -433,14 +433,12 @@
         position: absolute;
         right: -40%;
         bottom: -2%;
-        opacity: .9;
     }
     .veryPink2{
         opacity: 0;
         position: absolute;
         left: -30%;
         bottom: 2%;
-        opacity: .9;
     }
     .veryPink3{
         opacity: 0;
@@ -449,7 +447,6 @@
         position: absolute;
         left: -20%;
         top: 2%;
-        opacity: .9;
     }
     .veryPink4{
         opacity: 0;
@@ -508,51 +505,17 @@
                 .onlyNameGuest{
                     font-size: 1.75rem;
                 }
-    
-                .btn-single_person{
-                    width: 70%;
-                    font-size: 1.25rem;
-                    padding: .75rem 1rem;    
-                }
-                
                         .check{
-                            display: grid;
-                            place-items: center;
-                            margin-top: 2rem;
-                
                             .form_description{
-                            
-                                display: block;
-                                text-transform: lowercase;
-                                width: 95%;
-                                text-align: center;
-                                margin-bottom: .75rem;
-                    
-                                &::first-letter{
-                                    text-transform: uppercase;
-                                }
-                    
+                                font-size: 1.25rem;
                             }
                 
                             .selection-number{  // thi is a button
                                 // display: inline-block;
                                 margin-top: 2rem;
-                                text-decoration: none;
-                                text-transform: uppercase;
-                                background-color: $pink;
-                                font-family: $work-sans;
                                 width: 70%;
                                 font-size: 1.25rem;
-                                color: $text-color;
-                                text-align: center;
                                 padding: .75rem 1rem;
-                                cursor: pointer;
-                                transition: .5s ease-in;
-                                &:hover{
-                                    background-color: $text-color;
-                                    color: white;
-                        
-                                }
                             }
                 
                         }
@@ -567,31 +530,18 @@
                             place-items: center;
                 
                             .goBack{
-                                display: grid;
-                                place-items: center;
-                                background-color: $pink;
-                                padding: .5rem;
-                                border-radius: 50%;
                                 margin-bottom: 1.5rem;
                                 .arrow{
                                     width: 2rem;
                                     height: 2rem;
-                                    fill: #202020;
                                 }
                 
                             }
                 
                 
                             .list-people{
-                                display: block;
-                                text-transform: lowercase;
                                 width: 95%;
-                                text-align: center;
                                 margin-bottom: .75rem;
-                    
-                                &::first-letter{
-                                    text-transform: uppercase;
-                                }
                             }
                 
                             .list-name{
@@ -600,7 +550,6 @@
                                 gap: 1.25rem;
                                 
                                 .guest1{
-                                    text-transform: capitalize;
                                     font-size: 1rem;
                                     height: 2rem;
                                     width: 15.35rem;
@@ -610,19 +559,10 @@
                             .btn-confirm{
                                 all: unset;
                                 margin-top: 2rem;
-                                background-color: $pink;
-                                font-family: $work-sans;
                                 width: 70%;
                                 font-size: 1.25rem;
                                 // color:$text-color;
-                                text-align: center;
                                 padding: .75rem 1rem;
-                                cursor: pointer;
-                                transition: .5s ease-in;
-                                &:hover{
-                                    background-color: $text-color;
-                                    color: white;
-                                }
                             }
                         }
                 
@@ -630,10 +570,7 @@
                             // visibility: hidden;
                             display: none;
                         }
-                        
-                        // .lst-show{
-                            // visibility: visible;
-                        // }
+
             }
         }
         .flower-container-2{
@@ -649,41 +586,158 @@
         }
         .up_flower{
             width: 80%;
-            position: absolute;
-            transform: rotateZ(20deg);
             top: 5%;
             right: -53%;
         }
     
         .veryPink{
             width: 50%;
-            opacity: 0;
-            position: absolute;
             right: -35%;
             bottom: -2%;
         }
         .veryPink2{
             width: 70%;
-            opacity: 0;
-            position: absolute;
             left: -10%;
             bottom: 2%;
         }
         .veryPink3{
-            opacity: 0;
             width: 60%;
-
             left: -20%;
             top: 2%;
         }
         .veryPink4{
-            opacity: 0;
             width: 65%;
-            z-index:1;
-            position: absolute;
             right: -20%;
             top: -2%;
-            // opacity: .9;
+        }
+    }
+}
+@media screen and (min-width:700px) {
+    .sctn4{
+        margin-top: 0rem;
+        height: 70vh;
+    
+        .form{
+            width: 60%;
+            padding: 4.5rem 1rem;
+            gap: 2.75rem  1.5rem;
+    
+            .messageImg{
+                width: 70%;
+            }
+    
+            .form_title{
+                font-size: 1.65rem;            
+            }
+    
+            .singlePerson{
+                .onlyNameGuest{
+                    font-size: 1.75rem;
+                }
+                        .check{
+                            .form_description{
+                                font-size: 1.25rem;
+                            }
+                
+                            .selection-number{  // thi is a button
+                                // display: inline-block;
+                                margin-top: 2rem;
+                                width: 70%;
+                                font-size: 1.25rem;
+                                padding: .75rem 1rem;
+                            }
+                
+                        }
+                
+                        .hide-checkMark{
+                            display:none;
+                        }
+                
+                
+                        .type-list{
+                            display: grid;
+                            place-items: center;
+                
+                            .goBack{
+                                margin-bottom: 1.5rem;
+                                .arrow{
+                                    width: 2rem;
+                                    height: 2rem;
+                                }
+                
+                            }
+                
+                
+                            .list-people{
+                                width: 95%;
+                                margin-bottom: .75rem;
+                            }
+                
+                            .list-name{
+                                display: grid;
+                                place-items: center;
+                                gap: 1.25rem;
+                                
+                                .guest1{
+                                    font-size: 1rem;
+                                    height: 2rem;
+                                    width: 15.35rem;
+                                }
+                            }
+                                
+                            .btn-confirm{
+                                all: unset;
+                                margin-top: 2rem;
+                                width: 70%;
+                                font-size: 1.25rem;
+                                // color:$text-color;
+                                padding: .75rem 1rem;
+                            }
+                        }
+                
+                        .lst-hide{
+                            // visibility: hidden;
+                            display: none;
+                        }
+
+            }
+        }
+        .flower-container-2{
+            width: 10%;
+            bottom: -10%;
+            left: 5%;
+        }
+        
+        .sctn-2_flowers{
+            width: 28%;
+            bottom: 0;
+            right: -4%;
+        }
+        .up_flower{
+            width: 65%;
+            top: 5%;
+            right: -43%;
+        }
+    
+        .veryPink{
+            width: 40%;
+            right: -30%;
+            bottom: -2%;
+        }
+        .veryPink2{
+            width: 60%;
+            left: -5%;
+            bottom: 2%;
+        }
+        .veryPink3{
+            width: 50%;
+            left: -20%;
+            top: 2%;
+        }
+        .veryPink4{
+            width: 50%;
+            right: -20%;
+            top: -2%;
         }
     }
 }
