@@ -536,20 +536,26 @@ li {
 }
 .sctn3 {
   margin-top: -3rem;
+  height: min-content;
 }
-.sctn3 .content_sect3 {
+.sctn3 .sc3 {
+  display: grid;
+  place-items: center;
+  gap: 1.75rem;
+}
+.sctn3 .sc3 .content_sect3 {
   background-color: white;
   display: grid;
   place-items: center;
   width: 80%;
-  padding: 4.5rem 1rem;
+  padding: 2rem 1rem;
   opacity: 0;
 }
-.sctn3 .content_sect3 .dress_icon {
+.sctn3 .sc3 .content_sect3 .dress_icon {
   max-width: 20%;
   fill: #202020;
 }
-.sctn3 .content_sect3 .dresscode {
+.sctn3 .sc3 .content_sect3 .dresscode {
   margin-bottom: 2.125rem;
   width: 100%;
   padding: 0.5rem 1rem;
@@ -558,52 +564,80 @@ li {
   text-align: center;
   font-size: 1.5rem;
 }
-.sctn3 .content_sect3 .half {
+.sctn3 .sc3 .content_sect3 .half {
   display: grid;
   grid-auto-flow: column;
   width: 100%;
   margin-top: 2rem;
 }
-.sctn3 .content_sect3 .half .line__container {
+.sctn3 .sc3 .content_sect3 .half .line__container {
   display: grid;
   place-items: center;
 }
-.sctn3 .content_sect3 .half .line__container .line {
+.sctn3 .sc3 .content_sect3 .half .line__container .line {
   display: block;
   width: 1px;
   height: calc(100% + 0.1rem);
   background-color: #202020;
   transform: translate(6px, -5px);
 }
-.sctn3 .content_sect3 .half .men, .sctn3 .content_sect3 .half .women {
+.sctn3 .sc3 .content_sect3 .half .men, .sctn3 .sc3 .content_sect3 .half .women {
   font-family: "Work Sans";
 }
-.sctn3 .content_sect3 .half .men ul, .sctn3 .content_sect3 .half .women ul {
+.sctn3 .sc3 .content_sect3 .half .men ul, .sctn3 .sc3 .content_sect3 .half .women ul {
   padding: 0;
   display: grid;
   place-items: center;
   text-transform: capitalize;
 }
-.sctn3 .content_sect3 .half .men ul h3, .sctn3 .content_sect3 .half .women ul h3 {
+.sctn3 .sc3 .content_sect3 .half .men ul h3, .sctn3 .sc3 .content_sect3 .half .women ul h3 {
   margin-bottom: 0.75rem;
   color: #202020;
   font-size: 1.5rem;
 }
-.sctn3 .content_sect3 .half .men li, .sctn3 .content_sect3 .half .women li {
+.sctn3 .sc3 .content_sect3 .half .men li, .sctn3 .sc3 .content_sect3 .half .women li {
   text-align: center;
   font-size: 1.25rem;
   font-weight: 300;
 }
-.sctn3 .content_sect3 h3 {
+.sctn3 .sc3 .content_sect3 h3 {
   font-family: "Work Sans";
   font-weight: 400;
   font-size: 1.25rem;
 }
-.sctn3 .content_sect3 h3::first-letter {
+.sctn3 .sc3 .content_sect3 h3::first-letter {
   text-transform: uppercase;
 }
-.sctn3 .content_sect3 .reserva_color {
+.sctn3 .sc3 .content_sect3 .reserva_color {
   margin-top: 2rem;
+}
+.sctn3 .sc3 .lluviaSobres {
+  color: #3f3f3f;
+  font-family: "Work Sans";
+  z-index: 100;
+  background-color: white;
+  text-align: center;
+  place-items: center;
+  width: 80%;
+  padding: 2rem 1rem;
+}
+.sctn3 .sc3 .lluviaSobres .envelope {
+  fill: #3f3f3f;
+  width: 2.75rem;
+  padding: 0.5rem 0 0.5rem;
+}
+.sctn3 .sc3 .lluviaSobres .lluviaTitle {
+  margin-bottom: 0.75rem;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+.sctn3 .sc3 .lluviaSobres .lluviaText {
+  text-align: center;
+  font-weight: 300;
+  font-size: 1.125rem;
+}
+.sctn3 .sc3 .lluviaSobres .lluviaText .numaccount {
+  font-weight: 400;
 }
 .sctn3 .wtrclr-on-sctn-3, .sctn3 .wtrclr-on-sctn-3_1, .sctn3 .flwr_sctn-3-1 {
   position: absolute;
