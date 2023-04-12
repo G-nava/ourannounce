@@ -633,11 +633,15 @@ li {
   font-size: 1.5rem;
 }
 .sctn3 .sc3 .lluviaSobres .lluviaText {
+  display: grid;
   text-align: center;
   font-weight: 300;
   font-size: 1.125rem;
 }
-.sctn3 .sc3 .lluviaSobres .lluviaText .numaccount {
+.sctn3 .sc3 .lluviaSobres .lluviaText .lluviaSpan {
+  margin-top: 0.5rem;
+}
+.sctn3 .sc3 .lluviaSobres .lluviaText .lluviaSpan .numaccount {
   font-weight: 400;
 }
 .sctn3 .wtrclr-on-sctn-3, .sctn3 .wtrclr-on-sctn-3_1, .sctn3 .flwr_sctn-3-1 {
@@ -661,7 +665,7 @@ li {
   position: absolute;
   width: 45%;
   bottom: 25%;
-  right: -15%;
+  right: -16%;
   z-index: 120;
   transform: rotateZ(-22deg);
 }
@@ -716,7 +720,7 @@ li {
   z-index: 100;
   width: 45%;
   bottom: 25%;
-  left: -15%;
+  left: -16%;
 }
 .sctn3 .sctn-3_flowers .sctn-2_flwr2 {
   width: 45%;

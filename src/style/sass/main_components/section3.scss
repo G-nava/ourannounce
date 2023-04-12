@@ -125,13 +125,19 @@
                 font-size: 1.5rem;
             }
             .lluviaText{
+                display: grid;
                 text-align: center;
                 font-weight: 300;
                 font-size: 1.125rem;
 
-                .numaccount{
-                    font-weight: 400;
+                .lluviaSpan{
+                    margin-top: .5rem;
+                    .numaccount{
+                        font-weight: 400;
+                    }
                 }
+
+
             }
     
         }
@@ -161,7 +167,7 @@
         // display:inline-block;
         width: 45%;
         bottom: 25%;
-        right: -15%;
+        right: -16%;
         z-index: 120;
         transform: rotateZ(-22deg);
         // animation: hole_flowers 35s alternate infinite ease-in;
@@ -236,7 +242,7 @@
         z-index: 100;
         width: 45%;
         bottom: 25%;
-        left: -15%;
+        left: -16%;
 
 
         .sctn-2_flwr2{

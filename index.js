@@ -46,14 +46,14 @@ function resultData(result){
     }else{
         
         if (result.familia == 'no') {
-            const getGender = result.genero === 'f' ? 'estas invitada a celebrar nuestra boda': 'estas invitado a celebrar nuestra boda'
+            const getGender = result.genero === 'f' ? 'estas invitada a celebrar nuestra boda.': 'estas invitado a celebrar nuestra boda.'
             gender.innerHTML = getGender;
             // const guestHeader = segundApellido == null ? `${nombreInvitado} ${primerApellido}`: `${nombreInvitado} ${primerApellido} ${segundApellido}`;
             document.getElementById('value').innerHTML = result.name;
             // return
         }else{
             document.getElementById('value').innerHTML = `Familia: ${result.name}`
-            gender.innerHTML = 'estan invitados a celebrar nuestra boda'
+            gender.innerHTML = 'estan invitados a celebrar nuestra boda.'
         }
     }
     
@@ -188,7 +188,7 @@ function resultData(result){
             const selectedValue = Array.from(guestNumber).find(radio => radio.checked) && Array.from(guestNumber).find(radio => radio.checked).value;;
             
             if (selectedValue == null || selectedValue == "" || selectedValue == undefined ) {
-                alert('debes seleccionar la cantidad total de invitados a asistir')
+                alert('debes seleccionar la cantidad total de invitados a asistir.')
             }else{
                 
                 /**
