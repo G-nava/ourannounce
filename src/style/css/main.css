@@ -732,7 +732,7 @@ li {
 .sctn3 .sctn-3_flowers .sctn-2_flwr3 {
   width: 12%;
   right: 50%;
-  bottom: 49%;
+  bottom: 42%;
   animation: leaves_sct3 10s alternate infinite ease-in;
   transform-origin: right bottom;
 }
