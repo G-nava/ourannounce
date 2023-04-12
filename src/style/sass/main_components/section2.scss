@@ -168,3 +168,225 @@
         transform: rotate(-8deg) scale(40%);
     }
 }
+
+@media screen and (min-width:400px) {
+    .sctn2{
+        .sctn-2_flowers{
+            // z-index: 100;
+            width: 35%;
+        }
+        .container-2{   
+            .sub-content{
+                .couple{
+                    width: 93%;
+                }
+                .star{
+                    top: 61.35%;
+                    left: 40%;
+                }
+            }        
+        }
+    }
+}
+@media screen and (min-width:550px) {
+    .sctn2{
+        .sctn-2_flowers{
+            // z-index: 100;
+            width: 30%;
+        }
+        .container-2{   
+            .sub-content{
+                .couple{
+                    width: 85%;
+                }
+                .star{
+                    top: 61%;
+                    left: 40.2%;
+                }
+            }        
+        }
+    }
+}
+@media screen and (min-width:600px) {
+    .sctn2{
+        .sctn-2_flowers{
+            // z-index: 100;
+            width: 28%;
+        }
+        .container-2{   
+            .sub-content{
+                .couple{
+                    width: 80%;
+                }
+                .star{
+                    top: 60.5%;
+                    left: 40.5%;
+                }
+            }        
+        }
+    }
+}
+@media screen and (min-width:650px) {
+    .sctn2{
+        .sctn-2_flowers{
+            width: 25%;
+        }
+        .container-2{   
+            .sub-content{
+                .couple{
+                    width: 73%;
+                }
+                .star{
+                    top: 60.5%;
+                    left: 41%;
+                }
+            }        
+        }
+    }
+}
+@media screen and (min-width:700px) {
+    .sctn2{
+        .sctn-2_flowers{
+            // z-index: 100;
+            width: 23%;
+        }
+        .container-2{   
+            .sub-content{
+                .couple{
+                    width: 67%;
+                    .star{
+                        top: 57%;
+                        left: 40.5%;
+                    }
+                }
+            }        
+        }
+    }
+}
+
+@media screen and (min-width:750px) {
+    .sctn2{
+        margin-top: 0; 
+        .sctn-2_flowers{
+            width: 20%;
+        }
+        
+        .container-2{
+            .sub-content{
+                .couple{
+                    width: 65%;
+
+                }
+                .star{
+                    top: 59%;
+                    left: 41.5%;
+                }
+            }   
+        }
+    }
+}
+@media screen and (min-width:800px) {
+    .sctn2{
+        margin-top: 0; 
+        .sctn-2_flowers{
+            width: 20%;
+        }
+        
+        .container-2{
+            .sub-content{
+                .couple{
+                    width: 60%;
+                    opacity: .8; 
+                }
+                .star{
+                    top: 59%;
+                    left: 41.5%;
+                }
+            }   
+        }
+    }
+}
+@media screen and (min-width:850px) {
+    .sctn2{
+        margin-top: 0; 
+        .sctn-2_flowers{
+            width: 20%;
+        }
+        
+        .container-2{
+            .sub-content{
+                .couple{
+                    width: 55%;
+                    opacity: .8; 
+                }
+                .star{
+                    top: 58%;
+                    left: 42%;
+                }
+            }   
+        }
+    }
+}
+@media screen and (min-width:900px) {
+    .sctn2{
+        margin-top: 0; 
+        .sctn-2_flowers{
+            width: 20%;
+        }
+        
+        .container-2{
+            .sub-content{
+                .couple{
+                    width: 49%;
+                    opacity: .8; 
+                }
+                .star{
+                    top: 58%;
+                    left: 42.5%;
+                }
+            }   
+        }
+    }
+}
+@media screen and (min-width:1020px) {
+    .sctn2{
+        margin-top: 0; 
+        .sctn-2_flowers{
+            width: 20%;
+        }
+        
+        .container-2{
+            .sub-content{
+                .couple{
+                    width: 45%;
+                    opacity: .8; 
+                }
+                .star{
+                    top: 58%;
+                    left: 42.5%;
+                }
+            }   
+        }
+    }
+}
+@media screen and (min-width:1200px) {
+    .sctn2{
+        margin-top: 0; 
+        .sctn-2_flowers{
+            width: 20%;
+        }
+        
+        .container-2{
+            .sub-content{
+                .couple{
+                    width: 40%;
+                    opacity: .8; 
+                }
+                .star{
+                    top: 58%;
+                    left: 42.5%;
+                }
+            }   
+        }
+    }
+}

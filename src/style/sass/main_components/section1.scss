@@ -369,5 +369,208 @@
     }
 }
 
+@media screen and (min-width:481px) { ////-----> aplica al pasarse de 400
+    .sctn1{
+        .flower-container{
+            width: 35%;  
+        }
+        
+        .flower-container-2{
+            width: 12.5%;        
+        }
+        .watercolor1{
+            width: 60%;
+        }
+        .watercolor2{
+            width: 70%;
+        }
+            
+        .watercolor3{
+            width: 80%;
+        }
+
+        .content{
+
+            width: 90% ;
+    
+            .versiculo{
+                width: 85%;
+                font-size: 1.125rem;
+            }
+            
+            
+            .first-container{
+                width: 80%;
+    
+                .familyName{
+                    font-size: 1.5rem;
+                }
+    
+                .reason{
+                    font-size: 1.25rem;
+                }
+                
+        
+                .main-text{
+                    margin: 1rem 0 1rem;
+                    // font-size: 5rem;
+                    
+                    .y{ 
+                        font-size: 3.25rem;   
+                    }
+                    .doubleName{
+                        margin-top: 1rem;
+                        line-height: 4rem;
+        
+                    }
+                }
+    
+                .date{
+                    font-size: 1.125rem;
+
+                }
+
+                .city{
+                    font-size: 1.215rem;
+                }
+            }
+        }
+    
+    }
+}
+
+@media screen and (min-width:768px) { ////-----> aplica al pasarse de 400
+    .sctn1{
+        .flower-container{
+            width: 29%;  
+        }
+        
+        .flower-container-2{
+            width: 10.5%;        
+        }
+        .watercolor1{
+            width: 50%;
+        }
+        .watercolor2{
+            width: 60%;
+        }
+            
+        .watercolor3{
+            width: 70%;
+        }
+
+        .content{
+            gap: 1rem;
+
+            width: 65% ;
+    
+            .versiculo{
+                width: 80%;
+                font-size: 1.5rem;
+            }
+            
+            
+            .first-container{
+                width: 85%;
+    
+                .familyName{
+                    font-size: 1.5rem;
+                }
+    
+                .reason{
+                    font-size: 1.25rem;
+                }
+                
+        
+                .main-text{
+                    margin: 1rem 0 1rem;
+                    // font-size: 5.5rem;
+                    // color: rebeccapurple;
+                    
+                    .y{ 
+                        font-size: 3.25rem;   
+                    }
+                }
+    
+                .date{
+                    font-size: 1.3rem;
+
+                }
+
+                .city{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    
+    }
+}
+
+@media screen and (min-width:1020px) { ////-----> aplica al pasarse de 400
+    .sctn1{
+        .flower-container{
+            width: 25%;  
+        }
+        
+        .flower-container-2{
+            width: 8.5%;        
+        }
+        .watercolor1{
+            width: 40%;
+        }
+        .watercolor2{
+            width: 50%;
+        }
+            
+        .watercolor3{
+            width: 60%;
+        }
+
+        .content{
+            gap: 1rem;
+
+            width: 65% ;
+    
+            .versiculo{
+                width: 80%;
+                font-size: 1.5rem;
+            }
+            
+            
+            .first-container{
+                width: 85%;
+    
+                .familyName{
+                    font-size: 1.5rem;
+                }
+    
+                .reason{
+                    font-size: 1.25rem;
+                }
+                
+        
+                .main-text{
+                    margin: 1rem 0 1rem;
+                    // font-size: 5.5rem;
+                    // color: rebeccapurple;
+                    
+                    .y{ 
+                        font-size: 3.25rem;   
+                    }
+                }
+    
+                .date{
+                    font-size: 1.3rem;
+
+                }
+
+                .city{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    
+    }
+}
 
 
