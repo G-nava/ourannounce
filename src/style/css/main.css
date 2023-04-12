@@ -660,11 +660,10 @@ li {
 .sctn3 .f-s3_3 {
   position: absolute;
   width: 45%;
-  bottom: 0%;
-  right: -3%;
-  z-index: 100;
-  animation: hole_flowers 35s alternate infinite ease-in;
-  transform-origin: center bottom;
+  bottom: 25%;
+  right: -15%;
+  z-index: 120;
+  transform: rotateZ(-22deg);
 }
 .sctn3 .f-s3_3 .rootplant {
   position: absolute;
@@ -707,17 +706,17 @@ li {
 .sctn3 .f-s3_4 {
   position: absolute;
   width: 25%;
-  left: 1rem;
+  left: -3%;
   top: -5%;
   transform: rotateY(180deg);
   z-index: 100;
 }
 .sctn3 .sctn-3_flowers {
-  transform: rotateY(-180deg);
-  z-index: 10;
+  transform: rotateY(-180deg) rotateZ(-15deg);
+  z-index: 100;
   width: 45%;
-  bottom: 0;
-  left: -10%;
+  bottom: 25%;
+  left: -15%;
 }
 .sctn3 .sctn-3_flowers .sctn-2_flwr2 {
   width: 45%;
@@ -994,10 +993,10 @@ li {
 }
 .sctn4 .flower-container-2 {
   z-index: 100;
-  width: 15.5%;
+  width: 17.5%;
   bottom: -10%;
   left: 5%;
-  animation: hole_flowers 40s alternate infinite ease-in;
+  animation: hole_flowers 35s alternate infinite ease-in;
   transform-origin: center bottom;
 }
 .sctn4 .flower-container-2 .capullo-3 {
@@ -1037,7 +1036,7 @@ li {
 }
 .sctn4 .sctn-2_flowers {
   z-index: 100;
-  width: 41.5%;
+  width: 43.5%;
   bottom: 0;
   right: -4%;
   animation: hole_flowers 30s alternate infinite ease-in;
@@ -1096,8 +1095,9 @@ li {
   z-index: 100;
   width: 90%;
   position: absolute;
-  top: 3%;
-  right: -50%;
+  transform: rotateZ(20deg);
+  top: 5%;
+  right: -58%;
 }
 .sctn4 .up_flower .up_flowerSub {
   position: relative;

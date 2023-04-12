@@ -267,10 +267,10 @@
     }
     .flower-container-2{
         z-index: 100;
-        width: 15.5%;
+        width: 17.5%;
         bottom: -10%;
         left: 5%;
-        animation: hole_flowers 40s alternate infinite ease-in;
+        animation: hole_flowers 35s alternate infinite ease-in;
         transform-origin: center bottom;
         // top: -1rem;
         // right: -1rem;
@@ -324,7 +324,7 @@
     
     .sctn-2_flowers{
         z-index: 100;
-        width: 41.5%;
+        width: 43.5%;
         bottom: 0;
         right: -4%;
         animation: hole_flowers 30s alternate infinite ease-in;
@@ -392,10 +392,11 @@
         width: 90%;
         // display: inline-block;
         position: absolute;
+        transform: rotateZ(20deg);
 
         
-        top: 3%;
-        right: -50%;
+        top: 5%;
+        right: -58%;
         // animation: leaves_sct4 20s alternate infinite ease-in;
         // transform-origin: center top;
         
