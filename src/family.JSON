@@ -393,10 +393,130 @@
             "numPer": ""
         },
         {
-            "name": "",
+            "name": "sergio gómez",
+            "genero": "m",
+            "familia": "no",
+            "capacity": 2,
+            "confirm": "",
+            "numPer": ""
+        },
+        {
+            "name": "sergio berrocal",
+            "genero": "m",
+            "familia": "no",
+            "capacity": 2,
+            "confirm": "",
+            "numPer": ""
+        },
+        {
+            "name": "germán cure",
+            "genero": "m",
+            "familia": "no",
+            "capacity": 2,
+            "confirm": "",
+            "numPer": ""
+        },
+        {
+            "name": "álvaro yepez",
+            "genero": "m",
+            "familia": "no",
+            "capacity": 2,
+            "confirm": "",
+            "numPer": ""
+        },
+        {
+            "name": "fernando primo",
+            "genero": "m",
+            "familia": "no",
+            "capacity": 2,
+            "confirm": "",
+            "numPer": ""
+        },
+        {
+            "name": "héctor julio cortina",
+            "genero": "m",
+            "familia": "no",
+            "capacity": 2,
+            "confirm": "",
+            "numPer": ""
+        },
+        {
+            "name": "david arcieri",
+            "genero": "m",
+            "familia": "no",
+            "capacity": 2,
+            "confirm": "",
+            "numPer": ""
+        },
+        {
+            "name": "jorge ramos",
+            "genero": "m",
+            "familia": "no",
+            "capacity": 2,
+            "confirm": "",
+            "numPer": ""
+        },
+        {
+            "name": "judith zárate",
+            "genero": "f",
+            "familia": "no",
+            "capacity": 2,
+            "confirm": "",
+            "numPer": ""
+        },
+        {
+            "name": "ernesto martínez",
+            "genero": "m",
+            "familia": "no",
+            "capacity": 2,
+            "confirm": "",
+            "numPer": ""
+        },
+        {
+            "name": "leonor martínez",
+            "genero": "f",
+            "familia": "no",
+            "capacity": 2,
+            "confirm": "",
+            "numPer": ""
+        },
+        {
+            "name": "paola martínez",
+            "genero": "f",
+            "familia": "no",
+            "capacity": 2,
+            "confirm": "",
+            "numPer": ""
+        },
+        {
+            "name": "brenda martínez",
+            "genero": "f",
+            "familia": "no",
+            "capacity": 2,
+            "confirm": "",
+            "numPer": ""
+        },
+        {
+            "name": "lenin lartínez",
             "genero": "",
-            "familia": "",
-            "capacity": "",
+            "familia": "no",
+            "capacity": 2,
+            "confirm": "",
+            "numPer": ""
+        },
+        {
+            "name": "rafael martínez",
+            "genero": "m",
+            "familia": "no",
+            "capacity": 2,
+            "confirm": "",
+            "numPer": ""
+        },
+        {
+            "name": "wilber martínez",
+            "genero": "m",
+            "familia": "no",
+            "capacity": 2,
             "confirm": "",
             "numPer": ""
         }
