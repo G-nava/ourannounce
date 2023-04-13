@@ -28,6 +28,7 @@ fetch(localList)
     .then(data=>{
         const result = cantidad != undefined ? data.guestWedding[`${cantidad}`]: data.guestWedding[0];
         // console.log(data.guestWedding[3]);
+        console.log(result.name);
         resultData(result);
         
     })
@@ -36,11 +37,11 @@ function resultData(result){
     // console.log(result.name);
     /*
     Muestra la etiqueta de "familia" en caso de existir apellidos solamente
-    de lo contrario solo muertra el nombre del invitado
+    de lo contrario solo muertra el nombre del invitado con forme al archivo
+    JSON
     */
    const gender = document.getElementById('reason')
-//    console.log(result.name);
-    if (result.name == '') {
+    if (result.name == '') { // <------ this is the JSON files
        document.getElementById('value').style.display = 'none';
        document.getElementById('sctn4').style.display = 'none';
     }else{

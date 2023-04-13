@@ -391,6 +391,14 @@
             "capacity": 1,
             "confirm": "",
             "numPer": ""
+        },
+        {
+            "name": "",
+            "genero": "",
+            "familia": "",
+            "capacity": "",
+            "confirm": "",
+            "numPer": ""
         }
     ]
 }
