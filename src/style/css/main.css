@@ -855,7 +855,7 @@ li {
   background-color: #f3adb9;
   font-weight: 300;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.35rem;
 }
 .sctn3 .sc3 .content_sect3 .half {
   display: grid;
@@ -928,7 +928,7 @@ li {
   background-color: #f3adb9;
   font-weight: 300;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.35rem;
 }
 .sctn3 .sc3 .lluviaSobres .lluviaText {
   display: grid;
@@ -1136,7 +1136,6 @@ li {
   }
   .sctn3 .sc3 .lluviaSobres .lluviaTitle {
     margin-bottom: 0.75rem;
-    font-size: 1.5rem;
   }
   .sctn3 .sc3 .lluviaSobres .lluviaText {
     font-weight: 300;
