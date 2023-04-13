@@ -28,7 +28,7 @@ fetch(localList)
     .then(data=>{
         const result = cantidad != undefined ? data.guestWedding[`${cantidad}`]: data.guestWedding[0];
         // console.log(data.guestWedding[3]);
-        console.log(result.name);
+        // console.log(result.name);
         resultData(result);
         
     })
