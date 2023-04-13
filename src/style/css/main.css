@@ -927,7 +927,6 @@ li {
   padding: 0.5rem 0 0.5rem;
 }
 .sctn3 .sc3 .lluviaSobres .lluviaTitle {
-  margin-bottom: 2.125rem;
   width: 100%;
   padding: 0.5rem 1rem;
   background-color: #f3adb9;
@@ -1140,7 +1139,7 @@ li {
     padding: 0.5rem 0 0.5rem;
   }
   .sctn3 .sc3 .lluviaSobres .lluviaTitle {
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.5rem;
   }
   .sctn3 .sc3 .lluviaSobres .lluviaText {
     font-weight: 300;
