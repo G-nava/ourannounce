@@ -845,7 +845,7 @@ li {
   display: grid;
   place-items: center;
   width: 80%;
-  padding: 2rem 1rem;
+  padding: 1.5rem 1rem;
   opacity: 0;
 }
 .sctn3 .sc3 .content_sect3 .dress_icon {
@@ -906,7 +906,8 @@ li {
   text-transform: uppercase;
 }
 .sctn3 .sc3 .content_sect3 .reserva_color {
-  margin-top: 2rem;
+  margin-top: 0.5rem;
+  text-align: center;
 }
 .sctn3 .sc3 .lluviaSobres {
   color: #3f3f3f;
@@ -917,7 +918,7 @@ li {
   text-align: center;
   place-items: center;
   width: 80%;
-  padding: 2rem 1rem;
+  padding: 1.5rem 1rem;
   opacity: 0;
 }
 .sctn3 .sc3 .lluviaSobres .envelope {
@@ -1129,11 +1130,10 @@ li {
     font-size: 1.25rem;
   }
   .sctn3 .sc3 .content_sect3 .reserva_color {
-    margin-top: 2.25rem;
+    margin-top: 1rem;
   }
   .sctn3 .sc3 .lluviaSobres {
     width: 75%;
-    padding: 2rem 1rem;
   }
   .sctn3 .sc3 .lluviaSobres .envelope {
     width: 2.75rem;
