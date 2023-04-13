@@ -619,6 +619,7 @@ li {
 .sctn2 .container-2 .sub-content .couple {
   width: 115%;
   opacity: 0.8;
+  user-select: none;
 }
 .sctn2 .container-2 .sub-content .anim {
   opacity: 0;
