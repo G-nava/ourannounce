@@ -46,14 +46,14 @@ function resultData(result){
     }else{
         
         if (result.familia == 'no') {
-            const getGender = result.genero === 'f' ? 'estas invitada a celebrar nuestra boda.': 'estas invitado a celebrar nuestra boda.'
+            const getGender = result.genero === 'f' ? 'estás invitada a celebrar nuestra boda.': 'estás invitado a celebrar nuestra boda.'
             gender.innerHTML = getGender;
             // const guestHeader = segundApellido == null ? `${nombreInvitado} ${primerApellido}`: `${nombreInvitado} ${primerApellido} ${segundApellido}`;
             document.getElementById('value').innerHTML = result.name;
             // return
         }else{
             document.getElementById('value').innerHTML = `Familia: ${result.name}`
-            gender.innerHTML = 'estan invitados a celebrar nuestra boda.'
+            gender.innerHTML = 'están invitados a celebrar nuestra boda.'
         }
     }
     
