@@ -375,6 +375,9 @@ li {
 .sctn1 .content .first-container .city .recepcion .recepBold, .sctn1 .content .first-container .city .recepcion .boldHora {
   font-weight: 400;
 }
+.sctn1 .content .first-container .city .recepcion .pm {
+  text-transform: lowercase;
+}
 
 @keyframes anim1 {
   from {
@@ -942,6 +945,7 @@ li {
 }
 .sctn3 .sc3 .lluviaSobres .lluviaText .lluviaSpan .numaccount {
   font-weight: 400;
+  text-decoration: none;
 }
 .sctn3 .wtrclr-on-sctn-3, .sctn3 .wtrclr-on-sctn-3_1, .sctn3 .flwr_sctn-3-1 {
   position: absolute;
