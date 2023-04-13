@@ -530,7 +530,9 @@
                             place-items: center;
                 
                             .goBack{
-                                margin-bottom: 1.5rem;
+
+                                margin-top: .5rem;
+                                margin-bottom: 1rem;
                                 .arrow{
                                     width: 2rem;
                                     height: 2rem;
@@ -557,7 +559,7 @@
                             }
                                 
                             .btn-confirm{
-                                all: unset;
+                                // all: unset;
                                 margin-top: 2rem;
                                 width: 70%;
                                 font-size: 1.25rem;
@@ -687,7 +689,7 @@
                             }
                                 
                             .btn-confirm{
-                                all: unset;
+                                // all: unset;
                                 margin-top: 2rem;
                                 width: 70%;
                                 font-size: 1.25rem;
@@ -816,7 +818,7 @@
                             }
                                 
                             .btn-confirm{
-                                all: unset;
+                                // all: unset;
                                 margin-top: 2rem;
                                 width: 70%;
                                 font-size: 1.25rem;

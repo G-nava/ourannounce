@@ -1739,7 +1739,8 @@ li {
     place-items: center;
   }
   .sctn4 .form .singlePerson .type-list .goBack {
-    margin-bottom: 1.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
   }
   .sctn4 .form .singlePerson .type-list .goBack .arrow {
     width: 2rem;
@@ -1760,7 +1761,6 @@ li {
     width: 15.35rem;
   }
   .sctn4 .form .singlePerson .type-list .btn-confirm {
-    all: unset;
     margin-top: 2rem;
     width: 70%;
     font-size: 1.25rem;
@@ -1862,7 +1862,6 @@ li {
     width: 15.35rem;
   }
   .sctn4 .form .singlePerson .type-list .btn-confirm {
-    all: unset;
     margin-top: 2rem;
     width: 70%;
     font-size: 1.25rem;
@@ -1964,7 +1963,6 @@ li {
     width: 15.35rem;
   }
   .sctn4 .form .singlePerson .type-list .btn-confirm {
-    all: unset;
     margin-top: 2rem;
     width: 70%;
     font-size: 1.25rem;
