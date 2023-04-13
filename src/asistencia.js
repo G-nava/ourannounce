@@ -1,6 +1,6 @@
 
 /*================= LISTAR EN PAGINA DE ASISTENCIA =================*/
-import { queryData} from '../firebase.js'
+import { queryData} from '../src/scripts/firebase.js'
 let html = '';
 const asistenciaList = (data)=>{
 
