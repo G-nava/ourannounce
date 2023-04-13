@@ -59,7 +59,7 @@ const asistenciaList = (data)=>{
             
             let td4 = td.cloneNode(true);
 
-            console.log(Object.keys(dt.numPer).length);
+            // console.log(Object.keys(dt.numPer).length);
             const numPerLength = Object.keys(dt.numPer).length;
             td4.innerHTML = `${Object.keys(dt.numPer).length}`;
 

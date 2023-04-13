@@ -1,0 +1,14 @@
+@use "variables.scss" as *;
+
+
+
+.main-404{
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    
+    .h1-404{
+        font-family: $work-sans;
+
+    }
+}
