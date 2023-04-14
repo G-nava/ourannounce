@@ -132,7 +132,7 @@
             "name":"denci sierra vanegas",
             "genero": "f",
             "familia": "no",
-            "capacity" : 1,
+            "capacity" : 2,
             "confirm": "",
             "numPer": ""
         },
@@ -517,6 +517,22 @@
             "genero": "m",
             "familia": "no",
             "capacity": 2,
+            "confirm": "",
+            "numPer": ""
+        },
+        {
+            "name": "maría teresa estarita",
+            "genero": "f",
+            "familia": "no",
+            "capacity": 2,
+            "confirm": "",
+            "numPer": ""
+        },
+        {
+            "name": "hernández vanegas",
+            "genero": "",
+            "familia": "si",
+            "capacity": 3,
             "confirm": "",
             "numPer": ""
         }
