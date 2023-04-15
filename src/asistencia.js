@@ -43,6 +43,7 @@ const asistenciaList = (data)=>{
     const main = async () => {
         const data = await queryData();
         const objeto = data.slice(1);
+        
         objeto.forEach((dt, index)=>{
 
             let thN = th.cloneNode(true);
@@ -58,21 +59,56 @@ const asistenciaList = (data)=>{
             td3.innerHTML = `${Object.values(dt.numPer)}`;
             
             let td4 = td.cloneNode(true);
+            td4.className ='total';
 
             // console.log(Object.keys(dt.numPer).length);
-            const numPerLength = Object.keys(dt.numPer).length;
-            td4.innerHTML = `${Object.keys(dt.numPer).length}`;
+            //const numPerLength = Object.keys(dt.numPer).length;
+            if (dt.capacity == 1 && dt.confirm == 'si') {  
+                td4.innerHTML = 1;
+            }else{
+                td4.innerHTML = `${Object.keys(dt.numPer).length}`;
+            }
 
             let tr2 = tr.cloneNode(true);
             tr2.append(thN, td1, td2, td3, td4);
 
             tbody.appendChild(tr2)
             table.appendChild(tbody)
+            // total = total + td.numPer;
         
         });
             // asistenciaList(data)
+            let thf1 = th.cloneNode(true);
+            thf1.innerHTML = 'TOTAL';
+        
+            let thf2 = th.cloneNode(true);
+            thf2.innerHTML = '';
+            
+            let thf3 = th.cloneNode(true);
+            thf3.innerHTML = '';
+        
+            let thf4 = th.cloneNode(true);
+            thf4.innerHTML = '';
+
+            const total = document.querySelectorAll('.total')
+            let acumulador = 0;
+            total.forEach((t)=>{
+                acumulador += parseInt(t.textContent);
+            });
+            // console.log(acumulador);
+
+            let thf5 = th.cloneNode(true);
+            thf5.innerHTML = acumulador;
+            
+            let trf1 = tr.cloneNode(true);
+            trf1.append(thf1, thf2, thf3, thf4, thf5);
+        
+            tbody.appendChild(trf1)
+            table.appendChild(tbody)
     }
     main();
+
+
      
     html = table;
 }
