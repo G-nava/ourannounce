@@ -466,7 +466,7 @@
         },
         {
             "name": "vanegas baldovino",
-            "genero": "m",
+            "genero": "",
             "familia": "si",
             "capacity": 2,
             "confirm": "",
@@ -535,6 +535,32 @@
             "capacity": 3,
             "confirm": "",
             "numPer": ""
+        },
+        {
+            "name": "omaida zúñiga",
+            "genero": "f",
+            "familia": "no",
+            "capacity": 2,
+            "confirm": "",
+            "numPer": ""
+        },
+        {
+            "name": "rosa morón",
+            "genero": "f",
+            "familia": "no",
+            "capacity": 2,
+            "confirm": "",
+            "numPer": ""
         }
+        ,
+        {
+            "name": "tapia castro",
+            "genero": "",
+            "familia": "si",
+            "capacity": 2,
+            "confirm": "",
+            "numPer": ""
+        }
+        
     ]
 }
