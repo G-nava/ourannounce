@@ -600,8 +600,7 @@
             "capacity": 2,
             "confirm": "",
             "numPer": ""
-        }
-        ,
+        },
         {
             "name": "maría de los remedios gamez",
             "genero": "f",
@@ -609,8 +608,16 @@
             "capacity": 2,
             "confirm": "",
             "numPer": ""
+        },
+        {
+            "name": "cristina gómez",
+            "genero": "f",
+            "familia": "no",
+            "capacity": 1,
+            "confirm": "",
+            "numPer": ""
         }
+        
         
     ]
 }
-
