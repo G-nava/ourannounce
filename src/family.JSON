@@ -640,6 +640,22 @@
             "capacity": 2,
             "confirm": "",
             "numPer": ""
+        },
+        {
+            "name": "juan avilés",
+            "genero": "m",
+            "familia": "no",
+            "capacity": 1,
+            "confirm": "",
+            "numPer": ""
+        },
+        {
+            "name": "karla carbonel",
+            "genero": "f",
+            "familia": "no",
+            "capacity": 1,
+            "confirm": "",
+            "numPer": ""
         }
         
         
