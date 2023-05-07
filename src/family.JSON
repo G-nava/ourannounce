@@ -616,7 +616,24 @@
             "capacity": 1,
             "confirm": "",
             "numPer": ""
+        },
+        {
+            "name": "said saker",
+            "genero": "m",
+            "familia": "no",
+            "capacity": 2,
+            "confirm": "",
+            "numPer": ""
+        },
+        {
+            "name": "ricardo ramos",
+            "genero": "m",
+            "familia": "no",
+            "capacity": 2,
+            "confirm": "",
+            "numPer": ""
         }
+        
         
         
     ]
